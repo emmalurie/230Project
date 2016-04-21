@@ -1,0 +1,7 @@
+public class DiningHall {
+  
+  private ArrayQueue<Dish> menu; 
+  
+  
+  
+}
