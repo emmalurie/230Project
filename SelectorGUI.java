@@ -8,7 +8,7 @@ public class SelectorGUI{
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     JTabbedPane tp = new JTabbedPane(); 
     tp.addTab("Introduction", new InstructionsPanel()); 
-    tp.addTab("Today’s Choice", new JPanel()); 
+    tp.addTab("Today’s Choice", new TodaysChoice()); 
     tp.addTab("Just for You", new JPanel()); 
     
     frame.getContentPane().add(tp); //add tabbed pane to frame
