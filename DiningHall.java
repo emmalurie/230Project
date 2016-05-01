@@ -1,6 +1,7 @@
 import javafoundations.*; 
 import java.util.*;
-public class DiningHall {
+
+public class DiningHall{
   
   private ArrayQueue<Dish> menu; 
   private String name; 
@@ -45,14 +46,17 @@ public class DiningHall {
   }
   
     /*uses hashtables in HashtablesforMeal to create the menus */
-  public void createMenu(String inFileName,String mealName){
-    Hashtable<String, Dish> data = createHashtable(mealName); 
-    String[] optionsToday = readWellesleyFresh(inFileName, mealName); 
-    for (int i = 0; i < optionsToday.length; i++){
-      if(data.containsKey(optionsToday[i])){
-         addtoMenu(data.get());
+  public void createMenu(String todaysMenuFile, String dataFile, String mealName){
+    Hashtable<String, Dish> data = CreateHashTable.createHashtable(dataFile); 
+    LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName); 
+    System.out.println(optionsToday);
+    while(!optionsToday.isEmpty()){
+      String dishName = optionsToday.remove();
+      if(data.containsKey(dishName)){
+         System.out.println(dishName);
+         addToMenu(data.get(dishName));
       }else {
-        System.out.println(optionsToday[i]);
+        System.out.println(dishName);
       }
     }
     
@@ -66,6 +70,12 @@ public class DiningHall {
       score+= menu.dequeue().getScore();
     }
     totalScore = score;
+  }
+  
+  public static void main(String[] args){
+    DiningHall bates = new DiningHall("Bates");
+    bates.createMenu("menus/tower.txt", "data/Bates_Data.tsv", "lunch");
+    System.out.println(bates.menu);
   }
   
   

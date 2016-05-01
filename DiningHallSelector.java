@@ -6,9 +6,15 @@ import java.net.*;
 
 
 public class DiningHallSelector {
+  DiningHall bates, lulu, pom, stoned, tower; 
   
   public DiningHallSelector(){
-    //initialize menus 
+    bates = new DiningHall("Bates");
+    lulu = new DiningHall("Lulu");
+    pom = new DiningHall("Pomeroy");
+    stoned = new DiningHall("Stone Davis");
+    tower = new DiningHall("Tower");
+    
   }
   //bugs: to fix weird spaces, home-style brunch
   
@@ -43,7 +49,7 @@ public class DiningHallSelector {
                 result.add(trimLine(line.trim())); //helper method to format the line (removes the type of meal from the string)
                 
                 
-                System.out.println(line + "\n");
+                //System.out.println(line + "\n");
               }
             }
             }
@@ -56,6 +62,8 @@ public class DiningHallSelector {
               
             }
             }
+  
+  
 
   
   /*uses java Calendar API return an int representing the days of the week*/ 
