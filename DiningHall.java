@@ -1,4 +1,5 @@
 import javafoundations.*; 
+import java.util.*;
 public class DiningHall {
   
   private ArrayQueue<Dish> menu; 
@@ -50,6 +51,8 @@ public class DiningHall {
     for (int i = 0; i < optionsToday.length; i++){
       if(data.containsKey(optionsToday[i])){
          addtoMenu(data.get());
+      }else {
+        System.out.println(optionsToday[i]);
       }
     }
     
