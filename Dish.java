@@ -8,6 +8,11 @@ public class Dish implements Comparable<Dish>{
     this.score = 0.0; 
   }
   
+  public Dish(String name, int score){
+    this.name = name; 
+    this.score = score;
+  }
+  
   public String getName(){
    return this.name;  
   }
