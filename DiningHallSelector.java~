@@ -1,4 +1,75 @@
+/* reads from web menu and writes menu to txt file*/
+import java.util.*;
+import java.io.*;
+import java.net.*;
+
+
+
 public class DiningHallSelector {
   
+//  public DiningHallSelector(){
+//    
+//    
+//  }
   
-}
+  //need to get rid of dashes and separate through lunch and dinner
+  public static LinkedList<String> readWellesleyFresh (String inFileName) {
+    try {
+      Scanner reader = new Scanner(new File(inFileName));
+      LinkedList<String>result = new LinkedList<String>();
+      String startDate = getStartDow();
+      String endDate = getEndDow();
+      boolean canReadFile = false;
+      
+      while (reader.hasNext()) { // Continue until we reach end of input file
+        String line = reader.nextLine();
+        if (line.contains(startDate)){
+          canReadFile = true; 
+        }
+            if(line.contains(endDate)) canReadFile = false;
+            if (canReadFile && !line.contains("Breakfast-") && !line.contains(startDate)){
+              result.add(line);
+            }
+            }
+            reader.close(); // Close the file reader
+            return result; 
+            
+            } catch (FileNotFoundException ex) {
+              System.out.println(ex); // Handle file-not-found by displaying message
+              return null; // Return the empty string if file not found
+              
+            }
+            }
+  
+  //used java Calendar API return an int representing the days of the week
+  private static int getDOW(){
+    Calendar c = Calendar.getInstance();
+    int i = c.get(Calendar.DAY_OF_WEEK);
+    return i;
+    
+  }
+  /*returns the day of the week */
+  private static String getStartDow(){
+    String [] dow = {"Saturday","Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", };
+    int date = getDOW();   
+    return dow[date]; 
+  }
+  
+  /*returns tomorrow's day of the week */
+  private static String getEndDow(){
+    String [] dow = {"Saturday","Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", };
+    int date = getDOW() + 1 ;   
+    return dow[date % 7]; 
+  }
+  
+  
+  
+  public static void main(String[] args){
+    System.out.println(readWellesleyFresh("menus/bates.txt"));
+    
+  }
+  
+  
+  
+  
+  }
