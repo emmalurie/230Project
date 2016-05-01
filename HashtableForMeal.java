@@ -3,61 +3,79 @@ import java.io.*;
 import java.util.*;
 
 public class HashtableForMeal {
-  private Hashtable<String,Dish> lunchMeal; // size is dynamic???? 
-  private Hashtable<String,Dish> dinnerMeal; 
  
   
   /**
    * @param  String dictFName  the name of the file that contains 
    * the dictionary words
    */
-  public HashtableForMeal(String dictFName) {
-    lunchMeal = new Hashtable<String,Dish>(100); 
-    dinnerMeal = new Hashtable<String,Dish>(100); 
+  public static Hashtable<String,Dish> createHash(String dictFName, String meal) {
+    Hashtable<String,Dish> lunchMeal = new Hashtable<String,Dish>(100); 
+    Hashtable<String,Dish> dinnerMeal = new Hashtable<String,Dish>(100); 
     
     try {   // set up file for reading meals, one per line
       Scanner reader = new Scanner(new File(dictFName));
-      
       //if(reader.next() == "lunch") 
       // Q: Can we get rid of "lunch" and dinner
       
       // lunch
-      while (reader.hasNext() && !reader.next().equals("\n")) {
+      while (reader.hasNext() && !reader.nextLine().equals("\n")){
         //read next meal, trim it 
-        String ldishName  = reader.next().trim(); 
-        double lscore = Double.parseDouble(reader.next().trim());  
-        Dish ldish = new Dish(ldishName);
-        ldish.setScore(lscore);
+        String line = reader.nextLine().trim(); 
+        String name = line.split("\t")[0];
+        //System.out.println(name);
+        int score = Integer.parseInt(line.split("\t")[1]);
+        //System.out.println(score);
+        
+        //double lscore = Double.parseDouble(reader.next().trim());  
+        Dish dish = new Dish(name);
+        dish.setScore(score);
         //add the meal into the hash table
-        lunchMeal.put(ldishName, ldish);
+        lunchMeal.put(name, dish);
       }
       
       // dinner
       while(reader.hasNext()){
-        String ddishName  = reader.next().trim(); 
-        double dscore = Double.parseDouble(reader.next().trim());  
-        Dish ddish = new Dish(ddishName);
-        ddish.setScore(dscore);
+        String line = reader.nextLine().trim(); 
+        String name = line.split("\t")[0];
+        int score = Integer.parseInt(line.split("\t")[1]);
+        Dish dish = new Dish(name);
+        dish.setScore(score);
         
-        dinnerMeal.put(ddishName, ddish);    
+        dinnerMeal.put(name, dish);    
       }  
       
       
       reader.close();    // close file
     }
-//    catch (IOException e) {
-//      System.out.println("error in reading from file");
-//    }
    catch(FileNotFoundException ex){
       System.out.println("File is not found!!!");
     } 
+   
+   //LinkedList<Hashtable<String,Double>> result = new LinkedList<Hashtable<String,Double>>();
+   
+   if(meal.equals("lunch")){
+     return lunchMeal;
+   }else{
+     return dinnerMeal;
+   }
   }
   
   
   public static void main(String[] args){
-    HashtableForMeal bates = new HashtableForMeal("Test_Bates_Data1.tsv");
-    System.out.println(bates.lunchMeal.containsKey("Alex’s Pizza Day! BBQ Chicken Pizza, Butternut Squash and Mushroom Pizza (V), Parmesan and Arugula Pizza (V), with Roasted Brussel Sprouts (VE), and Rainbow Chard (VE)"));
-    System.out.println(bates.dinnerMeal.containsKey("Wintergreen Salad; a Custom Made Bates Only Salad with Bibb Lettuce, Fresh Mint, Grape Tomato, Goat Cheese and Golden Raisins with Raspberry Vinaigrette (V)"));
+//    Hashtable<String,Dish> bateslunch = createHash("data/Bates_Data.tsv","lunch");
+//    System.out.println(bateslunch.containsKey("Alex’s Pizza Day! BBQ Chicken Pizza, Butternut Squash and Mushroom Pizza (V), Parmesan and Arugula Pizza (V), with Roasted Brussel Sprouts (VE), and Rainbow Chard (VE)"));
+//    Hashtable<String,Dish> batesdinner = createHash("data/Bates_Data.tsv","dinner");
+//    System.out.println(batesdinner.containsKey("Wintergreen Salad; a Custom Made Bates Only Salad with Bibb Lettuce, Fresh Mint, Grape Tomato, Goat Cheese and Golden Raisins with Raspberry Vinaigrette (V)"));
+    
+    Hashtable<String,Dish> lululunch = createHash("data/Lulu_Data.tsv","lunch");
+    System.out.println(lululunch.containsKey("Carnitas Burrito, Shredded BBQ Pork in a Flour Tortilla, With Rice (VE) Beans (VE), Fresh Salsa (VE) & Tortilla Chips (VE)"));
+    System.out.println(lululunch.containsKey("BBQ Chicken Sandwich, Grilled Chicken Breast, smother in Bbq sauce and Sliced Bacon served in a Claflin Roll. BBQ Tofu (V) Sandwich with Kettle chips (VE)"));
+    System.out.println(lululunch.containsKey("Turkey Burger, With Caramelized Onions (V), Garden Burger (V) Served with Fresh Cut Fries (VE)"));
+    System.out.println(lululunch.containsKey("Tuna Melt, Tuna salad with Melted Swiss cheese on Toasted Marble Rye Bread Eggplant Parm Slider, Golden Crispy Eggplant, tomato Sauce Provolone on Brioche (V) served with Fresh Cut Fries (VE)"));
+    System.out.println(lululunch.containsKey("The Green Monstah! Grilled Chicken Breast with pesto and Mozzarella/Provolone on Ciabatta bread, spicy Brussels sprouts (VE), Grilled Corn (VE)."));
+//HashtableForMeal bates = new HashtableForMeal("Data/Lulu_Data.tsv");
+    //System.out.println(lulu.lunchMeal.containsKey("BBQ Chicken Sandwich, Grilled Chicken Breast, smother in Bbq sauce and Sliced Bacon served in a Claflin Roll. BBQ Tofu (V) Sandwich with Kettle chips (VE)"));
   }
   
 }
