@@ -43,6 +43,18 @@ public class DiningHall {
    return copy; 
   }
   
+    /*uses hashtables in HashtablesforMeal to create the menus */
+  public void createMenu(String inFileName,String mealName){
+    Hashtable<String, Dish> data = createHashtable(mealName); 
+    String[] optionsToday = readWellesleyFresh(inFileName, mealName); 
+    for (int i = 0; i < optionsToday.length; i++){
+      if(data.containsKey(optionsToday[i])){
+         addtoMenu(data.get());
+      }
+    }
+    
+  }
+  
   public void calcScore(){
     ArrayQueue<Dish> menuClone = copyMenu(); //clone of menu
     int score = 0;

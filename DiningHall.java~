@@ -3,7 +3,7 @@ public class DiningHall {
   
   private ArrayQueue<Dish> menu; 
   private String name; 
-  private int totalScore; 
+  private int totalScore; //sum score of dishes
   //maybe specify meal booleans (lunch and dinner)
   
   public DiningHall(String name){
@@ -42,14 +42,15 @@ public class DiningHall {
    menu = temp; 
    return copy; 
   }
-  public double calcScore(){
+  
+  public void calcScore(){
     ArrayQueue<Dish> menuClone = copyMenu(); //clone of menu
     int score = 0;
     
     for (int i = 0; i < menu.size(); i++){
       score+= menu.dequeue().getScore();
     }
-    return score;
+    totalScore = score;
   }
   
   

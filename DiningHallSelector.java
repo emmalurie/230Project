@@ -7,14 +7,11 @@ import java.net.*;
 
 public class DiningHallSelector {
   
-//  public DiningHallSelector(){
-//    
-//    
-//  }
-  
-  //need to get rid of dashes and separate through lunch and dinner
-  
+  public DiningHallSelector(){
+    //initialize menus 
+  }
   //bugs: to fix weird spaces, home-style brunch
+  
   
   public static LinkedList<String> readWellesleyFresh (String inFileName, String meal) {
     try {
@@ -59,6 +56,7 @@ public class DiningHallSelector {
               
             }
             }
+
   
   /*uses java Calendar API return an int representing the days of the week*/ 
   private static int getDOW(){
