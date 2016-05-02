@@ -75,9 +75,10 @@ public class DiningHall{
   }
   
   public static void main(String[] args){
-    DiningHall bates = new DiningHall("Bates");
-    bates.createMenu("menus/tower.txt", "data/Bates_Data.tsv", "lunch");
-    System.out.println(bates.menu);
+    DiningHall tower = new DiningHall("Tower");
+    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
+    //tower.calcScore();
+    System.out.println(tower.totalScore);
   }
   
   

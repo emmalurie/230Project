@@ -123,7 +123,7 @@ public class DiningHallSelector {
   
   private static String trimLine(String line){
     //types of dishes array
-    String[] startingPhrases = {"Home-style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
+    String[] startingPhrases = {"Home-style Lunch-", "Home-Style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
       "Global Grill Brunch-", "Pure, Lunch & Dinner-", "Pizza, Lunch & Dinner-","Pizza, Brunch & Dinner-","Daily Grill Brunch-", 
       "Home-style Dinner-","Pasta Station Lunch-", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner-"};
     int size; 
