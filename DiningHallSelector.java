@@ -62,9 +62,8 @@ public class DiningHallSelector {
               
             }
             }
-  
-<<<<<<< Updated upstream
-=======
+ 
+  /*creates a hashtable of all of the dishes on record being served at a specific dining hall*/
   public static Hashtable<String,Dish> createHashtable(String inFileName){
     
     Hashtable<String,Dish> mealData = new Hashtable<String,Dish>(100); 
@@ -98,8 +97,6 @@ public class DiningHallSelector {
     }
     return mealData;
   }
-  
->>>>>>> Stashed changes
   
 
   

@@ -49,13 +49,14 @@ public class DiningHall{
   public void createMenu(String todaysMenuFile, String dataFile, String mealName){
     Hashtable<String, Dish> data = CreateHashTable.createHashtable(dataFile); 
     LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName); 
+    System.out.println(optionsToday);
     while(!optionsToday.isEmpty()){
       String dishName = optionsToday.remove();
       if(data.containsKey(dishName)){
          System.out.println(dishName);
          addToMenu(data.get(dishName));
       }else {
-        //System.out.println(dishName);
+        System.out.println(dishName);
       }
     }
     
@@ -73,7 +74,7 @@ public class DiningHall{
   
   public static void main(String[] args){
     DiningHall bates = new DiningHall("Bates");
-    bates.createMenu("menus/bates.txt", "data/Bates_Data.tsv", "lunch");
+    bates.createMenu("menus/tower.txt", "data/Bates_Data.tsv", "lunch");
     System.out.println(bates.menu);
   }
   

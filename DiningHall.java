@@ -45,9 +45,11 @@ public class DiningHall{
    return copy; 
   }
   
-    /*uses hashtables in HashtablesforMeal to create the menus */
+   /*creates a menu of Dish objects by comparing the items in today's menu to keys in the hashtable. 
+    * If the hashtable contains the name of the dish, the value, is a Dish object representing that meal option.
+    * That dish object is added to that dininghall's menu*/
   public void createMenu(String todaysMenuFile, String dataFile, String mealName){
-    Hashtable<String, Dish> data = CreateHashTable.createHashtable(dataFile); 
+    Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
     LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName); 
     System.out.println(optionsToday);
     while(!optionsToday.isEmpty()){
@@ -61,7 +63,7 @@ public class DiningHall{
     }
     
   }
-  
+  /*calculates the score of the menu*/
   public void calcScore(){
     ArrayQueue<Dish> menuClone = copyMenu(); //clone of menu
     int score = 0;
