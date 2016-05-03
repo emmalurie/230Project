@@ -1,3 +1,4 @@
+
 /*DiningHall.java
  *Last updated: 3 May 2016
  *Authors: Emma Lurie 
