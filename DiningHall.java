@@ -2,7 +2,7 @@
  *Last updated: 3 May 2016
  *Authors: Emma Lurie and Dorothy Sun
  *About: Each dining hall is reprented by a DiningHall object. DiningHall objects have a name (ie "Tower") a totalScore,
- *and a menu (a ArrayQueue<Dish>) that holds Dish objects that represent what is being
+ *and a menu (a PriorityQueue<Dish>) that holds Dish objects that represent what is being
  *at a given meal at that dining hall. Besides the three instance variables mentioned previously the class contains getters, a createMenu() method that adds all
  *Dishes that appear in the hashtable to the menu. There is also a toString() method.
  * 
@@ -17,13 +17,22 @@ import java.util.*;
 
 public class DiningHall implements Comparable<DiningHall>{
   
-  private ArrayQueue<Dish> menu; 
+  private PriorityQueue<Dish> menu; 
   private String name; 
   private double averageScore; //average score of dishes
   //maybe specify meal booleans (lunch and dinner)
   
   public DiningHall(String name){
-    menu = new ArrayQueue<Dish>(); 
+    menu = new PriorityQueue<Dish>();
+//                                     {
+//      public int compare(Dish a, Dish b) {
+//        if (b > a) return +1;
+//        if (a.compareTo(b) > 0) return -1;
+//        return 0;
+//      }
+//    }
+//    ); 
+    //menu = new PriorityQueue<Dish>();
     this.name = name; 
     averageScore = 0.0; 
   }
@@ -32,7 +41,7 @@ public class DiningHall implements Comparable<DiningHall>{
     return name;  
   }
   
-  public ArrayQueue<Dish> getMenu(){
+  public PriorityQueue<Dish> getMenu(){
     return menu;  
   }
   
@@ -44,22 +53,22 @@ public class DiningHall implements Comparable<DiningHall>{
   private void addToMenu(Dish d){
     try {
       //the dish object is being passed, but it is not being enqueued
-      menu.enqueue(d);
+      menu.add(d);
     } catch (NullPointerException n){
       System.out.println(d.getName() + " is throwing a null pointer"); 
     }
   }
   
-  private ArrayQueue<Dish> copyMenu(){
+  private PriorityQueue<Dish> copyMenu(){
     //is there a better way to clone a queue? 
-    ArrayQueue<Dish> temp = new ArrayQueue<Dish>(); 
-    ArrayQueue<Dish> copy = new ArrayQueue<Dish>();
+    PriorityQueue<Dish> temp = new PriorityQueue<Dish>(); 
+    PriorityQueue<Dish> copy = new PriorityQueue<Dish>();
     
     
     while(!menu.isEmpty()){
-      Dish element = menu.dequeue();
-      temp.enqueue(element);
-      copy.enqueue(element);
+      Dish element = menu.poll();
+      temp.add(element);
+      copy.add(element);
     }
     menu = temp; 
     return copy; 
@@ -90,12 +99,12 @@ public class DiningHall implements Comparable<DiningHall>{
   }
   /*calculates the score of the menu*/
   public double calcScore(){
-    ArrayQueue<Dish> menuClone = copyMenu(); //clone of menu
+    PriorityQueue<Dish> menuClone = copyMenu(); //clone of menu
     int score = 0;
     try{
     for (int i = 0; i < menu.size(); i++){
       try {
-      score+= menu.dequeue().getScore();
+      score+= menu.poll().getScore();
       }catch(Exception ex){
        System.out.println("No objects are in the menu"); 
       }
@@ -115,6 +124,7 @@ public class DiningHall implements Comparable<DiningHall>{
     
     return result; 
   }
+  
   /*compareTo method compares the totalScore of dininghalls*/
   public int compareTo (DiningHall d){
     return (int)(this.averageScore - d.averageScore); 
@@ -134,9 +144,10 @@ public class DiningHall implements Comparable<DiningHall>{
     DiningHall stoned = new DiningHall("Stone Davis");
     DiningHall tower = new DiningHall("Tower");
     
-    /*bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
+    bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
     bates.calcScore();
     System.out.println(bates);
+    //System.out.println(bates.menu.size()+"\n\n");
     
     
     lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "lunch");
@@ -153,7 +164,7 @@ public class DiningHall implements Comparable<DiningHall>{
     
     tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
     tower.calcScore();
-    System.out.println(tower);*/
+    System.out.println(tower);
   }
   
   
