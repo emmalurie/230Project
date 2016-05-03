@@ -92,7 +92,7 @@ public class DiningHall implements Comparable<DiningHall>{
   public double calcScore(){
     ArrayQueue<Dish> menuClone = copyMenu(); //clone of menu
     int score = 0;
-    
+    try{
     for (int i = 0; i < menu.size(); i++){
       try {
       score+= menu.dequeue().getScore();
@@ -102,7 +102,10 @@ public class DiningHall implements Comparable<DiningHall>{
     }
     averageScore = score/menu.size();
     return averageScore;
-  }
+    }catch(Exception e){
+      return -1;
+    }
+}
   
   /*need to improve toString method to print out name and score*/
   public String toString(){
