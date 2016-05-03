@@ -12,6 +12,7 @@
  
  "Crispy Calamari, Fried Calamari with Sweet Chili Soy Sauce, Vegetable Tempura (VE), Flash Fried Vegetables, Sweet & Sour Dipping Sauce." for Tuesday's lunch cannot be found in the hashtable...it's there. not
  srue why it is throwing an error*/
+
 import javafoundations.*; 
 import java.util.*;
 
@@ -19,13 +20,13 @@ public class DiningHall implements Comparable<DiningHall>{
   
   private ArrayQueue<Dish> menu; 
   private String name; 
-  private int totalScore; //sum score of dishes
+  private double averageScore; //average score of dishes
   //maybe specify meal booleans (lunch and dinner)
   
   public DiningHall(String name){
     menu = new ArrayQueue<Dish>(); 
     this.name = name; 
-    totalScore = 0; 
+    averageScore = 0.0; 
   }
   
   public String getName(){
@@ -36,13 +37,10 @@ public class DiningHall implements Comparable<DiningHall>{
     return menu;  
   }
   
-  public int getScore(){
-    return totalScore;  
+  public double getAverageScore(){
+    return averageScore;  
   }
-  //a dining hall's score for a particular meal
-  public double totalScore(){
-    return totalScore;  
-  }
+
   //adds a dish to 
   private void addToMenu(Dish d){
     try {
@@ -92,7 +90,7 @@ public class DiningHall implements Comparable<DiningHall>{
     
   }
   /*calculates the score of the menu*/
-  public void calcScore(){
+  public double calcScore(){
     ArrayQueue<Dish> menuClone = copyMenu(); //clone of menu
     int score = 0;
     
@@ -103,20 +101,21 @@ public class DiningHall implements Comparable<DiningHall>{
        System.out.println("No objects are in the menu"); 
       }
     }
-    totalScore = score;
+    averageScore = score/menu.size();
+    return averageScore;
   }
   
   /*need to improve toString method to print out name and score*/
   public String toString(){
     String result = ""; 
     result += menu;
-    result += "\n" + totalScore;
+    result += "\n" + averageScore;
     
     return result; 
   }
   /*compareTo method compares the totalScore of dininghalls*/
   public int compareTo (DiningHall d){
-    return (int)(this.totalScore - d.totalScore); 
+    return (int)(this.averageScore - d.averageScore); 
   }
   
   public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName){
