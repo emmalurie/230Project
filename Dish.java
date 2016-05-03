@@ -33,4 +33,10 @@ public class Dish implements Comparable<Dish>{
    return (int)(this.score - other.score); 
     }
   
+  public String toString(){
+   String result = "";
+   result += name + "\t" + score; 
+   return result; 
+  }
+  
 }

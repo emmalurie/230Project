@@ -62,9 +62,8 @@ public class DiningHallSelector {
               
             }
             }
-  
-<<<<<<< Updated upstream
-=======
+ 
+  /*creates a hashtable of all of the dishes on record being served at a specific dining hall*/
   public static Hashtable<String,Dish> createHashtable(String inFileName){
     
     Hashtable<String,Dish> mealData = new Hashtable<String,Dish>(100); 
@@ -99,8 +98,6 @@ public class DiningHallSelector {
     return mealData;
   }
   
->>>>>>> Stashed changes
-  
 
   
   /*uses java Calendar API return an int representing the days of the week*/ 
@@ -126,7 +123,7 @@ public class DiningHallSelector {
   
   private static String trimLine(String line){
     //types of dishes array
-    String[] startingPhrases = {"Home-style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
+    String[] startingPhrases = {"Home-style Lunch-", "Home-Style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
       "Global Grill Brunch-", "Pure, Lunch & Dinner-", "Pizza, Lunch & Dinner-","Pizza, Brunch & Dinner-","Daily Grill Brunch-", 
       "Home-style Dinner-","Pasta Station Lunch-", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner-"};
     int size; 
