@@ -8,7 +8,7 @@
  
  To do: 
  We should create a method that finds the top 3 DiningHalls based on scores
- We should create a testing method that allowsus to manually put in the day of the week.*/
+ We should create a testing method that allows us to manually put in the day of the week.*/
 import java.util.*;
 import java.io.*;
 import java.net.*;

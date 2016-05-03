@@ -10,6 +10,8 @@ public class Dish implements Comparable<Dish>{
   private String name; 
   private double score; 
   
+  //constructors 
+  
   public Dish(String name){
     this.name = name; 
     this.score = 0.0; 
@@ -19,6 +21,8 @@ public class Dish implements Comparable<Dish>{
     this.name = name; 
     this.score = score;
   }
+  
+  //getters and setters
   
   public String getName(){
    return this.name;  
@@ -35,11 +39,13 @@ public class Dish implements Comparable<Dish>{
   public void setScore(double score){
    this.score = score;  
   }
-  
+  /*If a Dish's score is greater than another Dish's, a number greater than 1 is returned, 
+   * if they have the same score then 0 is returend, and if a Dish's score is less another Dish's, a number less than 0 is returned*/
   public int compareTo(Dish other){
    return (int)(this.score - other.score); 
     }
   
+  //toString() method returns the name and score of a dish
   public String toString(){
    String result = "";
    result += name + "\t" + score; 
