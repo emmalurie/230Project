@@ -43,7 +43,6 @@ public class DiningHall implements Comparable<DiningHall>{
   //adds a dish to 
   private void addToMenu(Dish d){
     try {
-      //the dish object is being passed, but it is not being enqueued
       menu.enqueue(d);
     } catch (NullPointerException n){
       System.out.println(d.getName() + " is throwing a null pointer"); 
@@ -80,10 +79,9 @@ public class DiningHall implements Comparable<DiningHall>{
       String dishName = optionsToday.remove();
       
       if(data.containsKey(dishName)){
-        //System.out.println(dishName);
-        addToMenu(data.get(dishName));
+        this.addToMenu(data.get(dishName));
       }else {
-        System.out.println(dishName + " could not be found in hash table" );
+        //System.out.println(dishName.substring(0,30) + "... could not addded to menu ");
       }
     }
     
@@ -95,7 +93,7 @@ public class DiningHall implements Comparable<DiningHall>{
     try{
     for (int i = 0; i < menu.size(); i++){
       try {
-      score+= menu.dequeue().getScore();
+      score+= menuClone.dequeue().getScore();
       }catch(Exception ex){
        System.out.println("No objects are in the menu"); 
       }
@@ -134,26 +132,28 @@ public class DiningHall implements Comparable<DiningHall>{
     DiningHall stoned = new DiningHall("Stone Davis");
     DiningHall tower = new DiningHall("Tower");
     
-    /*bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
-    bates.calcScore();
-    System.out.println(bates);
-    
-    
-    lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "lunch");
-    lulu.calcScore();
-    System.out.println(lulu);
-    
-    pom.createMenu("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch");
-    pom.calcScore();
-    System.out.println(pom);
-    
-    stoned.createMenu("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "lunch");
-    stoned.calcScore();
-    System.out.println(stoned);
-    
-    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
-    tower.calcScore();
-    System.out.println(tower);*/
+    bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch");
+    System.out.println(bates);    
+//    bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
+//    bates.calcScore();
+//    System.out.println(bates);
+//    
+//    
+//    lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "lunch");
+//    lulu.calcScore();
+//    System.out.println(lulu);
+//    
+//    pom.createMenu("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch");
+//    pom.calcScore();
+//    System.out.println(pom);
+//    
+//    stoned.createMenu("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "lunch");
+//    stoned.calcScore();
+//    System.out.println(stoned);
+//    
+//    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
+//    tower.calcScore();
+//    System.out.println(tower);
   }
   
   
