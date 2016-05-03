@@ -30,9 +30,9 @@ public class DiningHallSelector {
   
  public void initializeAll(String mealName){
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
-    lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);    System.out.println("\n");
-    pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", mealName);    System.out.println("\n");
-    stoned.initializeDiningHall("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", mealName);    System.out.println("\n");
+    lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);  
+    pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", mealName);    
+    stoned.initializeDiningHall("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", mealName);    
     tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName);    
   }
   
@@ -86,7 +86,7 @@ public class DiningHallSelector {
   /*creates a hashtable of all of the dishes on record being served at a specific dining hall*/
   public static Hashtable<String,Dish> createHashtable(String inFileName){
     
-    Hashtable<String,Dish> mealData = new Hashtable<String,Dish>(100); 
+    Hashtable<String,Dish> mealData = new Hashtable<String,Dish>(200); 
     
     
     try {   // set up file for reading meals, one per line
@@ -182,6 +182,11 @@ public class DiningHallSelector {
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
     DiningHallSelector s = new DiningHallSelector();
     s.initializeAll("lunch");
+    System.out.println(s.bates);
+    System.out.println(s.lulu);
+      System.out.println(s.pom);
+    System.out.println(s.stoned);
+        System.out.println(s.tower);
   }
   
   
