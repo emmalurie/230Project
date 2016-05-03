@@ -8,7 +8,7 @@
  
  To do: 
  We should create a method that finds the top 3 DiningHalls based on scores
- We should create a testing method that allows us to manually put in the day of the week.*/
+ We should create a testing method that allows us to manually put in the day of the week. -Done by Emma */
 import java.util.*;
 import java.io.*;
 import java.net.*;
@@ -123,11 +123,26 @@ public class DiningHallSelector {
     return dow[date - 1]; 
   }
   
+  
   /*returns tomorrow's day of the week */
   private static String getEndDow(){
     String [] dow = {"Saturday","Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", };
     int date = getDOW() + 1 ;   
     return dow[date % 7]; 
+  }
+  
+  /*this helper method is the same as getStartDow(), but the date is a parameter. This method makes it easier for testing, 
+   * because we can test any day of the week at any time */
+    private static String getStartDow(int day){
+    String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", "Saturday"};
+    return dow[day -1];
+  }
+    
+  /*this helper method is the same as getEndDow(), but the date is a parameter. This method makes it easier for testing, 
+   * because we can test any day of the week at any time */
+  private static String getEndDow(int day){
+   String [] dow = {"Saturday","Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", };
+       return dow[day % 7]; 
   }
   
   private static String trimLine(String line){
@@ -145,6 +160,7 @@ public class DiningHallSelector {
     return line; 
   }
   
+
   
   
   public static void main(String[] args){

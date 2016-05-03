@@ -119,11 +119,18 @@ public class DiningHall implements Comparable<DiningHall>{
   
   
   public static void main(String[] args){
-    DiningHall tower = new DiningHall("Tower");
-    tower.createMenu("menus/bates.txt", "data/Bates_Data.tsv", "dinner");
-    tower.calcScore();
-    System.out.println(tower.menu.first().getName());
-    System.out.println(tower.totalScore);
+//    DiningHall tower = new DiningHall("Tower");
+//    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "dinner");
+//    System.out.println(tower);
+//    
+//    DiningHall stoned = new DiningHall("Stone Davis");
+//    stoned.createMenu("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "dinner");
+//    System.out.println(stoned);
+//    
+    //DiningHallSelector.readWellesleyFresh("menus/tower.txt","dinner");
+    
+    //System.out.println(tower.menu.first().getName());
+    //System.out.println(tower.totalScore);
   }
   
   

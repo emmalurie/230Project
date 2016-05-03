@@ -8,7 +8,7 @@
  
  To do: should change ArrayQueue to PriorityQueue, change totalScore to averageScore
  should create a method that returns the top menu item (for JustForYou option)
- should create an intialize() method that createsMenu() and calcScore()... then the only public methods are initialize(), constructor, compareTo(), getters, and toString() */
+ should create an intialize() method that createsMenu() and calcScore()... then the only public methods are initialize(), constructor, compareTo(), getters, and toString() -Emma*/
 import javafoundations.*; 
 import java.util.*;
 
@@ -111,6 +111,12 @@ public class DiningHall implements Comparable<DiningHall>{
   public int compareTo (DiningHall d){
    return (int)(this.totalScore - d.totalScore); 
   }
+  
+  public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName){
+    createMenu(todaysMenuFile, dataFile, mealName);
+    calcScore();
+  }
+  
   
   public static void main(String[] args){
     DiningHall tower = new DiningHall("Tower");
