@@ -8,10 +8,12 @@ public class TodaysChoice extends JPanel{
   private JPanel lunchPanel, dinnerPanel;
   private String meal; 
   private DiningHallSelector selector;
+  private JLabel result; 
   
   public TodaysChoice(DiningHallSelector selector){
     
-    //this.selector = selector;
+    this.selector = selector;
+    
     
     lunchPanel = new JPanel();
     dinnerPanel = new JPanel();
@@ -21,6 +23,8 @@ public class TodaysChoice extends JPanel{
     
     ButtonListener listener = new ButtonListener();
     
+
+               
     lunchButton.addActionListener(listener);
     dinnerButton.addActionListener(listener);
     
@@ -42,7 +46,9 @@ public class TodaysChoice extends JPanel{
       meal = "dinner";
     }
     System.out.println(meal);
-    //selector.initializeAll(meal);
+    selector.initializeAll(meal);
+    result = new JLabel("the result is " + selector.getBestDiningHall().getName());
+    add(result);
   }
 }
 }
