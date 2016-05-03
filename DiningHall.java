@@ -6,13 +6,13 @@
  *at a given meal at that dining hall. Besides the three instance variables mentioned previously the class contains getters, a createMenu() method that adds all
  *Dishes that appear in the hashtable to the menu. There is also a toString() method.
  
- To do: should create compareTo method and should implement Comparable, change ArrayQueue to PriorityQueue, change totalScore to averageScore
- should create a method that returns the top menu item (for JustForYou option)*/
+ To do: should change ArrayQueue to PriorityQueue, change totalScore to averageScore
+ should create a method that returns the top menu item (for JustForYou option)
+ should create an intialize() method that createsMenu() and calcScore()... then the only public methods are initialize(), constructor, compareTo(), and toString() */
 import javafoundations.*; 
 import java.util.*;
 
-//need to implement comparable
-public class DiningHall{
+public class DiningHall implements Comparable<DiningHall>{
   
   private ArrayQueue<Dish> menu; 
   private String name; 
@@ -102,6 +102,10 @@ public class DiningHall{
    result += "\n" + totalScore;
    
    return result; 
+  }
+  /*compareTo method compares the totalScore of dininghalls*/
+  public int compareTo (DiningHall d){
+   return (int)(this.totalScore - d.totalScore); 
   }
   
   public static void main(String[] args){

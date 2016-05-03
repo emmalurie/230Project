@@ -1,7 +1,7 @@
 /*Dish.java
  *Last updated: 1 May 2016
  *Authors: Emma Lurie
- *Notes: the Dish class creates a Dish ojbect which represents a single menu item at any dining hall. Every dish has a name and a score. Both instance
+ *Notes: the Dish class creates a Dish object which represents a single menu item at any dining hall. Every dish has a name and a score. Both instance
  variables have getters and setters. The Dish class implements the Comparable interface. A Dish is considered greater than another Dish if
  it has a higher score*/
 
