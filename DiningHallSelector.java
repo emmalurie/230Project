@@ -171,6 +171,28 @@ public class DiningHallSelector {
     return line; 
   }
   
+  public String toString(){
+    //new lines aren't really working
+    String result = "";
+    result += "Bates \n" + bates + "\n"; 
+    result += "Lulu \n" + lulu+ "\n";
+    result += "Pomeroy \n" + pom+ "\n";
+    result += "Stone Davis \n" + stoned + "\n";
+    result += "Tower \n" + tower + "\n";
+    
+    return result;
+    
+  }
+  /*returns the DiningHall with a higher score*/
+    private DiningHall getMax(DiningHall a, DiningHall b){
+    return (a.compareTo(b) > 0 ? a : b); 
+  }
+  /*returns the DiningHall with the highest score*/
+  public DiningHall getBestDiningHall(){
+    return getMax(bates, getMax(lulu, getMax(pom, getMax(stoned, tower))));
+  }
+  
+  
 
   
   
@@ -182,11 +204,13 @@ public class DiningHallSelector {
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
     DiningHallSelector s = new DiningHallSelector();
     s.initializeAll("lunch");
-    System.out.println(s.bates);
-    System.out.println(s.lulu);
-      System.out.println(s.pom);
-    System.out.println(s.stoned);
-        System.out.println(s.tower);
+    System.out.println(s);
+    System.out.println(s.getBestDiningHall().getName());
+//    System.out.println(s.bates);
+//    System.out.println(s.lulu);
+//      System.out.println(s.pom);
+//    System.out.println(s.stoned);
+//      System.out.println(s.tower);
   }
   
   

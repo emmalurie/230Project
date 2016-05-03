@@ -7,8 +7,12 @@ public class TodaysChoice extends JPanel{
   private JButton lunchButton, dinnerButton;
   private JPanel lunchPanel, dinnerPanel;
   private String meal; 
+  private DiningHallSelector selector;
   
-  public TodaysChoice(){
+  public TodaysChoice(DiningHallSelector selector){
+    
+    //this.selector = selector;
+    
     lunchPanel = new JPanel();
     dinnerPanel = new JPanel();
     
@@ -25,6 +29,8 @@ public class TodaysChoice extends JPanel{
     
     add(lunchPanel);
     add(dinnerPanel);
+    
+    
   }
   
   private class ButtonListener implements ActionListener {
@@ -36,6 +42,7 @@ public class TodaysChoice extends JPanel{
       meal = "dinner";
     }
     System.out.println(meal);
+    //selector.initializeAll(meal);
   }
 }
 }
