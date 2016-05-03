@@ -163,7 +163,6 @@ public class DiningHallSelector {
 
   
   
-  
   public static void main(String[] args){
     System.out.println(readWellesleyFresh("menus/bplc.txt","dinner"));
     //System.out.println(getStartDow());
