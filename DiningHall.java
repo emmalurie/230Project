@@ -1,3 +1,13 @@
+/*DiningHall.java
+ *Last updated: 3 May 2016
+ *Authors: Emma Lurie 
+ *About: Each dining hall is reprented by a DiningHall object. DiningHall objects have a name (ie "Tower") a totalScore,
+ *and a menu (a ArrayQueue<Dish>) that holds Dish objects that represent what is being
+ *at a given meal at that dining hall. Besides the three instance variables mentioned previously the class contains getters, a createMenu() method that adds all
+ *Dishes that appear in the hashtable to the menu. There is also a toString() method.
+ 
+ To do: should create compareTo method and should implement Comparable, change ArrayQueue to PriorityQueue, change totalScore to averageScore
+ should create a method that returns the top menu item (for JustForYou option)*/
 import javafoundations.*; 
 import java.util.*;
 
@@ -27,9 +37,9 @@ public class DiningHall{
    return totalScore;  
   }
   //adds a dish to 
-  public void addToMenu(Dish d){
+  private void addToMenu(Dish d){
     try {
-    //the dish object is being passed, but it so not being enqueued
+    //the dish object is being passed, but it is not being enqueued
     menu.enqueue(d);
     } catch (NullPointerException n){
      System.out.println(d.getName() + " is throwing a null pointer"); 

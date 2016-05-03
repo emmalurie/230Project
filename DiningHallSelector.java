@@ -1,4 +1,14 @@
-/* reads from web menu and writes menu to txt file*/
+/*DiningHallSelector.java
+ *Last updated: 3 May 2016
+ *Authors: Emma Lurie and Dorothy Sun
+ *About: Each time the program is run, a DiningHallSelector object is created representing the process of choosing the best dining hall at a given meal.
+ * In the constructor five dining halls are created as representations the five dining halls at Wellesley. This method contains a readWellesleyFresh() method 
+ that reads a weekly menu from a txt file as well as a createHashtable() method that reads data from a tsv file that holds Wellesley Fresh common dishes and their 
+ student reviews. This class also creates helper methods that neaten text and help retrieve the day of the week. 
+ 
+ To do: 
+ We should create a method that finds the top 3 DiningHalls based on scores
+ We should create a testing method that allowsus to manually put in the day of the week.*/
 import java.util.*;
 import java.io.*;
 import java.net.*;

@@ -44,7 +44,6 @@ public class DiningHallSelector {
             
             if (canReadFile && !line.contains("Breakfast-") && !line.contains(startDate)){
               if (lunch && (line.contains("Lunch")  || line.contains("Brunch"))|| dinner && line.contains("Dinner")){
-                //figure out how to get rid of heading 
                 
                 result.add(trimLine(line.trim())); //helper method to format the line (removes the type of meal from the string)
                 

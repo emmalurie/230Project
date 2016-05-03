@@ -1,6 +1,7 @@
 import javafoundations.*; 
 import java.util.*;
 
+//need to implement comparable
 public class DiningHall{
   
   private ArrayQueue<Dish> menu; 
@@ -9,7 +10,7 @@ public class DiningHall{
   //maybe specify meal booleans (lunch and dinner)
   
   public DiningHall(String name){
-    ArrayQueue<Dish> menu = new ArrayQueue<Dish>(); 
+    menu = new ArrayQueue<Dish>(); 
     this.name = name; 
     totalScore = 0; 
   }
@@ -27,7 +28,12 @@ public class DiningHall{
   }
   //adds a dish to 
   public void addToMenu(Dish d){
+    try {
+    //the dish object is being passed, but it so not being enqueued
     menu.enqueue(d);
+    } catch (NullPointerException n){
+     System.out.println(d.getName() + " is throwing a null pointer"); 
+    }
   }
   
   private ArrayQueue<Dish> copyMenu(){
@@ -49,13 +55,18 @@ public class DiningHall{
     * If the hashtable contains the name of the dish, the value, is a Dish object representing that meal option.
     * That dish object is added to that dininghall's menu*/
   public void createMenu(String todaysMenuFile, String dataFile, String mealName){
+    
     Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
     LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName); 
-    System.out.println(optionsToday);
+    
+    //System.out.println(optionsToday);
+    
     while(!optionsToday.isEmpty()){
+      
       String dishName = optionsToday.remove();
+      
       if(data.containsKey(dishName)){
-         System.out.println(dishName);
+         //System.out.println(dishName);
          addToMenu(data.get(dishName));
       }else {
         System.out.println(dishName);
@@ -74,10 +85,20 @@ public class DiningHall{
     totalScore = score;
   }
   
+  /*need to improve toString method to print out name and score*/
+  public String toString(){
+   String result = ""; 
+   result += menu;
+   result += "\n" + totalScore;
+   
+   return result; 
+  }
+  
   public static void main(String[] args){
     DiningHall tower = new DiningHall("Tower");
-    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
-    //tower.calcScore();
+    tower.createMenu("menus/bates.txt", "data/Bates_Data.tsv", "dinner");
+    tower.calcScore();
+    System.out.println(tower.menu.first().getName());
     System.out.println(tower.totalScore);
   }
   
