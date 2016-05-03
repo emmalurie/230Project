@@ -1,13 +1,12 @@
-
 /*DiningHall.java
  *Last updated: 3 May 2016
- *Authors: Emma Lurie 
+ *Authors: Emma Lurie and Dorothy Sun
  *About: Each dining hall is reprented by a DiningHall object. DiningHall objects have a name (ie "Tower") a totalScore,
  *and a menu (a ArrayQueue<Dish>) that holds Dish objects that represent what is being
  *at a given meal at that dining hall. Besides the three instance variables mentioned previously the class contains getters, a createMenu() method that adds all
  *Dishes that appear in the hashtable to the menu. There is also a toString() method.
  * 
- To do: should change ArrayQueue to PriorityQueue, change totalScore to averageScore
+ To do: should change ArrayQueue to PriorityQueue,Dorothy)
  should create a method that returns the top menu item (for JustForYou option) 
  
  "Crispy Calamari, Fried Calamari with Sweet Chili Soy Sauce, Vegetable Tempura (VE), Flash Fried Vegetables, Sweet & Sour Dipping Sauce." for Tuesday's lunch cannot be found in the hashtable...it's there. not

@@ -30,7 +30,6 @@ public class DiningHallSelector {
   
  public void initializeAll(String mealName){
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
-    System.out.println("\n");
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);    System.out.println("\n");
     pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", mealName);    System.out.println("\n");
     stoned.initializeDiningHall("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", mealName);    System.out.println("\n");
@@ -182,6 +181,7 @@ public class DiningHallSelector {
     //System.out.println(readWellesleyFresh("menus/stonedavis.txt", "lunch"));
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
     DiningHallSelector s = new DiningHallSelector();
+    s.initializeAll("lunch");
   }
   
   

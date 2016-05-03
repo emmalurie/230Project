@@ -7,8 +7,10 @@
  student reviews. This class also creates helper methods that neaten text and help retrieve the day of the week. 
  
  To do: 
+ Improve readWellelseyFresh: Pom isn't totally working
  We should create a method that finds the top 3 DiningHalls based on scores
- We should create a testing method that allows us to manually put in the day of the week. -Done by Emma */
+ We should create a testing method that allows us to manually put in the day of the week. -Done by Emma 
+ */
 import java.util.*;
 import java.io.*;
 import java.net.*;
@@ -24,8 +26,18 @@ public class DiningHallSelector {
     pom = new DiningHall("Pomeroy");
     stoned = new DiningHall("Stone Davis");
     tower = new DiningHall("Tower");
-    
   }
+  
+ public void initializeAll(String mealName){
+    bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
+    System.out.println("\n");
+    lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);    System.out.println("\n");
+    pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", mealName);    System.out.println("\n");
+    stoned.initializeDiningHall("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", mealName);    System.out.println("\n");
+    tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName);    
+  }
+  
+    
   //bugs: to fix weird spaces, home-style brunch
   
   
@@ -148,8 +160,8 @@ public class DiningHallSelector {
   private static String trimLine(String line){
     //types of dishes array
     String[] startingPhrases = {"Home-style Lunch-", "Home-Style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
-      "Global Grill Brunch-", "Pure, Lunch & Dinner-", "Pizza, Lunch & Dinner-","Pizza, Brunch & Dinner-","Daily Grill Brunch-", 
-      "Home-style Dinner-","Pasta Station Lunch-", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner-"};
+      "Global Grill Brunch-", "Pure, Lunch & Dinner-", "Pizza, Lunch & Dinner-","Pizza, Brunch & Dinner-","Daily Grill Brunch-", "Daily Grill Lunch-",
+      "Home-style Dinner-","Pasta Station Lunch-","Pasta Station Lunch Ð", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner -", "Dinner-"};
     int size; 
     for (int i = 0; i < startingPhrases.length; i++){
       if (line.contains(startingPhrases[i])){
@@ -164,10 +176,12 @@ public class DiningHallSelector {
   
   
   public static void main(String[] args){
-    System.out.println(readWellesleyFresh("menus/bplc.txt","dinner"));
-    //System.out.println(getStartDow());
-
-
+    //System.out.println(readWellesleyFresh("menus/bplc.txt","dinner"));
+    //System.out.println(readWellesleyFresh("menus/bates.txt","dinner"));
+    //System.out.println(readWellesleyFresh("menus/pomeroy.txt","lunch"));
+    //System.out.println(readWellesleyFresh("menus/stonedavis.txt", "lunch"));
+    //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
+    DiningHallSelector s = new DiningHallSelector();
   }
   
   
