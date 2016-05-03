@@ -28,7 +28,7 @@ public class DiningHallSelector {
     tower = new DiningHall("Tower");
   }
   
- /* public void initializeAll(String mealName){
+ public void initializeAll(String mealName){
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
     System.out.println("\n");
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);    System.out.println("\n");
@@ -36,7 +36,7 @@ public class DiningHallSelector {
     stoned.initializeDiningHall("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", mealName);    System.out.println("\n");
     tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName);    
   }
-  */
+  
     
   //bugs: to fix weird spaces, home-style brunch
   
@@ -181,6 +181,7 @@ public class DiningHallSelector {
     //System.out.println(readWellesleyFresh("menus/pomeroy.txt","lunch"));
     //System.out.println(readWellesleyFresh("menus/stonedavis.txt", "lunch"));
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
+    DiningHallSelector s = new DiningHallSelector();
   }
   
   
