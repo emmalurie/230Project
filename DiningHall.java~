@@ -51,12 +51,11 @@ public class DiningHall implements Comparable<DiningHall>{
   //adds a dish to 
   private void addToMenu(Dish d){
     try {
-<<<<<<< HEAD
       //the dish object is being passed, but it is not being enqueued
       menu.add(d);
-=======
-      menu.enqueue(d);
->>>>>>> origin/master
+
+
+
     } catch (NullPointerException n){
       System.out.println(d.getName() + " is throwing a null pointer"); 
     }
@@ -106,11 +105,9 @@ public class DiningHall implements Comparable<DiningHall>{
     try{
     for (int i = 0; i < menu.size(); i++){
       try {
-<<<<<<< HEAD
       score+= menu.poll().getScore();
-=======
-      score+= menuClone.dequeue().getScore();
->>>>>>> origin/master
+
+
       }catch(Exception ex){
        System.out.println("No objects are in the menu"); 
       }
@@ -151,19 +148,19 @@ public class DiningHall implements Comparable<DiningHall>{
     DiningHall stoned = new DiningHall("Stone Davis");
     DiningHall tower = new DiningHall("Tower");
     
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
     bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
     bates.calcScore();
     System.out.println(bates);
     //System.out.println(bates.menu.size()+"\n\n");
-=======
+
     //bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch");
     //System.out.println(bates);    
     bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
     bates.calcScore();
     System.out.println(bates);
->>>>>>> origin/master
+
     
     
     lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "lunch");
@@ -181,8 +178,7 @@ public class DiningHall implements Comparable<DiningHall>{
     tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
     tower.calcScore();
     System.out.println(tower);
-<<<<<<< HEAD
-=======
+
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch");
     System.out.println(bates);    
 //    bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
@@ -205,9 +201,7 @@ public class DiningHall implements Comparable<DiningHall>{
 //    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
 //    tower.calcScore();
 //    System.out.println(tower);
->>>>>>> origin/master
-=======
->>>>>>> origin/master
+
   }
   
   
