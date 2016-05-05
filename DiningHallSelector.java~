@@ -32,11 +32,6 @@ public class DiningHallSelector{
     tower = new DiningHall("Tower");
     
     rankings = new PriorityQueue<DiningHall>();
-    rankings.enqueue(bates);
-    rankings.enqueue(lulu);
-    rankings.enqueue(pom);
-    rankings.enqueue(stoned);
-    rankings.enqueue(tower);
     
   }
   
@@ -201,6 +196,11 @@ public class DiningHallSelector{
   }
   /*returns the DiningHall with the highest score*/
   public DiningHall getBestDiningHall(){
+    rankings.enqueue(bates);
+    rankings.enqueue(lulu);
+    rankings.enqueue(pom);
+    rankings.enqueue(stoned);
+    rankings.enqueue(tower);
     return rankings.first();
   }
   
@@ -214,10 +214,14 @@ public class DiningHallSelector{
     //System.out.println(readWellesleyFresh("menus/pomeroy.txt","lunch"));
     //System.out.println(readWellesleyFresh("menus/stonedavis.txt", "lunch"));
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
+    
     DiningHallSelector s = new DiningHallSelector();
-    s.initializeAll("dinner");
+    s.initializeAll("lunch");
     System.out.println(s);
     System.out.println(s.getBestDiningHall().getName());
+
+    
+    //System.out.println(s.getBestDiningHall().getName());
 //    System.out.println(s.bates);
 //    System.out.println(s.lulu);
 //      System.out.println(s.pom);

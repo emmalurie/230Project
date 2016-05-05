@@ -5,23 +5,37 @@ import javax.swing.*;
 public class TodaysChoice extends JPanel{
   
   private JButton lunchButton, dinnerButton;
-  private JPanel lunchPanel, dinnerPanel, resultPanel;
+  private JPanel lunchPanel, dinnerPanel, instructionsPanel, resultsPanel;
   private String meal; 
   private DiningHallSelector selector;
-  private JLabel resultText; 
+  private JLabel lunchFirst, lunchSecond, lunchThird, dinnerFirst, dinnerSecond, dinnerThird, instructions; 
   
-  public TodaysChoice(DiningHallSelector selector){
+  public TodaysChoice(){
+    setLayout(new BorderLayout());
     
     this.selector = selector;
     
+    instructionsPanel = new JPanel();
+    resultsPanel = new JPanel();
+    
     lunchPanel = new JPanel();
     dinnerPanel = new JPanel();
-    resultPanel = new JPanel();
+
+    
     
     lunchButton = new JButton("Lunch");
     dinnerButton = new JButton("Dinner");
     
-    resultText = new JLabel();
+    lunchFirst = new JLabel();
+    lunchSecond = new JLabel();
+    lunchThird = new JLabel();
+    
+    dinnerFirst = new JLabel();
+    dinnerSecond = new JLabel();
+    dinnerThird = new JLabel();
+    
+    instructions = new JLabel("A good meal is just a click away!");
+    
     
     ButtonListener listener = new ButtonListener();
     
@@ -29,14 +43,37 @@ public class TodaysChoice extends JPanel{
     lunchButton.addActionListener(listener);
     dinnerButton.addActionListener(listener);
     
+    //add buttons and result text
     lunchPanel.add(lunchButton);
+    lunchPanel.setLayout(new GridLayout(4,1));
+    
+    dinnerPanel.setLayout(new GridLayout(4,1));
+    
+    lunchPanel.add(lunchFirst);
+    lunchPanel.add(lunchSecond);
+    lunchPanel.add(lunchThird);
+            
     dinnerPanel.add(dinnerButton);
-    resultPanel.add(resultText);
     
-    add(lunchPanel);
-    add(dinnerPanel);
-    add(resultPanel);
+    dinnerPanel.add(dinnerFirst);
+    dinnerPanel.add(dinnerSecond);
+    dinnerPanel.add(dinnerThird);
+
+    //add instructions to instruction panel
+    instructionsPanel.add(instructions);
     
+
+//set results panel layout and add lunch and dinner panel
+    resultsPanel.setLayout(new GridLayout(2, 1));
+    resultsPanel.add(lunchPanel);
+    resultsPanel.add(dinnerPanel);
+    
+
+    
+    
+    add(instructionsPanel, BorderLayout.NORTH);
+    add(resultsPanel, BorderLayout.CENTER);
+
   }
   
   private class ButtonListener implements ActionListener {
@@ -48,8 +85,20 @@ public class TodaysChoice extends JPanel{
       meal = "dinner";
     }
     System.out.println(meal);
+    
+    DiningHallSelector selector = new DiningHallSelector();
     selector.initializeAll(meal);
-    resultText.setText("The result is: " + selector.getBestDiningHall().getName());
+    
+    if (meal.equals("lunch")){
+     lunchFirst.setText("1. " + selector.getFirst().getName()); 
+     lunchSecond.setText("2. " + selector.getSecond().getName()); 
+     lunchThird.setText("3. " + selector.getThird().getName());
+     
+    }else {
+dinnerFirst.setText("1. " + selector.getFirst().getName()); 
+     dinnerSecond.setText("2. " + selector.getSecond().getName()); 
+     dinnerThird.setText("3. " + selector.getThird().getName());
+    }
 
 
   }
