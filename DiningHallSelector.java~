@@ -11,10 +11,13 @@
  We should create a method that finds the top 3 DiningHalls based on scores
  We should create a testing method that allows us to manually put in the day of the week. -Done by Emma 
  */
-import java.util.*;
+import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.Hashtable;
+import java.util.Calendar;
 import java.io.*;
 import java.net.*;
-
+import javafoundations.*;
 
 
 public class DiningHallSelector{
@@ -28,18 +31,12 @@ public class DiningHallSelector{
     stoned = new DiningHall("Stone Davis");
     tower = new DiningHall("Tower");
     
-    rankings = new PriorityQueue<DiningHall>(10, new Comparator<DiningHall>() {
-    public int compare(DiningHall a, DiningHall b) {
-        if (a.getAverageScore() > b.getAverageScore()) return 1;
-        if (a.getAverageScore()== b.getAverageScore()) return 0;
-        return -1;
-    }
-});;
-    rankings.add(bates);
-    rankings.add(lulu);
-    rankings.add(pom);
-    rankings.add(stoned);
-    rankings.add(tower);
+    rankings = new PriorityQueue<DiningHall>();
+    rankings.enqueue(bates);
+    rankings.enqueue(lulu);
+    rankings.enqueue(pom);
+    rankings.enqueue(stoned);
+    rankings.enqueue(tower);
     
   }
   
@@ -204,7 +201,7 @@ public class DiningHallSelector{
   }
   /*returns the DiningHall with the highest score*/
   public DiningHall getBestDiningHall(){
-    return rankings.peek();
+    return rankings.first();
   }
   
   

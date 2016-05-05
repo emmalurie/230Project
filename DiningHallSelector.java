@@ -11,10 +11,13 @@
  We should create a method that finds the top 3 DiningHalls based on scores
  We should create a testing method that allows us to manually put in the day of the week. -Done by Emma 
  */
-import java.util.*;
+import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.Hashtable;
+import java.util.Calendar;
 import java.io.*;
 import java.net.*;
-
+import javafoundations.*;
 
 
 public class DiningHallSelector{
@@ -29,11 +32,6 @@ public class DiningHallSelector{
     tower = new DiningHall("Tower");
     
     rankings = new PriorityQueue<DiningHall>();
-    rankings.offer(bates);
-    rankings.offer(lulu);
-    rankings.offer(pom);
-    rankings.offer(stoned);
-    rankings.offer(tower);
     
   }
   
@@ -198,7 +196,12 @@ public class DiningHallSelector{
   }
   /*returns the DiningHall with the highest score*/
   public DiningHall getBestDiningHall(){
-    return rankings.peek();
+    rankings.enqueue(bates);
+    rankings.enqueue(lulu);
+    rankings.enqueue(pom);
+    rankings.enqueue(stoned);
+    rankings.enqueue(tower);
+    return rankings.first();
   }
   
   
@@ -211,10 +214,14 @@ public class DiningHallSelector{
     //System.out.println(readWellesleyFresh("menus/pomeroy.txt","lunch"));
     //System.out.println(readWellesleyFresh("menus/stonedavis.txt", "lunch"));
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
+    
     DiningHallSelector s = new DiningHallSelector();
-    s.initializeAll("dinner");
+    s.initializeAll("lunch");
     System.out.println(s);
     System.out.println(s.getBestDiningHall().getName());
+
+    
+    //System.out.println(s.getBestDiningHall().getName());
 //    System.out.println(s.bates);
 //    System.out.println(s.lulu);
 //      System.out.println(s.pom);
