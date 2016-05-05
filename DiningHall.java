@@ -9,9 +9,10 @@
  To do: should change ArrayQueue to PriorityQueue,Dorothy
  
  "Crispy Calamari, Fried Calamari with Sweet Chili Soy Sauce, Vegetable Tempura (VE), Flash Fried Vegetables, Sweet & Sour Dipping Sauce." for Tuesday's lunch cannot be found in the hashtable...it's there. not
- srue why it is throwing an error*/
+ sure why it is throwing an error*/
 
 import javafoundations.*; 
+import java.util.PriorityQueue;
 import java.util.*;
 
 public class DiningHall implements Comparable<DiningHall>{
@@ -22,7 +23,7 @@ public class DiningHall implements Comparable<DiningHall>{
   //maybe specify meal booleans (lunch and dinner)
   
   public DiningHall(String name){
-    menu = new PriorityQueue<Dish>();  
+    menu = new PriorityQueue<Dish>();
     this.name = name; 
     averageScore = 0.0; 
   }
@@ -38,12 +39,11 @@ public class DiningHall implements Comparable<DiningHall>{
   public double getAverageScore(){
     return averageScore;  
   }
-
+  
   //adds a dish to 
   private void addToMenu(Dish d){
     try {
-      //the dish object is being passed, but it is not being enqueued
-      menu.offer(d);
+      menu.add(d);
     } catch (NullPointerException n){
       System.out.println(d.getName() + " is throwing a null pointer"); 
     }
@@ -57,8 +57,8 @@ public class DiningHall implements Comparable<DiningHall>{
     
     while(!menu.isEmpty()){
       Dish element = menu.poll();
-      temp.offer(element);
-      copy.offer(element);
+      temp.add(element);
+      copy.add(element);
     }
     menu = temp; 
     return copy; 
@@ -66,7 +66,7 @@ public class DiningHall implements Comparable<DiningHall>{
   
   /*creates a menu of Dish objects by comparing the items in today's menu to keys in the hashtable. 
    * If the hashtable contains the name of the dish, the value, is a Dish object representing that meal option.
-   * That dish object is added to that dininghall's menu*/
+   * That dish object is added to that DiningHall's menu*/
   public void createMenu(String todaysMenuFile, String dataFile, String mealName){
     
     Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
@@ -94,20 +94,20 @@ public class DiningHall implements Comparable<DiningHall>{
     PriorityQueue<Dish> menuClone = copyMenu(); //clone of menu
     int score = 0;
     try{
-    for (int i = 0; i < menu.size(); i++){
-      try {
-      score+= menuClone.poll().getScore();
-      
-      }catch(Exception ex){
-       System.out.println("No objects are in the menu"); 
+      for (int i = 0; i < menu.size(); i++){
+        try {
+          score+= menuClone.poll().getScore();
+          
+        }catch(Exception ex){
+          System.out.println("No objects are in the menu"); 
+        }
       }
-    }
-    averageScore = score/menu.size();
-    return averageScore;
+      averageScore = score/(double)menu.size();
+      return averageScore;
     }catch(Exception e){
       return -1;
     }
-}
+  }
   
   /*need to improve toString method to print out name and score*/
   public String toString(){
@@ -123,11 +123,15 @@ public class DiningHall implements Comparable<DiningHall>{
     return (int)(this.averageScore - d.averageScore); 
   }
   
+  public Dish getTop(){
+    return menu.peek(); 
+  }
+  
   public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName){
     createMenu(todaysMenuFile, dataFile, mealName);
     calcScore();
   }
- 
+  
   
   
   public static void main(String[] args){
@@ -137,64 +141,35 @@ public class DiningHall implements Comparable<DiningHall>{
     DiningHall pom  = new DiningHall("Pomeroy");
     DiningHall stoned = new DiningHall("Stone Davis");
     DiningHall tower = new DiningHall("Tower");
-    
-
-
+  
     bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
     bates.calcScore();
     System.out.println(bates);
-    System.out.println(bates.menu.size()+"\n\n");
 
-    //bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch");
-    //System.out.println(bates);    
-//    bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
-//    bates.calcScore();
-//    System.out.println(bates);
     
     
     lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "lunch");
     lulu.calcScore();
     System.out.println(lulu);
-    System.out.println(lulu.menu.size()+"\n\n");
     
     pom.createMenu("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch");
     pom.calcScore();
-    System.out.println(pom);
-    System.out.println(pom.menu.size()+"\n\n");
+    //System.out.println(pom);
     
     stoned.createMenu("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "lunch");
     stoned.calcScore();
-    System.out.println(stoned);
-    System.out.println(stoned.menu.size()+"\n\n");
+    //System.out.println(stoned);
     
     tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
     tower.calcScore();
-    System.out.println(tower);
-    System.out.println(tower.menu.size()+"\n\n");
+    //System.out.println(tower);
 
-//    bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch");
-//    System.out.println(bates);    
-//    bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
-//    bates.calcScore();
-//    System.out.println(bates);
-//    
-//    
-//    lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "lunch");
-//    lulu.calcScore();
-//    System.out.println(lulu);
-//    
-//    pom.createMenu("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch");
-//    pom.calcScore();
-//    System.out.println(pom);
-//    
-//    stoned.createMenu("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "lunch");
-//    stoned.calcScore();
-//    System.out.println(stoned);
-//    
-//    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
-//    tower.calcScore();
-//    System.out.println(tower);
+    
+    /*getTop Testing()*/
 
+    System.out.println("Bates Top: " + bates.getTop());
+    System.out.println("Lulu Top: " + lulu.getTop());
+    
   }
   
   

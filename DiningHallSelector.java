@@ -17,8 +17,9 @@ import java.net.*;
 
 
 
-public class DiningHallSelector {
+public class DiningHallSelector{
   DiningHall bates, lulu, pom, stoned, tower; 
+  PriorityQueue<DiningHall> rankings;
   
   public DiningHallSelector(){
     bates = new DiningHall("Bates");
@@ -26,6 +27,14 @@ public class DiningHallSelector {
     pom = new DiningHall("Pomeroy");
     stoned = new DiningHall("Stone Davis");
     tower = new DiningHall("Tower");
+    
+    rankings = new PriorityQueue<DiningHall>();
+    rankings.offer(bates);
+    rankings.offer(lulu);
+    rankings.offer(pom);
+    rankings.offer(stoned);
+    rankings.offer(tower);
+    
   }
   
  public void initializeAll(String mealName){
@@ -189,7 +198,7 @@ public class DiningHallSelector {
   }
   /*returns the DiningHall with the highest score*/
   public DiningHall getBestDiningHall(){
-    return getMax(bates, getMax(lulu, getMax(pom, getMax(stoned, tower))));
+    return rankings.peek();
   }
   
   
@@ -203,7 +212,7 @@ public class DiningHallSelector {
     //System.out.println(readWellesleyFresh("menus/stonedavis.txt", "lunch"));
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
     DiningHallSelector s = new DiningHallSelector();
-    s.initializeAll("lunch");
+    s.initializeAll("dinner");
     System.out.println(s);
     System.out.println(s.getBestDiningHall().getName());
 //    System.out.println(s.bates);

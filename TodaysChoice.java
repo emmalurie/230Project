@@ -5,35 +5,37 @@ import javax.swing.*;
 public class TodaysChoice extends JPanel{
   
   private JButton lunchButton, dinnerButton;
-  private JPanel lunchPanel, dinnerPanel;
+  private JPanel lunchPanel, dinnerPanel, resultPanel;
   private String meal; 
   private DiningHallSelector selector;
-  private JLabel result; 
+  private JLabel resultText; 
   
   public TodaysChoice(DiningHallSelector selector){
     
     this.selector = selector;
     
-    
     lunchPanel = new JPanel();
     dinnerPanel = new JPanel();
+    resultPanel = new JPanel();
     
     lunchButton = new JButton("Lunch");
     dinnerButton = new JButton("Dinner");
     
+    resultText = new JLabel();
+    
     ButtonListener listener = new ButtonListener();
     
-
                
     lunchButton.addActionListener(listener);
     dinnerButton.addActionListener(listener);
     
     lunchPanel.add(lunchButton);
     dinnerPanel.add(dinnerButton);
+    resultPanel.add(resultText);
     
     add(lunchPanel);
     add(dinnerPanel);
-    
+    add(resultPanel);
     
   }
   
@@ -47,8 +49,9 @@ public class TodaysChoice extends JPanel{
     }
     System.out.println(meal);
     selector.initializeAll(meal);
-    result = new JLabel("the result is " + selector.getBestDiningHall().getName());
-    add(result);
+    resultText.setText("The result is: " + selector.getBestDiningHall().getName());
+
+
   }
 }
 }
