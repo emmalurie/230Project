@@ -190,18 +190,42 @@ public class DiningHallSelector{
     return result;
     
   }
-  /*returns the DiningHall with a higher score*/
-    private DiningHall getMax(DiningHall a, DiningHall b){
-    return (a.compareTo(b) > 0 ? a : b); 
-  }
   /*returns the DiningHall with the highest score*/
-  public DiningHall getBestDiningHall(){
+  public DiningHall getFirst(){
+    return getTopThreeDiningHalls()[0];
+  }
+  
+  public DiningHall getSecond(){
+    return getTopThreeDiningHalls()[1];
+  }
+  
+  public DiningHall getThird(){
+   return getTopThreeDiningHalls()[2]; 
+  }
+    
+  
+  
+  /*returns the top three dining halls*/
+  public DiningHall[] getTopThreeDiningHalls(){
+    DiningHall [] topThree;
+    if (rankings.isEmpty()){
     rankings.enqueue(bates);
     rankings.enqueue(lulu);
     rankings.enqueue(pom);
     rankings.enqueue(stoned);
     rankings.enqueue(tower);
-    return rankings.first();
+    }
+    
+    DiningHall first = rankings.dequeue();
+    DiningHall second = rankings.dequeue();
+    DiningHall third = rankings.dequeue();
+    
+    rankings.enqueue(first);
+    rankings.enqueue(second);
+    rankings.enqueue(third);
+    
+    topThree = new DiningHall[] {first, second, third};
+    return topThree;
   }
   
   
@@ -216,9 +240,9 @@ public class DiningHallSelector{
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
     
     DiningHallSelector s = new DiningHallSelector();
-    s.initializeAll("lunch");
-    System.out.println(s);
-    System.out.println(s.getBestDiningHall().getName());
+    s.initializeAll("dinner");
+    System.out.println(s.getThird().getName());
+    
 
     
     //System.out.println(s.getBestDiningHall().getName());

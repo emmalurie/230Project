@@ -191,6 +191,7 @@ public class DiningHallSelector{
     
   }
   /*returns the DiningHall with the highest score*/
+  //not consistently working 
   public DiningHall getFirst(){
     return getTopThreeDiningHalls()[0];
   }
@@ -205,7 +206,7 @@ public class DiningHallSelector{
     
   
   
-  /*returns the top three dining halls*/
+  /*returns the top three dining halls in an array of DiningHalls*/
   public DiningHall[] getTopThreeDiningHalls(){
     DiningHall [] topThree;
     if (rankings.isEmpty()){
@@ -223,7 +224,6 @@ public class DiningHallSelector{
     rankings.enqueue(first);
     rankings.enqueue(second);
     rankings.enqueue(third);
-    
     topThree = new DiningHall[] {first, second, third};
     return topThree;
   }
@@ -241,8 +241,14 @@ public class DiningHallSelector{
     
     DiningHallSelector s = new DiningHallSelector();
     s.initializeAll("dinner");
-    System.out.println(s.getThird().getName());
-    
+    DiningHall [] test = s.getTopThreeDiningHalls();
+    for (int i = 0; i < test.length; i++){
+     System.out.println(test[i].getName()); 
+    }
+//                System.out.println(s.getTopThreeDiningHalls()[1].getName());
+//                        System.out.println(s.getTopThreeDiningHalls()[2].getName());
+//System.out.println(s.getFirst().getName());
+    //System.out.println(s.getSecond().getName());
 
     
     //System.out.println(s.getBestDiningHall().getName());
