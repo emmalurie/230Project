@@ -8,8 +8,12 @@ public class TodaysChoice extends JPanel{
   private JPanel lunchButtonPanel, dinnerButtonPanel, lunchPanel, dinnerPanel, instructionsPanel, resultsPanel;
   private String meal; 
   private DiningHallSelector selector;
+<<<<<<< HEAD
   private JLabel lunchFirst, lunchSecond, lunchThird, dinnerFirst, dinnerSecond, dinnerThird, instructions;
   
+=======
+  private JLabel lunchFirst, lunchSecond, lunchRec, dinnerFirst, dinnerSecond, dinnerRec, instructions;
+>>>>>>> origin/master
   public TodaysChoice(){
     setLayout(new BorderLayout());
     
@@ -18,9 +22,10 @@ public class TodaysChoice extends JPanel{
     Color seaGreen = new Color(143,188,143);
     
     
-    Font titleFont = new Font ("Marker Felt" , Font.BOLD, 48);
-    Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 36);
-    Font textFont = new Font ("Marker Felt" , Font.PLAIN, 30);
+    Font titleFont = new Font ("Marker Felt" , Font.BOLD, 54);
+    Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 48);
+    Font textFont = new Font ("Marker Felt" , Font.PLAIN, 36);
+    
     this.selector = selector;
     
     instructionsPanel = new JPanel();
@@ -53,30 +58,30 @@ public class TodaysChoice extends JPanel{
     
     lunchFirst = new JLabel();
     lunchSecond = new JLabel();
-    lunchThird = new JLabel();
+    lunchRec = new JLabel();
 
     
     dinnerFirst = new JLabel();
     dinnerSecond = new JLabel();
-    dinnerThird = new JLabel();
+    dinnerRec = new JLabel();
     
     //center text
     lunchFirst.setHorizontalAlignment(JLabel.CENTER);
     lunchSecond.setHorizontalAlignment(JLabel.CENTER);
-    lunchThird.setHorizontalAlignment(JLabel.CENTER);
+    lunchRec.setHorizontalAlignment(JLabel.CENTER);
     
     dinnerFirst.setHorizontalAlignment(JLabel.CENTER);
     dinnerSecond.setHorizontalAlignment(JLabel.CENTER);
-    dinnerThird.setHorizontalAlignment(JLabel.CENTER);
+    dinnerRec.setHorizontalAlignment(JLabel.CENTER);
     
     //set font 
      lunchFirst.setFont(textFont);
     lunchSecond.setFont(textFont);
-    lunchThird.setFont(textFont);
+    lunchRec.setFont(textFont);
     
     dinnerFirst.setFont(textFont);
     dinnerSecond.setFont(textFont);
-    dinnerThird.setFont(textFont);
+    dinnerRec.setFont(textFont);
     
     instructions = new JLabel("A good meal is just a click away!", JLabel.CENTER);
     instructions.setFont(titleFont);
@@ -89,9 +94,7 @@ public class TodaysChoice extends JPanel{
     dinnerButton.addActionListener(listener);
     
     
-    
-
-    
+   
     //add buttons and result text
     lunchButtonPanel.add(lunchButton);
     lunchButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
@@ -104,8 +107,9 @@ public class TodaysChoice extends JPanel{
     dinnerPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
     
     lunchPanel.add(lunchFirst);
+    lunchPanel.add(lunchRec);
     lunchPanel.add(lunchSecond);
-    lunchPanel.add(lunchThird);
+
 
     
     dinnerButtonPanel.add(dinnerButton);
@@ -113,8 +117,9 @@ public class TodaysChoice extends JPanel{
     dinnerPanel.add(dinnerButtonPanel);
     
     dinnerPanel.add(dinnerFirst);
+    dinnerPanel.add(dinnerRec);
     dinnerPanel.add(dinnerSecond);
-    dinnerPanel.add(dinnerThird);
+
 
     //add instructions to instruction panel
     instructionsPanel.add(instructions);
@@ -125,9 +130,6 @@ public class TodaysChoice extends JPanel{
     resultsPanel.add(lunchPanel);
     resultsPanel.add(dinnerPanel);
     
-    
-    
-    
     add(instructionsPanel, BorderLayout.NORTH);
     add(resultsPanel, BorderLayout.CENTER);
     
@@ -136,6 +138,7 @@ public class TodaysChoice extends JPanel{
   private class ButtonListener implements ActionListener {
     
     public void actionPerformed (ActionEvent event){
+       String topChoice;
       if (event.getSource() == lunchButton){
         meal = "lunch"; 
       }else {
@@ -147,15 +150,24 @@ public class TodaysChoice extends JPanel{
       
       selector.initializeAll(meal);
       DiningHall[] topThree = selector.getTopThreeDiningHalls();
-      
+      topChoice = topThree[0].getName();
       if (meal.equals("lunch")){
-        lunchFirst.setText("The best dining hall today is:  " + topThree[0].getName()); 
-        lunchSecond.setText("Another great choice is " + topThree[1].getName()); 
-        lunchThird.setText("At " + topThree[0].getName() + " we recommend you try " + topThree[0].getTop().getName());
+        lunchFirst.setText("The best dining hall for lunch today is " + topChoice + "!!!"); 
+        lunchRec.setText("At " + topChoice + ", we recommend you try " + topThree[0].getTop().shortenName()+ ")");
+        lunchSecond.setText("If you can't make it to " + topChoice +", another great choice is " + topThree[1].getName()+"!"); 
+
       }else {
+<<<<<<< HEAD
         dinnerFirst.setText("1. " +  topThree[0].getName()); 
         dinnerSecond.setText("2. " +  topThree[1].getName()); 
         dinnerThird.setText("3. " +   topThree[2].getName()); 
+=======
+        dinnerFirst.setText("The best dining hall for dinner today is " + topChoice + "!!!"); 
+        dinnerRec.setText("(At " + topChoice + ", we recommend you try " + topThree[0].getTop().shortenName()+ ")");
+        dinnerSecond.setText("If you can't make it to " + topChoice +", another great choice is " + topThree[1].getName() +"!"); 
+
+
+>>>>>>> origin/master
       
     }
   }
