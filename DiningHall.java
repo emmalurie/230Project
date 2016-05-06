@@ -41,6 +41,10 @@ public class DiningHall implements Comparable<DiningHall>{
     return averageScore;  
   }
   
+  public void setAverageScore(double score){
+    averageScore = score;
+  }
+  
   //adds a dish to 
   private void addToMenu(Dish d){
     try {
