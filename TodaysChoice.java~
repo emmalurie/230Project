@@ -14,6 +14,7 @@ public class TodaysChoice extends JPanel{
     
     Color lightBlue = new Color(135, 206, 250);
     Color lightPurple = new Color(216,191,216);
+    Color seaGreen = new Color(143,188,143);
     
     
     Font titleFont = new Font ("Marker Felt" , Font.BOLD, 48);
@@ -142,13 +143,14 @@ public class TodaysChoice extends JPanel{
       System.out.println(meal);
       
       DiningHallSelector selector = new DiningHallSelector();
+      
       selector.initializeAll(meal);
       DiningHall[] topThree = selector.getTopThreeDiningHalls();
       
       if (meal.equals("lunch")){
-        lunchFirst.setText("1. " + topThree[0].getName()); 
-        lunchSecond.setText("2. " + topThree[1].getName()); 
-        lunchThird.setText("3. " +  topThree[2].getName());
+        lunchFirst.setText("The best dining hall today is:  " + topThree[0].getName()); 
+        lunchSecond.setText("Another great choice is " + topThree[1].getName()); 
+        lunchThird.setText("At " + topThree[0].getName() + " we recommend you try " + topThree[0].getTop().getName());
       }else {
         dinnerFirst.setText("1. " +  topThree[0].getName()); 
         dinnerSecond.setText("2. " +  topThree[1].getName()); 

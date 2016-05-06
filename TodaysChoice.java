@@ -9,6 +9,7 @@ public class TodaysChoice extends JPanel{
   private String meal; 
   private DiningHallSelector selector;
   private JLabel lunchFirst, lunchSecond, lunchThird, dinnerFirst, dinnerSecond, dinnerThird, instructions;
+  
   public TodaysChoice(){
     setLayout(new BorderLayout());
     
@@ -155,7 +156,6 @@ public class TodaysChoice extends JPanel{
         dinnerFirst.setText("1. " +  topThree[0].getName()); 
         dinnerSecond.setText("2. " +  topThree[1].getName()); 
         dinnerThird.setText("3. " +   topThree[2].getName()); 
-
       
     }
   }

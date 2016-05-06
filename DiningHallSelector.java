@@ -32,10 +32,31 @@ public class DiningHallSelector{
     tower = new DiningHall("Tower");
     
     rankings = new PriorityQueue<DiningHall>();
-    
   }
   
- public void initializeAll(String mealName){
+  public DiningHall getBates(){
+    return bates;
+  }
+  
+  
+  public DiningHall getLulu(){
+    return lulu;
+  }
+  
+  public DiningHall getPom(){
+    return pom;
+  }
+  
+  public DiningHall getStoned(){
+    return stoned;
+  }
+  
+  public DiningHall getTower(){
+    return tower;
+  }
+  
+  
+  public void initializeAll(String mealName){
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);  
     pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", mealName);    
@@ -43,7 +64,7 @@ public class DiningHallSelector{
     tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName);    
   }
   
-    
+  
   //bugs: to fix weird spaces, home-style brunch
   
   
@@ -69,27 +90,27 @@ public class DiningHallSelector{
         
         if (line.contains(startDate)) canReadFile = true; 
         if (line.contains(endDate)) canReadFile = false;
+        
+        if (canReadFile && !line.contains("Breakfast-") && !line.contains(startDate)){
+          if (lunch && (line.contains("Lunch")  || line.contains("Brunch"))|| dinner && line.contains("Dinner")){
             
-            if (canReadFile && !line.contains("Breakfast-") && !line.contains(startDate)){
-              if (lunch && (line.contains("Lunch")  || line.contains("Brunch"))|| dinner && line.contains("Dinner")){
-                
-                result.add(trimLine(line.trim())); //helper method to format the line (removes the type of meal from the string)
-                
-                
-                //System.out.println(line + "\n");
-              }
-            }
-            }
-            reader.close(); // Close the file reader
-            return result; 
+            result.add(trimLine(line.trim())); //helper method to format the line (removes the type of meal from the string)
             
-            } catch (FileNotFoundException ex) {
-              System.out.println(ex); // Handle file-not-found by displaying message
-              return null; // Return the empty string if file not found
-              
-            }
-            }
- 
+            
+            //System.out.println(line + "\n");
+          }
+        }
+      }
+      reader.close(); // Close the file reader
+      return result; 
+      
+    } catch (FileNotFoundException ex) {
+      System.out.println(ex); // Handle file-not-found by displaying message
+      return null; // Return the empty string if file not found
+      
+    }
+  }
+  
   /*creates a hashtable of all of the dishes on record being served at a specific dining hall*/
   public static Hashtable<String,Dish> createHashtable(String inFileName){
     
@@ -107,15 +128,15 @@ public class DiningHallSelector{
         
         //System.out.println(line);
         nameScore = line.split("\t");
- 
-    
+        
+        
         if(nameScore.length > 1){ //if contains a name and a score 
-        name = nameScore[0];
-        score = Integer.parseInt(nameScore[1]);
-        Dish value = new Dish (name, score);
-        mealData.put(name, value);
+          name = nameScore[0];
+          score = Integer.parseInt(nameScore[1]);
+          Dish value = new Dish (name, score);
+          mealData.put(name, value);
         }
-
+        
       }
       reader.close();    // close file
       
@@ -125,7 +146,7 @@ public class DiningHallSelector{
     return mealData;
   }
   
-
+  
   
   /*uses java Calendar API return an int representing the days of the week*/ 
   private static int getDOW(){
@@ -151,16 +172,16 @@ public class DiningHallSelector{
   
   /*this helper method is the same as getStartDow(), but the date is a parameter. This method makes it easier for testing, 
    * because we can test any day of the week at any time */
-    private static String getStartDow(int day){
+  private static String getStartDow(int day){
     String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", "Saturday"};
     return dow[day -1];
   }
-    
+  
   /*this helper method is the same as getEndDow(), but the date is a parameter. This method makes it easier for testing, 
    * because we can test any day of the week at any time */
   private static String getEndDow(int day){
-   String [] dow = {"Saturday","Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", };
-       return dow[day % 7]; 
+    String [] dow = {"Saturday","Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", };
+    return dow[day % 7]; 
   }
   
   private static String trimLine(String line){
@@ -201,20 +222,20 @@ public class DiningHallSelector{
   }
   
   public DiningHall getThird(){
-   return getTopThreeDiningHalls()[2]; 
+    return getTopThreeDiningHalls()[2]; 
   }
-    
+  
   
   
   /*returns the top three dining halls in an array of DiningHalls*/
   public DiningHall[] getTopThreeDiningHalls(){
     DiningHall [] topThree;
     if (rankings.isEmpty()){
-    rankings.enqueue(bates);
-    rankings.enqueue(lulu);
-    rankings.enqueue(pom);
-    rankings.enqueue(stoned);
-    rankings.enqueue(tower);
+      rankings.enqueue(bates);
+      rankings.enqueue(lulu);
+      rankings.enqueue(pom);
+      rankings.enqueue(stoned);
+      rankings.enqueue(tower);
     }
     
     DiningHall first = rankings.dequeue();
@@ -229,7 +250,7 @@ public class DiningHallSelector{
   }
   
   
-
+  
   
   
   public static void main(String[] args){
@@ -243,13 +264,13 @@ public class DiningHallSelector{
     s.initializeAll("dinner");
     DiningHall [] test = s.getTopThreeDiningHalls();
     for (int i = 0; i < test.length; i++){
-     System.out.println(test[i].getName()); 
+      System.out.println(test[i].getName()); 
     }
 //                System.out.println(s.getTopThreeDiningHalls()[1].getName());
 //                        System.out.println(s.getTopThreeDiningHalls()[2].getName());
 //System.out.println(s.getFirst().getName());
     //System.out.println(s.getSecond().getName());
-
+    
     
     //System.out.println(s.getBestDiningHall().getName());
 //    System.out.println(s.bates);
@@ -262,4 +283,4 @@ public class DiningHallSelector{
   
   
   
-  }
+}
