@@ -34,6 +34,7 @@ public class DiningHallSelector{
     rankings = new PriorityQueue<DiningHall>();
   }
   
+<<<<<<< Updated upstream
   public DiningHall getBates(){
     return bates;
   }
@@ -57,6 +58,10 @@ public class DiningHallSelector{
   
   
   public void initializeAll(String mealName){
+=======
+  
+ public void initializeAll(String mealName){
+>>>>>>> Stashed changes
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);  
     pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", mealName);    
@@ -96,6 +101,7 @@ public class DiningHallSelector{
             
             result.add(trimLine(line.trim())); //helper method to format the line (removes the type of meal from the string)
             
+<<<<<<< Updated upstream
             
             //System.out.println(line + "\n");
           }
@@ -111,6 +117,16 @@ public class DiningHallSelector{
     }
   }
   
+=======
+            } catch (FileNotFoundException ex) {
+              System.out.println(ex); // Handle file-not-found by displaying message
+              return null; // Return the empty string if file not found
+              
+            }
+            }
+
+ 
+>>>>>>> Stashed changes
   /*creates a hashtable of all of the dishes on record being served at a specific dining hall*/
   public static Hashtable<String,Dish> createHashtable(String inFileName){
     
@@ -248,9 +264,13 @@ public class DiningHallSelector{
     topThree = new DiningHall[] {first, second, third};
     return topThree;
   }
+<<<<<<< Updated upstream
   
   
   
+=======
+ 
+>>>>>>> Stashed changes
   
   
   public static void main(String[] args){

@@ -137,8 +137,6 @@ public class DiningHall implements Comparable<DiningHall>{
     calcScore();
   }
   
-  
-  
   public static void main(String[] args){
     
     DiningHall bates = new DiningHall("Bates");
