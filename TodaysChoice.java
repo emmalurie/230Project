@@ -8,12 +8,8 @@ public class TodaysChoice extends JPanel{
   private JPanel lunchButtonPanel, dinnerButtonPanel, lunchPanel, dinnerPanel, instructionsPanel, resultsPanel;
   private String meal; 
   private DiningHallSelector selector;
-<<<<<<< HEAD
-  private JLabel lunchFirst, lunchSecond, lunchThird, dinnerFirst, dinnerSecond, dinnerThird, instructions;
-  
-=======
   private JLabel lunchFirst, lunchSecond, lunchRec, dinnerFirst, dinnerSecond, dinnerRec, instructions;
->>>>>>> origin/master
+
   public TodaysChoice(){
     setLayout(new BorderLayout());
     
@@ -149,25 +145,18 @@ public class TodaysChoice extends JPanel{
       DiningHallSelector selector = new DiningHallSelector();
       
       selector.initializeAll(meal);
-      DiningHall[] topThree = selector.getTopThreeDiningHalls();
-      topChoice = topThree[0].getName();
+      DiningHall[] topTwo = selector.getTopTwoDiningHalls();
+      topChoice = topTwo[0].getName();
       if (meal.equals("lunch")){
         lunchFirst.setText("The best dining hall for lunch today is " + topChoice + "!!!"); 
-        lunchRec.setText("At " + topChoice + ", we recommend you try " + topThree[0].getTop().shortenName()+ ")");
-        lunchSecond.setText("If you can't make it to " + topChoice +", another great choice is " + topThree[1].getName()+"!"); 
+        lunchRec.setText("At " + topChoice + ", we recommend you try " + topTwo[0].getTop().shortenName()+ ")");
+        lunchSecond.setText("If you can't make it to " + topChoice +", another great choice is " + topTwo[1].getName()+"!"); 
 
       }else {
-<<<<<<< HEAD
-        dinnerFirst.setText("1. " +  topThree[0].getName()); 
-        dinnerSecond.setText("2. " +  topThree[1].getName()); 
-        dinnerThird.setText("3. " +   topThree[2].getName()); 
-=======
         dinnerFirst.setText("The best dining hall for dinner today is " + topChoice + "!!!"); 
-        dinnerRec.setText("(At " + topChoice + ", we recommend you try " + topThree[0].getTop().shortenName()+ ")");
-        dinnerSecond.setText("If you can't make it to " + topChoice +", another great choice is " + topThree[1].getName() +"!"); 
+        dinnerRec.setText("(At " + topChoice + ", we recommend you try " + topTwo[0].getTop().shortenName()+ ")");
+        dinnerSecond.setText("If you can't make it to " + topChoice +", another great choice is " + topTwo[1].getName() +"!"); 
 
-
->>>>>>> origin/master
       
     }
   }

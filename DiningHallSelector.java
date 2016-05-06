@@ -34,7 +34,7 @@ public class DiningHallSelector{
     rankings = new PriorityQueue<DiningHall>();
   }
   
-<<<<<<< Updated upstream
+
   public DiningHall getBates(){
     return bates;
   }
@@ -58,10 +58,6 @@ public class DiningHallSelector{
   
   
   public void initializeAll(String mealName){
-=======
-  
- public void initializeAll(String mealName){
->>>>>>> Stashed changes
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);  
     pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", mealName);    
@@ -101,8 +97,6 @@ public class DiningHallSelector{
             
             result.add(trimLine(line.trim())); //helper method to format the line (removes the type of meal from the string)
             
-<<<<<<< Updated upstream
-            
             //System.out.println(line + "\n");
           }
         }
@@ -116,17 +110,7 @@ public class DiningHallSelector{
       
     }
   }
-  
-=======
-            } catch (FileNotFoundException ex) {
-              System.out.println(ex); // Handle file-not-found by displaying message
-              return null; // Return the empty string if file not found
-              
-            }
-            }
 
- 
->>>>>>> Stashed changes
   /*creates a hashtable of all of the dishes on record being served at a specific dining hall*/
   public static Hashtable<String,Dish> createHashtable(String inFileName){
     
@@ -227,25 +211,10 @@ public class DiningHallSelector{
     return result;
     
   }
-  /*returns the DiningHall with the highest score*/
-  //not consistently working 
-  public DiningHall getFirst(){
-    return getTopThreeDiningHalls()[0];
-  }
-  
-  public DiningHall getSecond(){
-    return getTopThreeDiningHalls()[1];
-  }
-  
-  public DiningHall getThird(){
-    return getTopThreeDiningHalls()[2]; 
-  }
-  
-  
   
   /*returns the top three dining halls in an array of DiningHalls*/
-  public DiningHall[] getTopThreeDiningHalls(){
-    DiningHall [] topThree;
+  public DiningHall[] getTopTwoDiningHalls(){
+    DiningHall [] topTwo;
     if (rankings.isEmpty()){
       rankings.enqueue(bates);
       rankings.enqueue(lulu);
@@ -256,22 +225,14 @@ public class DiningHallSelector{
     
     DiningHall first = rankings.dequeue();
     DiningHall second = rankings.dequeue();
-    DiningHall third = rankings.dequeue();
     
     rankings.enqueue(first);
     rankings.enqueue(second);
-    rankings.enqueue(third);
-    topThree = new DiningHall[] {first, second, third};
-    return topThree;
+    topTwo = new DiningHall[] {first, second};
+    return topTwo;
   }
-<<<<<<< Updated upstream
   
-  
-  
-=======
  
->>>>>>> Stashed changes
-  
   
   public static void main(String[] args){
     //System.out.println(readWellesleyFresh("menus/bplc.txt","dinner"));
@@ -283,7 +244,7 @@ public class DiningHallSelector{
     DiningHallSelector s = new DiningHallSelector();
     //s.initializeAll("lunch");
     //s.initializeAll("dinner");
-    DiningHall [] test = s.getTopThreeDiningHalls();
+    DiningHall [] test = s.getTopTwoDiningHalls();
     for (int i = 0; i < test.length; i++){
       System.out.println(test[i].getName()); 
     }
