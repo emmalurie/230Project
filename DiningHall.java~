@@ -11,9 +11,10 @@
  "Crispy Calamari, Fried Calamari with Sweet Chili Soy Sauce, Vegetable Tempura (VE), Flash Fried Vegetables, Sweet & Sour Dipping Sauce." for Tuesday's lunch cannot be found in the hashtable...it's there. not
  sure why it is throwing an error*/
 
-import javafoundations.*; 
-import java.util.PriorityQueue;
-import java.util.*;
+//import java.util.*;
+import javafoundations.*;
+import java.util.Hashtable;
+import java.util.LinkedList;
 
 public class DiningHall implements Comparable<DiningHall>{
   
@@ -43,7 +44,7 @@ public class DiningHall implements Comparable<DiningHall>{
   //adds a dish to 
   private void addToMenu(Dish d){
     try {
-      menu.add(d);
+      menu.enqueue(d);
     } catch (NullPointerException n){
       System.out.println(d.getName() + " is throwing a null pointer"); 
     }
@@ -56,9 +57,9 @@ public class DiningHall implements Comparable<DiningHall>{
     
     
     while(!menu.isEmpty()){
-      Dish element = menu.poll();
-      temp.add(element);
-      copy.add(element);
+      Dish element = menu.dequeue();
+      temp.enqueue(element);
+      copy.enqueue(element);
     }
     menu = temp; 
     return copy; 
@@ -96,7 +97,7 @@ public class DiningHall implements Comparable<DiningHall>{
     try{
       for (int i = 0; i < menu.size(); i++){
         try {
-          score+= menuClone.poll().getScore();
+          score+= menuClone.dequeue().getScore();
           
         }catch(Exception ex){
           System.out.println("No objects are in the menu"); 
@@ -124,7 +125,7 @@ public class DiningHall implements Comparable<DiningHall>{
   }
   
   public Dish getTop(){
-    return menu.peek(); 
+    return menu.first(); 
   }
   
   public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName){

@@ -82,7 +82,11 @@ public class DiningHall implements Comparable<DiningHall>{
       if(data.containsKey(dishName)){
         this.addToMenu(data.get(dishName));
       }else {
-        //System.out.println(dishName.substring(0,30) + "... could not addded to menu ");
+        if (dishName.length() > 30){
+        System.out.println(dishName.substring(0,30) + "... could not addded to menu ");
+        } else {
+          System.out.println(dishName + "... could not addded to menu ");
+        }
       }
     }
     
@@ -145,13 +149,13 @@ public class DiningHall implements Comparable<DiningHall>{
   
     bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
     bates.calcScore();
-    System.out.println(bates);
+    //System.out.println(bates);
 
     
     
     lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "lunch");
     lulu.calcScore();
-    System.out.println(lulu);
+    //System.out.println(lulu);
     
     pom.createMenu("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch");
     pom.calcScore();
@@ -169,7 +173,7 @@ public class DiningHall implements Comparable<DiningHall>{
     /*getTop Testing()*/
 
     System.out.println("Bates Top: " + bates.getTop());
-    System.out.println("Lulu Top: " + lulu.getTop());
+   // System.out.println("Lulu Top: " + lulu.getTop());
     
   }
   
