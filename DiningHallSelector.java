@@ -240,7 +240,8 @@ public class DiningHallSelector{
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
     
     DiningHallSelector s = new DiningHallSelector();
-    s.initializeAll("dinner");
+    //s.initializeAll("lunch");
+    //s.initializeAll("dinner");
     DiningHall [] test = s.getTopThreeDiningHalls();
     for (int i = 0; i < test.length; i++){
      System.out.println(test[i].getName()); 
