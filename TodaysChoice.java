@@ -5,12 +5,16 @@ import javax.swing.*;
 public class TodaysChoice extends JPanel{
   
   private JButton lunchButton, dinnerButton;
-  private JPanel lunchPanel, dinnerPanel, instructionsPanel, resultsPanel;
+  private JPanel lunchButtonPanel, dinnerButtonPanel, lunchPanel, dinnerPanel, instructionsPanel, resultsPanel;
   private String meal; 
   private DiningHallSelector selector;
   private JLabel lunchFirst, lunchSecond, lunchThird, dinnerFirst, dinnerSecond, dinnerThird, instructions;
   public TodaysChoice(){
     setLayout(new BorderLayout());
+    
+    Color lightBlue = new Color(135, 206, 250);
+    Color lightPurple = new Color(216,191,216);
+    
     
     Font titleFont = new Font ("Marker Felt" , Font.BOLD, 48);
     Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 36);
@@ -20,8 +24,19 @@ public class TodaysChoice extends JPanel{
     instructionsPanel = new JPanel();
     resultsPanel = new JPanel();
     
+    instructionsPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    
+    lunchButtonPanel = new JPanel();
+    dinnerButtonPanel = new JPanel();
+    
     lunchPanel = new JPanel();
     dinnerPanel = new JPanel();
+    
+    instructionsPanel.setBackground(lightBlue);
+    lunchButtonPanel.setBackground(lightPurple);
+    lunchPanel.setBackground(lightBlue);
+    dinnerButtonPanel.setBackground(lightPurple);
+    dinnerPanel.setBackground(lightBlue);
     
     
     
@@ -31,8 +46,8 @@ public class TodaysChoice extends JPanel{
     lunchButton.setFont(buttonFont);
     dinnerButton.setFont(buttonFont);
     
-    lunchButton.setForeground(Color.RED);
-    dinnerButton.setForeground(Color.RED);
+    lunchButton.setForeground(Color.BLACK);
+    dinnerButton.setForeground(Color.BLACK);
     
     lunchFirst = new JLabel();
     lunchSecond = new JLabel();
@@ -73,18 +88,27 @@ public class TodaysChoice extends JPanel{
     
     
     
+
+    
     //add buttons and result text
-    lunchPanel.add(lunchButton);
+    lunchButtonPanel.add(lunchButton);
+    lunchButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    lunchPanel.add(lunchButtonPanel);
+    
     lunchPanel.setLayout(new GridLayout(4,1));
+    lunchPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
     
     dinnerPanel.setLayout(new GridLayout(4,1));
+    dinnerPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
     
     lunchPanel.add(lunchFirst);
     lunchPanel.add(lunchSecond);
     lunchPanel.add(lunchThird);
 
     
-    dinnerPanel.add(dinnerButton);
+    dinnerButtonPanel.add(dinnerButton);
+    dinnerButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    dinnerPanel.add(dinnerButtonPanel);
     
     dinnerPanel.add(dinnerFirst);
     dinnerPanel.add(dinnerSecond);
