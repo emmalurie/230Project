@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class JustForYouPanel extends JPanel{
   private String meal;
-  private JPanel lunchPanel, dinnerPanel, entirePanel;
+  private JPanel lunchPanel, dinnerPanel, entirePanel, instructionPanel;
   private JPanel leftPanel, rightPanel;
   private JLabel instructionLabel;
   private JPanel lunchButtonPanel, dinnerButtonPanel, lunchResultPanel, dinnerResultPanel;
@@ -19,9 +19,6 @@ public class JustForYouPanel extends JPanel{
   public JustForYouPanel(){
     //setLayout(new BorderLayout());
     setLayout (new BoxLayout (this, BoxLayout.Y_AXIS)); 
-    
-    Color lightBlue = new Color(135, 206, 250);
-    Color lightPurple = new Color(216,191,216);
     
     Font titleFont = new Font ("Marker Felt" , Font.BOLD, 48);
     Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 36);
@@ -116,6 +113,23 @@ public class JustForYouPanel extends JPanel{
     dinnerResultPanel.add(dinnerRec);
     dinnerResultPanel.add(dinnerSecond);
     
+    
+    // set colors
+    Color lightBlue = new Color(135, 206, 250);
+    Color lightPurple = new Color(216,191,216);
+    
+    instructionPanel = new JPanel();
+    instructionPanel.add(instructionLabel);
+    
+    instructionPanel.setBackground(lightBlue);
+    lunchPanel.setBackground(lightPurple);
+    lunchButtonPanel.setBackground(lightBlue);
+    lunchResultPanel.setBackground(lightPurple);
+    
+    dinnerPanel.setBackground(lightBlue);
+    dinnerButtonPanel.setBackground(lightPurple);
+    dinnerResultPanel.setBackground(lightBlue);
+      
     //entirePanel.add(instructionLabel);
     leftPanel.add(lunchPanel);
     leftPanel.add(lunchButtonPanel);
@@ -128,7 +142,7 @@ public class JustForYouPanel extends JPanel{
     entirePanel.add(leftPanel);
     entirePanel.add(rightPanel);
     
-    add(instructionLabel);
+    add(instructionPanel);
     add(entirePanel);
     
   }

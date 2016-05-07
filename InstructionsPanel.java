@@ -16,11 +16,11 @@ public class InstructionsPanel extends JPanel{
     title = new JLabel("Dining Hall Selector");
     authors = new JLabel("by Emma Lurie and Dorothy Sun");
     
-    bates = new JLabel(new ImageIcon("bates.png","Bates Dining Hall"));
-    lulu =  new JLabel (new ImageIcon("lulu.png","Lulu Dining Hall"));
-    pom = new JLabel (new ImageIcon("pom.png", "Pomeroy Dining Hall"));
-    stoned = new JLabel (new ImageIcon("stoned.png", "Stone Davis Dining Hall"));
-    tower = new JLabel (new ImageIcon("tower.png", "Tower Dining Hall"));
+    bates = new JLabel(new ImageIcon("images/bates-logo","Bates Dining Hall"));
+    lulu =  new JLabel (new ImageIcon("images/lulu-logo.png","Lulu Dining Hall"));
+    pom = new JLabel (new ImageIcon("images/pom-logo.png", "Pomeroy Dining Hall"));
+    stoned = new JLabel (new ImageIcon("images/stoned-logo.png", "Stone Davis Dining Hall"));
+    tower = new JLabel (new ImageIcon("images/tower-logo.png", "Tower Dining Hall"));
     
     
     
