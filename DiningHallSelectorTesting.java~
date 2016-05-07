@@ -1,7 +1,7 @@
 public class DiningHallSelectorTesting{
   
   public static void main (String[] args){
-   /**/
+   /*
     System.out.println("Start date and End date testing... is a helper method to readWellesleyFresh()");
     System.out.println("getStartDow(1) (Sunday): " + DiningHallSelector.getStartDow(1));
     System.out.println("getEndDow(1) (Monday): " + DiningHallSelector.getEndDow(1) +"\n");
@@ -127,7 +127,98 @@ public class DiningHallSelectorTesting{
     
     System.out.println("Saturday Lunch:\n" + DiningHallSelector.readWellesleyFresh("menus/tower.txt","lunch", 7) +"\n");
     System.out.println("Saturday Dinner:\n" + DiningHallSelector.readWellesleyFresh("menus/tower.txt","dinner", 7) +"\n");
+    */
+
+     /*
+     System.out.println("Bates Menu Scored");
+     
+     DiningHall bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch", 1);
+     System.out.println("Sunday Lunch:\n" +bates +"\n");
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "dinner", 1);
+     System.out.println("Sunday Dinner:\n" + bates+"\n");
+     
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch", 2);
+     System.out.println("Monday Lunch:\n" +bates+"\n");
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "dinner", 2);
+     System.out.println("Monday Dinner:\n" + bates+"\n");
+     
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch", 3);
+     System.out.println("Tuesday Lunch:\n" +bates+"\n");
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "dinner", 3);
+     System.out.println("Tuesday Dinner:\n" + bates+"\n");
+     
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch", 4);
+     System.out.println("Wednesday Lunch:\n" +bates+"\n");
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "dinner", 4);
+     System.out.println("Wednesday Dinner:\n" + bates+"\n");
+     
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch", 5);
+     System.out.println("Thursday Lunch:\n" +bates +"\n");
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "dinner", 5);
+     System.out.println("Thursday Dinner:\n" + bates+"\n");
+    
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch", 6);
+     System.out.println("Friday Lunch:\n" +bates+"\n");
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "dinner", 6);
+     System.out.println("Friday Dinner:\n" + bates+"\n");
+     
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "lunch", 7);
+     System.out.println("Saturday Lunch:\n" +bates+"\n");
+     bates = new DiningHall("Bates");
+     bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "dinner", 7);
+     System.out.println("Saturday Dinner:\n" + bates+"\n");
+     */
+     System.out.println("Lulu Menu Scored");
+     DiningHall lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "lunch", 1);
+     System.out.println("Sunday Lunch:\n" +lulu +"\n");
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "dinner", 1);
+     System.out.println("Sunday Dinner:\n" + lulu+"\n");
+     
+
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "lunch", 2);
+     System.out.println("Monday Lunch:\n" +lulu +"\n");
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "dinner", 2);
+     System.out.println("Monday Dinner:\n" + lulu+"\n");
+     
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "lunch", 3);
+     System.out.println("Tuesday Lunch:\n" +lulu +"\n");
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "dinner", 3);
+     System.out.println("Tuesday Dinner:\n" + lulu+"\n");
+     
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "lunch", 4);
+     System.out.println("Wednesday Lunch:\n" +lulu +"\n");
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "dinner", 4);
+     System.out.println("Wednesday Dinner:\n" + lulu+"\n");
+     
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "lunch", 5);
+     System.out.println("Thursday Lunch:\n" +lulu +"\n");
+     lulu = new DiningHall("Lulu");
+     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "dinner", 5);
+     System.out.println("Thursday Dinner:\n" + lulu+"\n");
   }
+  
   
   
 }
