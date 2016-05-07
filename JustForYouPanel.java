@@ -7,6 +7,7 @@ import javax.swing.*;
 public class JustForYouPanel extends JPanel{
   private String meal;
   private JPanel lunchPanel, dinnerPanel, entirePanel;
+  private JPanel leftPanel, rightPanel;
   private JLabel instructionLabel;
   private JPanel lunchButtonPanel, dinnerButtonPanel, lunchResultPanel, dinnerResultPanel;
   private JCheckBox ldish1, ldish2, ldish3, ldish4, ldish5;
@@ -63,6 +64,10 @@ public class JustForYouPanel extends JPanel{
     lunchButtonPanel.add(lunchButton);
     dinnerButtonPanel.add(dinnerButton);
     
+    this.leftPanel = new JPanel();
+    leftPanel.setLayout (new BoxLayout (leftPanel, BoxLayout.Y_AXIS));
+    this.rightPanel = new JPanel();
+    rightPanel.setLayout (new BoxLayout (rightPanel, BoxLayout.Y_AXIS));
 //    instructionsPanel = new JPanel();
 //    resultsPanel = new JPanel();
     
@@ -111,14 +116,17 @@ public class JustForYouPanel extends JPanel{
     dinnerResultPanel.add(dinnerRec);
     dinnerResultPanel.add(dinnerSecond);
     
-    
     //entirePanel.add(instructionLabel);
-    entirePanel.add(lunchPanel);
-    entirePanel.add(dinnerPanel);
-    entirePanel.add(lunchButtonPanel);
-    entirePanel.add(dinnerButtonPanel);
-    entirePanel.add(lunchResultPanel);
-    entirePanel.add(dinnerResultPanel);
+    leftPanel.add(lunchPanel);
+    leftPanel.add(lunchButtonPanel);
+    leftPanel.add(lunchResultPanel);
+    
+    rightPanel.add(dinnerPanel);
+    rightPanel.add(dinnerButtonPanel);
+    rightPanel.add(dinnerResultPanel);
+    
+    entirePanel.add(leftPanel);
+    entirePanel.add(rightPanel);
     
     add(instructionLabel);
     add(entirePanel);

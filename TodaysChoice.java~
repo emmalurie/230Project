@@ -11,23 +11,9 @@ public class TodaysChoice extends JPanel{
   private JLabel lunchFirst, lunchSecond, lunchRec, dinnerFirst, dinnerSecond, dinnerRec, instructions;
 
   public TodaysChoice(){
-    setLayout(new BorderLayout());
-    
-    Color lightBlue = new Color(135, 206, 250);
-    Color lightPurple = new Color(216,191,216);
-    Color seaGreen = new Color(143,188,143);
-    
-    
-    Font titleFont = new Font ("Marker Felt" , Font.BOLD, 54);
-    Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 48);
-    Font textFont = new Font ("Marker Felt" , Font.PLAIN, 36);
-    
-    this.selector = selector;
-    
+    //panels 
     instructionsPanel = new JPanel();
     resultsPanel = new JPanel();
-    
-    instructionsPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
     
     lunchButtonPanel = new JPanel();
     dinnerButtonPanel = new JPanel();
@@ -35,31 +21,50 @@ public class TodaysChoice extends JPanel{
     lunchPanel = new JPanel();
     dinnerPanel = new JPanel();
     
+    //buttons 
+    lunchButton = new JButton("Lunch");
+    dinnerButton = new JButton("Dinner");
+    
+    //listener 
+    ButtonListener listener = new ButtonListener();
+    lunchButton.addActionListener(listener);
+    dinnerButton.addActionListener(listener);
+    
+    
+    //labels 
+    lunchFirst = new JLabel();
+    lunchSecond = new JLabel();
+    lunchRec = new JLabel();
+    
+    dinnerFirst = new JLabel();
+    dinnerSecond = new JLabel();
+    dinnerRec = new JLabel();
+    
+    instructions = new JLabel("A good meal is just a click away!", JLabel.CENTER);
+    
+
+    
+    //layout
+    setLayout(new BorderLayout());
+    lunchPanel.setLayout(new GridLayout(4,1));
+    dinnerPanel.setLayout(new GridLayout(4,1));
+    
+    //border 
+    instructionsPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    lunchButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    lunchPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    dinnerButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    dinnerPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    
+    //background color 
+    Color lightBlue = new Color(135, 206, 250);
+    Color lightPurple = new Color(216,191,216);
+    
     instructionsPanel.setBackground(lightBlue);
     lunchButtonPanel.setBackground(lightPurple);
     lunchPanel.setBackground(lightBlue);
     dinnerButtonPanel.setBackground(lightPurple);
     dinnerPanel.setBackground(lightBlue);
-    
-    
-    
-    lunchButton = new JButton("Lunch");
-    dinnerButton = new JButton("Dinner");
-    
-    lunchButton.setFont(buttonFont);
-    dinnerButton.setFont(buttonFont);
-    
-    lunchButton.setForeground(Color.BLACK);
-    dinnerButton.setForeground(Color.BLACK);
-    
-    lunchFirst = new JLabel();
-    lunchSecond = new JLabel();
-    lunchRec = new JLabel();
-
-    
-    dinnerFirst = new JLabel();
-    dinnerSecond = new JLabel();
-    dinnerRec = new JLabel();
     
     //center text
     lunchFirst.setHorizontalAlignment(JLabel.CENTER);
@@ -71,47 +76,34 @@ public class TodaysChoice extends JPanel{
     dinnerRec.setHorizontalAlignment(JLabel.CENTER);
     
     //set font 
-     lunchFirst.setFont(textFont);
+    Font titleFont = new Font ("Marker Felt" , Font.BOLD, 54);
+    Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 48);
+    Font textFont = new Font ("Marker Felt" , Font.PLAIN, 36);
+
+    
+    lunchButton.setFont(buttonFont);
+    dinnerButton.setFont(buttonFont);
+    
+    lunchFirst.setFont(textFont);
     lunchSecond.setFont(textFont);
     lunchRec.setFont(textFont);
     
     dinnerFirst.setFont(textFont);
     dinnerSecond.setFont(textFont);
     dinnerRec.setFont(textFont);
-    
-    instructions = new JLabel("A good meal is just a click away!", JLabel.CENTER);
+
     instructions.setFont(titleFont);
-    
-    
-    ButtonListener listener = new ButtonListener();
-    
-    
-    lunchButton.addActionListener(listener);
-    dinnerButton.addActionListener(listener);
-    
-    
    
     //add buttons and result text
     lunchButtonPanel.add(lunchButton);
-    lunchButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+
     lunchPanel.add(lunchButtonPanel);
-    
-    lunchPanel.setLayout(new GridLayout(4,1));
-    lunchPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
-    
-    dinnerPanel.setLayout(new GridLayout(4,1));
-    dinnerPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
-    
     lunchPanel.add(lunchFirst);
     lunchPanel.add(lunchRec);
     lunchPanel.add(lunchSecond);
-
-
     
     dinnerButtonPanel.add(dinnerButton);
-    dinnerButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
     dinnerPanel.add(dinnerButtonPanel);
-    
     dinnerPanel.add(dinnerFirst);
     dinnerPanel.add(dinnerRec);
     dinnerPanel.add(dinnerSecond);
@@ -147,6 +139,7 @@ public class TodaysChoice extends JPanel{
       selector.initializeAll(meal);
       DiningHall[] topTwo = selector.getTopTwoDiningHalls();
       topChoice = topTwo[0].getName();
+      
       if (meal.equals("lunch")){
         lunchFirst.setText("The best dining hall for lunch today is " + topChoice + "!!!"); 
         lunchRec.setText("At " + topChoice + ", we recommend you try " + topTwo[0].getTop().shortenName()+ ")");
