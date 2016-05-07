@@ -292,17 +292,54 @@ public class DiningHallSelector{
     s.initializeAll("dinner");
     
     
-     System.out.println(s.bates.getAverageScore());
-     System.out.println(s.lulu.getAverageScore());
-     System.out.println(s.pom.getAverageScore());
-     System.out.println(s.stoned.getAverageScore());
-     System.out.println(s.tower.getAverageScore());
+    System.out.println(s.bates.getName()+"\t"+ s.bates.getTop().toString() +"\t"+ s.bates.getAverageScore()+"\n");
+     System.out.println(s.lulu.getName()+"\t"+s.lulu.getTop().toString()+"\t" +s.lulu.getAverageScore()+"\n");
+     System.out.println(s.pom.getName()+"\t"+s.pom.getTop().toString() +"\t" + s.pom.getAverageScore()+"\n");
+     //System.out.println(s.stoned.getTop().toString()+"\t" + s.stoned.getAverageScore()+"\n");
+     System.out.println(s.tower.getName()+"\t"+s.tower.getTop().toString()+"\t" + s.tower.getAverageScore()+"\n");
      
-//    DiningHall [] test = s.getTopTwoDiningHalls();
-//    for (int i = 0; i < test.length; i++){
-//      System.out.println(test[i].getName()+ test[i].getAverageScore()); 
-//    }
-//    
+     System.out.println("\n\n");
+    DiningHall [] test1 = s.getTopTwoDiningHalls();
+    for (int i = 0; i < test1.length; i++){
+      System.out.println(test1[i].getName()+ "\t"+ test1[i].getAverageScore()); 
+    }
+    
+    
+    System.out.println("\n\n\nClick on Bates and lulu (should give us Lulu and Pom)");
+    double score1 = s.bates.getAverageScore();
+    s.bates.setAverageScore(score1+1);
+    
+    double score2 = s.lulu.getAverageScore();
+    s.lulu.setAverageScore(score2+1);
+    
+    
+    System.out.println(s.bates.getName()+"\t"+ s.bates.getTop().toString() +"\t"+ s.bates.getAverageScore()+"\n");
+    System.out.println(s.lulu.getName()+"\t"+s.lulu.getTop().toString()+"\t" +s.lulu.getAverageScore()+"\n");
+    System.out.println(s.pom.getName()+"\t"+s.pom.getTop().toString() +"\t" + s.pom.getAverageScore()+"\n");
+    //System.out.println(s.stoned.getTop().toString()+"\t" + s.stoned.getAverageScore()+"\n");
+    System.out.println(s.tower.getName()+"\t"+s.tower.getTop().toString()+"\t" + s.tower.getAverageScore()+"\n");
+    
+    
+    DiningHall [] test2 = s.getTopTwoDiningHalls();
+    for (int i = 0; i < test2.length; i++){
+      System.out.println(test2[i].getName()+  "\t"+ test2[i].getAverageScore()+  "\t"+ test2[i].getMenu().size()); 
+    }
+    
+    
+     System.out.println("\n\n\nClick on lulu (should give us Lulu and Pom)");
+     double score3 = s.lulu.getAverageScore();
+     s.lulu.setAverageScore(score3+1);
+     
+     System.out.println(s.bates.getName()+"\t"+ s.bates.getTop().toString() +"\t"+ s.bates.getAverageScore()+"\n");
+     System.out.println(s.lulu.getName()+"\t"+s.lulu.getTop().toString()+"\t" +s.lulu.getAverageScore()+"\n");
+     System.out.println(s.pom.getName()+"\t"+s.pom.getTop().toString() +"\t" + s.pom.getAverageScore()+"\n");
+     //System.out.println(s.stoned.getTop().toString()+"\t" + s.stoned.getAverageScore()+"\n");
+     System.out.println(s.tower.getName()+"\t"+s.tower.getTop().toString()+"\t" + s.tower.getAverageScore()+"\n");
+     
+     DiningHall [] test3 = s.getTopTwoDiningHalls();
+     for (int i = 0; i < test3.length; i++){
+       System.out.println(test3[i].getName()+ "\t"+ test3[i].getAverageScore()+ "\t"+ test3[i].getMenu().size()); 
+     }
     
     
 //                System.out.println(s.getTopThreeDiningHalls()[1].getName());

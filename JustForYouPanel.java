@@ -205,29 +205,29 @@ public class JustForYouPanel extends JPanel{
       if (meal.equals("lunch")){
         if (ldish1.isSelected()){
           score = lunchSelector.getBates().getAverageScore(); 
-          lunchSelector.getBates().setAverageScore(score++);
+          lunchSelector.getBates().setAverageScore(score+1.0);
         }
         
         if (ldish2.isSelected()){
           score = lunchSelector.getLulu().getAverageScore(); 
-          lunchSelector.getLulu().setAverageScore(score++);
+          lunchSelector.getLulu().setAverageScore(score+1.0);
         }
         
         if (ldish3.isSelected()){
           score = lunchSelector.getPom().getAverageScore();
-          lunchSelector.getPom().setAverageScore(score++);
+          lunchSelector.getPom().setAverageScore(score+1.0);
         }
         
         if (!lunchSelector.isWeekend()){
         if (ldish4.isSelected()){
           score = lunchSelector.getStoned().getAverageScore();
-          lunchSelector.getStoned().setAverageScore(score++);
+          lunchSelector.getStoned().setAverageScore(score+1.0);
         }
         }
         
         if (ldish5.isSelected()){
-          double s = lunchSelector.getTower().getAverageScore(); 
-          lunchSelector.getTower().setAverageScore(s+1); 
+          score = lunchSelector.getTower().getAverageScore(); 
+          lunchSelector.getTower().setAverageScore(score+1.0); 
         }
         
         DiningHall[] topTwo = lunchSelector.getTopTwoDiningHalls();
@@ -240,29 +240,29 @@ public class JustForYouPanel extends JPanel{
         
         if (ddish1.isSelected()){
           score = dinnerSelector.getBates().getAverageScore(); 
-          dinnerSelector.getBates().setAverageScore(score++);
+          dinnerSelector.getBates().setAverageScore(score+1.0);
         }
         
         if (ddish2.isSelected()){
           score = dinnerSelector.getLulu().getAverageScore(); 
-          dinnerSelector.getLulu().setAverageScore(score++); 
+          dinnerSelector.getLulu().setAverageScore(score+1.0); 
         }
         
         if (ddish3.isSelected()){
           score = dinnerSelector.getPom().getAverageScore(); 
-          dinnerSelector.getPom().setAverageScore(score++);
+          dinnerSelector.getPom().setAverageScore(score+1.0);
         }
         
         if (!lunchSelector.isWeekend()){
         if (ddish4.isSelected()){
           score = dinnerSelector.getStoned().getAverageScore(); 
-          dinnerSelector.getStoned().setAverageScore(score++);
+          dinnerSelector.getStoned().setAverageScore(score+1.0);
         }
         }
         
         if (ddish5.isSelected()){
           score = dinnerSelector.getTower().getAverageScore(); 
-          dinnerSelector.getTower().setAverageScore(score++);
+          dinnerSelector.getTower().setAverageScore(score+1.0);
         }
         
         DiningHall[] topTwo = dinnerSelector.getTopTwoDiningHalls();

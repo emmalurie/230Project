@@ -105,12 +105,16 @@ public class DiningHall implements Comparable<DiningHall>{
   /*calculates the score of the dining hall by calculating the average score of the all of the Dish's on the menu*/
   public double calcScore(){
     PriorityQueue<Dish> menuClone = copyMenu(); //clone of menu
-    int score = 0;
+    double score = 0.0;
     try{
+      
+      if(menu.size() == 0){
+        return 0.0; 
+      }
+      
       for (int i = 0; i < menu.size(); i++){
         try {
-          score+= menuClone.dequeue().getScore();
-          
+          score += menuClone.dequeue().getScore();
         }catch(Exception ex){
           System.out.println("No objects are in the menu"); 
         }
@@ -138,7 +142,12 @@ public class DiningHall implements Comparable<DiningHall>{
   
   /*@return the highest rated dish on the menu*/
   public Dish getTop(){
+    try{
     return menu.first(); 
+    }catch(NullPointerException ex){
+      System.out.println("There is no food here!!!");
+      return null; 
+    }
   }
   
   /*creates the menu for a DiningHall and the calculates the DiningHall's average score. This cannot be done in the constructor because the meal "lunch"

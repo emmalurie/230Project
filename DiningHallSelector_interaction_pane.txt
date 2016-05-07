@@ -1,0 +1,16 @@
+Welcome to DrJava.  Working directory is /Users/Dorothy/Documents/CS230/Final_Project/230Project
+> run DiningHallSelector
+Bates	Our Famous Make your Own Grilled Cheese (V) with Fresh Kettle Potato Chips (VE)	6.0	5.0
+
+Lulu	Sausage Pizza, Cheese Pizza (V), Fruit Crisp (V)	6.0	5.666666666666667
+
+Pomeroy	Buffalo Vegetable Pizza (V), Vegan Pizza (VE), Cheese Pizza (V), House made Fresh French Fries (VE), Broccoli (VE) Full Nacho Bar Starts @ 3:00	7.0	6.5
+
+Tower	Vegetable Lo Mein (VE), Red Pork, Fried Lo Mein, Gingered Beans (VE), Mixed Asian Vegetable (VE)	6.0	6.0
+
+
+
+
+Pomeroy6.5
+Tower6.0
+> 
