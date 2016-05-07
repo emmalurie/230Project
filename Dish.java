@@ -52,7 +52,7 @@ public class Dish implements Comparable<Dish>{
   //toString() method returns the name and score of a dish
   public String toString(){
    String result = "";
-   result += name + "\t" + score; 
+   result += name + "\t" + score + "\n"; 
    return result; 
   }
   

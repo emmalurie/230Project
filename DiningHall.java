@@ -99,6 +99,30 @@ public class DiningHall implements Comparable<DiningHall>{
     }
     
   }
+  /*testing method for createMenu*/
+  public void createMenu(String todaysMenuFile, String dataFile, String mealName, int day){
+    
+    Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
+    LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName,day); 
+    
+    //System.out.println(optionsToday);
+    
+    while(!optionsToday.isEmpty()){
+      
+      String dishName = optionsToday.remove();
+      
+      if(data.containsKey(dishName)){
+        this.addToMenu(data.get(dishName));
+      }else {
+        if (dishName.length() > 30){
+        System.out.println(dishName.substring(0,30) + "... could not addded to menu ");
+        } else {
+          System.out.println(dishName + "... could not addded to menu ");
+        }
+      }
+    }
+    
+  }
   
   
   
@@ -130,7 +154,7 @@ public class DiningHall implements Comparable<DiningHall>{
   public String toString(){
     String result = ""; 
     result += menu;
-    result += "\n" + averageScore;
+    result += "\nAVERAGE SCORE: " + averageScore;
     
     return result; 
   }
@@ -158,6 +182,11 @@ public class DiningHall implements Comparable<DiningHall>{
    @param mealName is either "lunch" or "dinner", a parameter for createMenu()*/
   public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName){
     createMenu(todaysMenuFile, dataFile, mealName);
+    calcScore();
+  }
+  /*testing version*/
+    public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName, int day){
+    createMenu(todaysMenuFile, dataFile, mealName, day);
     calcScore();
   }
   

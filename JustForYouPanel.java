@@ -222,13 +222,18 @@ public class JustForYouPanel extends JPanel{
   private class ButtonListener implements ActionListener {
     
     public void actionPerformed (ActionEvent event){
-      
+
       if (event.getSource() == lunchButton){
         meal = "lunch"; 
+        lunchSelector = new DiningHallSelector();
+        lunchSelector.initializeAll(meal);
       }else {
         meal = "dinner";
+        dinnerSelector = new DiningHallSelector();
+        dinnerSelector.initializeAll(meal);
       }
-      
+
+
       String topChoice;
       double score; 
       
