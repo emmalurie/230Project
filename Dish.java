@@ -37,7 +37,7 @@ public class Dish implements Comparable<Dish>{
   }
   /*shortens a dish's name to the first 30 chars*/
   public String shortenName(){
-    return (name.length() > 31 ? name.substring(0,30) + "...": name);
+    return (name.length() > 46 ? name.substring(0,45) + "...": name);
   }
   
   public void setScore(double score){

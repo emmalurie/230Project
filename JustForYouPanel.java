@@ -98,11 +98,13 @@ public class JustForYouPanel extends JPanel{
     dinnerRec.setHorizontalAlignment(JLabel.CENTER);
     
     this.lunchResultPanel = new JPanel();
+    lunchResultPanel.setLayout (new GridLayout (3, 1));
     lunchResultPanel.add(lunchFirst);
     lunchResultPanel.add(lunchRec);
     lunchResultPanel.add(lunchSecond);
     
     this.dinnerResultPanel = new JPanel();
+    dinnerResultPanel.setLayout (new GridLayout (3, 1));
     dinnerResultPanel.add(dinnerFirst);
     dinnerResultPanel.add(dinnerRec);
     dinnerResultPanel.add(dinnerSecond);

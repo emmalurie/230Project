@@ -5,7 +5,7 @@
  *and a menu (a PriorityQueue<Dish>) that holds Dish objects that represent what is being
  *at a given meal at that dining hall. Besides the three instance variables mentioned previously the class contains getters, a createMenu() method that adds all
  *Dishes that appear in the hashtable to the menu. There is also a toString() method.
- * */
+ */
 
 import javafoundations.*;
 import java.util.Hashtable;
