@@ -1,5 +1,5 @@
 /*DiningHallSelector.java
- *Last updated: 3 May 2016
+ *Last updated: 7 May 2016
  *Authors: Emma Lurie and Dorothy Sun
  *About: Each time the program is run, a DiningHallSelector object is created representing the process of choosing the best dining hall at a given meal.
  * In the constructor five dining halls are created as representations the five dining halls at Wellesley. This method contains a readWellesleyFresh() method 
@@ -10,6 +10,9 @@
  Improve readWellelseyFresh: Pom isn't totally working
  We should create a testing method that allows us to manually put in the day of the week. -Done by Emma 
  */
+
+/* All the methods are commented */
+
 import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.Hashtable;
@@ -34,7 +37,8 @@ public class DiningHallSelector{
     rankings = new PriorityQueue<DiningHall>();
   }
   
-//getters
+  
+  //getters
   public DiningHall getBates(){
     return bates;
   }
@@ -56,8 +60,10 @@ public class DiningHallSelector{
     return tower;
   }
   
+  
   /*initializeAll creates a menu and calculates the score for all five of the dining halls. 
-   * @param mealName is either "lunch" or "dinner" and represents the meal the user would like to find the best dining hall for*/
+   * @param mealName is either "lunch" or "dinner" and represents the meal the user would like to find the best dining hall for
+   */
   public void initializeAll(String mealName){
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);  
@@ -68,8 +74,12 @@ public class DiningHallSelector{
   
   
   //bugs: to fix weird spaces, home-style brunch
-  /**/
+  
+  /* Read the weekly menu from the given file for a given meal and add the result to a LinkedList
  
+   * @param inFileName, meal 
+   * @return LinkedList<String> a LinkedList of strings read from the website
+   */
   public static LinkedList<String> readWellesleyFresh (String inFileName, String meal) {
     try {
       Scanner reader = new Scanner(new File(inFileName));
@@ -84,8 +94,6 @@ public class DiningHallSelector{
       
       if (meal.equals("lunch")) lunch = true; 
       if (meal.equals("dinner")) dinner = true; 
-      
-      
       
       while (reader.hasNext()) { // Continue until we reach end of input file
         String line = reader.nextLine();
@@ -111,12 +119,16 @@ public class DiningHallSelector{
       
     }
   }
+  
+  
 
-  /*creates a hashtable of all of the dishes on record being served at a specific dining hall*/
+  /*creates a hashtable of all of the dishes on record being served at a specific dining hall
+   * @param inFileName a String that denotes a file of meal data 
+   * @return Hashtable<String,Dish> that are being created
+   */
   public static Hashtable<String,Dish> createHashtable(String inFileName){
     
     Hashtable<String,Dish> mealData = new Hashtable<String,Dish>(200); 
-    
     
     try {   // set up file for reading meals, one per line
       Scanner reader = new Scanner(new File(inFileName));
@@ -156,6 +168,8 @@ public class DiningHallSelector{
     return i;
     
   }
+  
+  
   /*returns the day of the week */
   private static String getStartDow(){
     String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", "Saturday"};
@@ -185,6 +199,9 @@ public class DiningHallSelector{
     return dow[day % 7]; 
   }
   
+  
+  /*this helper method is 
+   * */
   private static String trimLine(String line){
     //types of dishes array
     String[] startingPhrases = {"Home-style Lunch-", "Home-Style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
@@ -200,6 +217,9 @@ public class DiningHallSelector{
     return line; 
   }
   
+  
+  /*toString method to print out name of dishes and averageScore at a given meal
+   * for 5 dinning halls */
   public String toString(){
     //new lines aren't really working
     String result = "";
@@ -209,11 +229,11 @@ public class DiningHallSelector{
     result += "Stone Davis \n" + stoned + "\n";
     result += "Tower \n" + tower + "\n";
     
-    return result;
-    
+    return result;   
   }
   
-  /*returns the top three dining halls in an array of DiningHalls*/
+  
+  /*returns the top two dining halls in an array of DiningHalls*/
   public DiningHall[] getTopTwoDiningHalls(){
     DiningHall [] topTwo;
     if (rankings.isEmpty()){
@@ -232,6 +252,7 @@ public class DiningHallSelector{
     topTwo = new DiningHall[] {first, second};
     return topTwo;
   }
+  
   
   /*testing method*/
    public static LinkedList<String> readWellesleyFresh (String inFileName, String meal, int day) {
@@ -273,6 +294,8 @@ public class DiningHallSelector{
     }
   }
    
+   
+   /*Check whether today is weekend to avoid NullPointerException because StoneD does not open at weekends.*/
    public boolean isWeekend(){
     String d = getStartDow();
     return ( d.equals("Saturday") || d.equals("Sunday")); 

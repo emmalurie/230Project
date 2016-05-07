@@ -1,3 +1,10 @@
+/*InstructionsPanel.java
+ *Last updated: 7 May 2016
+ *Authors: Emma Lurie and Dorothy Sun
+ *About:
+ */
+
+
 import java.awt.*; 
 import javax.swing.*; 
 import java.awt.Image;
@@ -104,6 +111,10 @@ public class InstructionsPanel extends JPanel{
     instructions.add(best);
     instructions.add(signed);
    
+    //border 
+    title.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    pics.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    instructions.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));    
     
     picsAndInstructions.add(pics,BorderLayout.NORTH );
     picsAndInstructions.add(instructions,BorderLayout.CENTER );

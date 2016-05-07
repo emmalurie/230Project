@@ -1,3 +1,11 @@
+/*SelectorGUI.java
+ *Last updated: 7 May 2016
+ *Authors: Emma Lurie
+ *About: TodaysChoice contains both lunch panel and dinner panel for user to click on the 
+ * lunch/ dinner button to see the corresponding results generated through the program. The 
+ * results are calculated based on comparing today's menu to the hashtable we have in the data
+ * base. 
+ */
 
 
 import java.awt.*;
@@ -115,7 +123,7 @@ public class TodaysChoice extends JPanel{
     instructionsPanel.add(instructions);
     
     
-//set results panel layout and add lunch and dinner panel
+    //set results panel layout and add lunch and dinner panel
     resultsPanel.setLayout(new GridLayout(2, 1));
     resultsPanel.add(lunchPanel);
     resultsPanel.add(dinnerPanel);
@@ -125,6 +133,11 @@ public class TodaysChoice extends JPanel{
     
   }
   
+  
+  /*
+   * ButtonListener is a private class for responding to button push events, in this
+   * case, the lunch and dinner buttons
+   */ 
   private class ButtonListener implements ActionListener {
     
     public void actionPerformed (ActionEvent event){

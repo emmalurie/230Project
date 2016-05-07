@@ -1,3 +1,10 @@
+/*JustForYouPanel.java
+ *Last updated: 7 May 2016
+ *Authors: Emma Lurie and Dorothy Sun
+ *About: 
+ */
+
+
 /* To debug: 
  * click twice, the result chanegs
  * stoneD, nullpointerexception

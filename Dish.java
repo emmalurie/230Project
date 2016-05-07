@@ -5,13 +5,14 @@
  variables have getters and setters. The Dish class implements the Comparable interface. A Dish is considered greater than another Dish if
  it has a higher score*/
 
+/* All the methods are commented */
+
 public class Dish implements Comparable<Dish>{
   
   private String name; 
   private double score; 
   
-  //constructors 
-  
+  //Two constructors 
   public Dish(String name){
     this.name = name; 
     this.score = 0.0; 
@@ -22,8 +23,8 @@ public class Dish implements Comparable<Dish>{
     this.score = score;
   }
   
-  //getters and setters
   
+  //getters and setters
   public String getName(){
    return this.name;  
   }
@@ -35,21 +36,26 @@ public class Dish implements Comparable<Dish>{
   public void setName(String name){
    this.name = name;  
   }
-  /*shortens a dish's name to the first 30 chars*/
+  
+  public void setScore(double score){
+    this.score = score;  
+  }
+  
+  
+  /*shortens a dish's name to the first 45 chars to put on GUI*/
   public String shortenName(){
     return (name.length() > 46 ? name.substring(0,45) + "...": name);
   }
   
-  public void setScore(double score){
-   this.score = score;  
-  }
+
   /*If a Dish's score is greater than another Dish's, a number greater than 1 is returned, 
    * if they have the same score then 0 is returend, and if a Dish's score is less another Dish's, a number less than 0 is returned*/
   public int compareTo(Dish other){
    return (int)(this.score - other.score); 
     }
   
-  //toString() method returns the name and score of a dish
+  
+  /*toString() method returns the name and score of a dish*/
   public String toString(){
    String result = "";
    result += name + "\t" + score + "\n"; 
