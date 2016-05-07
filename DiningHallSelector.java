@@ -272,6 +272,14 @@ public class DiningHallSelector{
       
     }
   }
+   
+   public boolean isWeekend(){
+    String d = getStartDow();
+
+    return ( d.equals("Saturday") || d.equals("Sunday"));
+    
+     
+   }
  
   
   public static void main(String[] args){

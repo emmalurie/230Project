@@ -2,30 +2,78 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.util.Calendar;
 
 
 public class JustForYouPanel extends JPanel{
   private String meal;
+  private DiningHallSelector lunchSelector, dinnerSelector;
+  
   private JPanel lunchPanel, dinnerPanel, entirePanel, instructionPanel;
   private JPanel leftPanel, rightPanel;
   private JLabel instructionLabel;
   private JPanel lunchButtonPanel, dinnerButtonPanel, lunchResultPanel, dinnerResultPanel;
   private JCheckBox ldish1, ldish2, ldish3, ldish4, ldish5;
   private JCheckBox ddish1, ddish2, ddish3, ddish4, ddish5;
-  private DiningHallSelector lunchSelector, dinnerSelector;
+
   private JButton lunchButton, dinnerButton;  
   private JLabel lunchFirst, lunchSecond, lunchRec, dinnerFirst, dinnerSecond, dinnerRec;
   
   public JustForYouPanel(){
-    //setLayout(new BorderLayout());
-    setLayout (new BoxLayout (this, BoxLayout.Y_AXIS)); 
+    //initialize selectors
+    lunchSelector = new DiningHallSelector();
+    dinnerSelector = new DiningHallSelector();
     
+    lunchSelector.initializeAll("lunch");
+    dinnerSelector.initializeAll("dinner");
+    
+    //checkboxes 
+    
+    ldish1 = new JCheckBox (lunchSelector.getBates().getTop().shortenName());
+    ldish2 = new JCheckBox (lunchSelector.getLulu().getTop().shortenName());
+    ldish3 = new JCheckBox (lunchSelector.getPom().getTop().shortenName());
+    
+    if (!lunchSelector.isWeekend()) ldish4 = new JCheckBox (lunchSelector.getStoned().getTop().shortenName());//stone davis closed on weekends and does not have a top value 
+    
+    ldish5 = new JCheckBox (lunchSelector.getTower().getTop().shortenName());
+    
+    ddish1 = new JCheckBox (dinnerSelector.getBates().getTop().shortenName());
+    ddish2 = new JCheckBox (dinnerSelector.getLulu().getTop().shortenName());
+    ddish3 = new JCheckBox (dinnerSelector.getPom().getTop().shortenName());
+    if (!dinnerSelector.isWeekend()) ddish4 = new JCheckBox (dinnerSelector.getStoned().getTop().shortenName());//stone davis closed on weekends and does not have a top value 
+    ddish5 = new JCheckBox (dinnerSelector.getTower().getTop().shortenName());
+    
+
+    //fonts 
     Font titleFont = new Font ("Marker Felt" , Font.BOLD, 48);
     Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 36);
     Font textFont = new Font ("Marker Felt" , Font.PLAIN, 30);
     
-    lunchSelector = new DiningHallSelector();
-    dinnerSelector = new DiningHallSelector();
+    //panels 
+    lunchPanel = new JPanel();
+    dinnerPanel = new JPanel();
+    entirePanel = new JPanel();
+    
+    lunchButtonPanel = new JPanel();
+    dinnerButtonPanel = new JPanel();
+    
+    leftPanel = new JPanel();
+    rightPanel = new JPanel();
+    
+    lunchResultPanel = new JPanel();
+    dinnerResultPanel = new JPanel();
+    
+    //buttons 
+    lunchButton = new JButton("See My Lunch");
+    dinnerButton = new JButton("See My Dinner");
+    
+    //listeners
+    ButtonListener listener = new ButtonListener();
+    lunchButton.addActionListener(listener);
+    dinnerButton.addActionListener(listener);
+    
+    //labels 
+    instructionLabel = new JLabel("Talior Your Meal by Your Preferences!", JLabel.CENTER);
     
     lunchFirst = new JLabel();
     lunchSecond = new JLabel();
@@ -35,62 +83,20 @@ public class JustForYouPanel extends JPanel{
     dinnerSecond = new JLabel();
     dinnerRec = new JLabel();
     
-    this.lunchSelector.initializeAll("lunch");
-    this.dinnerSelector.initializeAll("dinner");
+
+    //layout
+    setLayout (new BoxLayout (this, BoxLayout.Y_AXIS)); 
     
-    this.lunchPanel = new JPanel();
     lunchPanel.setLayout (new GridLayout (5, 1));
-    this.dinnerPanel = new JPanel();
     dinnerPanel.setLayout (new GridLayout (5, 1));
     
-    this.entirePanel = new JPanel();
     entirePanel.setLayout (new GridLayout (3, 2));
-      
-    this.instructionLabel = new JLabel("Talior Your Meal by Your Preferences!", JLabel.CENTER);
     
-    lunchButton = new JButton("See My Lunch");
-    dinnerButton = new JButton("See My Dinner");
-    
-    ButtonListener listener = new ButtonListener();
-    this.lunchButtonPanel = new JPanel();
-    this.dinnerButtonPanel = new JPanel();
-    
-    lunchButton.addActionListener(listener);
-    dinnerButton.addActionListener(listener);
-    
-    lunchButtonPanel.add(lunchButton);
-    dinnerButtonPanel.add(dinnerButton);
-    
-    this.leftPanel = new JPanel();
     leftPanel.setLayout (new BoxLayout (leftPanel, BoxLayout.Y_AXIS));
-    this.rightPanel = new JPanel();
     rightPanel.setLayout (new BoxLayout (rightPanel, BoxLayout.Y_AXIS));
-//    instructionsPanel = new JPanel();
-//    resultsPanel = new JPanel();
     
-    ldish1 = new JCheckBox (lunchSelector.getBates().getTop().shortenName());
-    ldish2 = new JCheckBox (lunchSelector.getLulu().getTop().shortenName());
-    ldish3 = new JCheckBox (lunchSelector.getPom().getTop().shortenName());
-    ldish4 = new JCheckBox (lunchSelector.getStoned().getTop().shortenName());
-    ldish5 = new JCheckBox (lunchSelector.getTower().getTop().shortenName());
-    
-    ddish1 = new JCheckBox (dinnerSelector.getBates().getTop().shortenName());
-    ddish2 = new JCheckBox (dinnerSelector.getLulu().getTop().shortenName());
-    ddish3 = new JCheckBox (dinnerSelector.getPom().getTop().shortenName());
-    ddish4 = new JCheckBox (dinnerSelector.getStoned().getTop().shortenName());
-    ddish5 = new JCheckBox (dinnerSelector.getTower().getTop().shortenName());
-    
-    lunchPanel.add(ldish1);
-    lunchPanel.add(ldish2);
-    lunchPanel.add(ldish3);
-    lunchPanel.add(ldish4);
-    lunchPanel.add(ldish5);
-    
-    dinnerPanel.add(ddish1);
-    dinnerPanel.add(ddish2);
-    dinnerPanel.add(ddish3);
-    dinnerPanel.add(ddish4);
-    dinnerPanel.add(ddish5);
+    lunchResultPanel.setLayout (new GridLayout (3, 1));
+    dinnerResultPanel.setLayout (new GridLayout (3, 1));
     
     //center text
     lunchFirst.setHorizontalAlignment(JLabel.CENTER);
@@ -101,20 +107,7 @@ public class JustForYouPanel extends JPanel{
     dinnerSecond.setHorizontalAlignment(JLabel.CENTER);
     dinnerRec.setHorizontalAlignment(JLabel.CENTER);
     
-    this.lunchResultPanel = new JPanel();
-    lunchResultPanel.setLayout (new GridLayout (3, 1));
-    lunchResultPanel.add(lunchFirst);
-    lunchResultPanel.add(lunchRec);
-    lunchResultPanel.add(lunchSecond);
-    
-    this.dinnerResultPanel = new JPanel();
-    dinnerResultPanel.setLayout (new GridLayout (3, 1));
-    dinnerResultPanel.add(dinnerFirst);
-    dinnerResultPanel.add(dinnerRec);
-    dinnerResultPanel.add(dinnerSecond);
-    
-    
-    // set colors
+   // set colors
     Color lightBlue = new Color(135, 206, 250);
     Color lightPurple = new Color(216,191,216);
     
@@ -129,6 +122,34 @@ public class JustForYouPanel extends JPanel{
     dinnerPanel.setBackground(lightBlue);
     dinnerButtonPanel.setBackground(lightPurple);
     dinnerResultPanel.setBackground(lightBlue);
+
+    //add buttons to button panels 
+    lunchButtonPanel.add(lunchButton);
+    dinnerButtonPanel.add(dinnerButton);
+    
+    
+    //add top dishes to panels
+    lunchPanel.add(ldish1);
+    lunchPanel.add(ldish2);
+    lunchPanel.add(ldish3);
+    if(!lunchSelector.isWeekend()) lunchPanel.add(ldish4);
+    lunchPanel.add(ldish5);
+    
+    dinnerPanel.add(ddish1);
+    dinnerPanel.add(ddish2);
+    dinnerPanel.add(ddish3);
+    if(!dinnerSelector.isWeekend())dinnerPanel.add(ddish4);
+    dinnerPanel.add(ddish5);
+    
+    //add best choices to panel
+    lunchResultPanel.add(lunchFirst);
+    lunchResultPanel.add(lunchRec);
+    lunchResultPanel.add(lunchSecond);
+    
+
+    dinnerResultPanel.add(dinnerFirst);
+    dinnerResultPanel.add(dinnerRec);
+    dinnerResultPanel.add(dinnerSecond);
       
     //entirePanel.add(instructionLabel);
     leftPanel.add(lunchPanel);
@@ -159,26 +180,29 @@ public class JustForYouPanel extends JPanel{
       }
       
       String topChoice;
+      double score; 
       
       if (meal.equals("lunch")){
         if (ldish1.isSelected()){
-          double s = lunchSelector.getBates().getAverageScore(); 
-          lunchSelector.getBates().setAverageScore(s+1);
+          score = lunchSelector.getBates().getAverageScore(); 
+          lunchSelector.getBates().setAverageScore(score++);
         }
         
         if (ldish2.isSelected()){
-          double s = lunchSelector.getLulu().getAverageScore(); 
-          lunchSelector.getLulu().setAverageScore(s+1);
+          score = lunchSelector.getLulu().getAverageScore(); 
+          lunchSelector.getLulu().setAverageScore(score++);
         }
         
         if (ldish3.isSelected()){
-          double s = lunchSelector.getPom().getAverageScore();
-          lunchSelector.getPom().setAverageScore(s+1);
+          score = lunchSelector.getPom().getAverageScore();
+          lunchSelector.getPom().setAverageScore(score++);
         }
         
+        if (!lunchSelector.isWeekend()){
         if (ldish4.isSelected()){
-          double s = lunchSelector.getStoned().getAverageScore();
-          lunchSelector.getStoned().setAverageScore(s+1);
+          score = lunchSelector.getStoned().getAverageScore();
+          lunchSelector.getStoned().setAverageScore(score++);
+        }
         }
         
         if (ldish5.isSelected()){
@@ -195,28 +219,30 @@ public class JustForYouPanel extends JPanel{
       }else {
         
         if (ddish1.isSelected()){
-          double s = dinnerSelector.getBates().getAverageScore(); 
-          dinnerSelector.getBates().setAverageScore(s+1);
+          score = dinnerSelector.getBates().getAverageScore(); 
+          dinnerSelector.getBates().setAverageScore(score++);
         }
         
         if (ddish2.isSelected()){
-          double s = dinnerSelector.getLulu().getAverageScore(); 
-          dinnerSelector.getLulu().setAverageScore(s+1); 
+          score = dinnerSelector.getLulu().getAverageScore(); 
+          dinnerSelector.getLulu().setAverageScore(score++); 
         }
         
         if (ddish3.isSelected()){
-          double s = dinnerSelector.getPom().getAverageScore(); 
-          dinnerSelector.getPom().setAverageScore(s+1);
+          score = dinnerSelector.getPom().getAverageScore(); 
+          dinnerSelector.getPom().setAverageScore(score++);
         }
         
+        if (!lunchSelector.isWeekend()){
         if (ddish4.isSelected()){
-          double s = dinnerSelector.getStoned().getAverageScore(); 
-          dinnerSelector.getStoned().setAverageScore(s+1);
+          score = dinnerSelector.getStoned().getAverageScore(); 
+          dinnerSelector.getStoned().setAverageScore(score++);
+        }
         }
         
         if (ddish5.isSelected()){
-          double s = dinnerSelector.getTower().getAverageScore(); 
-          dinnerSelector.getTower().setAverageScore(s+1);
+          score = dinnerSelector.getTower().getAverageScore(); 
+          dinnerSelector.getTower().setAverageScore(score++);
         }
         
         DiningHall[] topTwo = dinnerSelector.getTopTwoDiningHalls();
