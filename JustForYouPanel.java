@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -26,8 +25,7 @@ public class JustForYouPanel extends JPanel{
     lunchSelector.initializeAll("lunch");
     dinnerSelector.initializeAll("dinner");
     
-    //checkboxes 
-    
+    //checkboxes   
     ldish1 = new JCheckBox (lunchSelector.getBates().getTop().shortenName());
     ldish2 = new JCheckBox (lunchSelector.getLulu().getTop().shortenName());
     ldish3 = new JCheckBox (lunchSelector.getPom().getTop().shortenName());
@@ -177,6 +175,7 @@ public class JustForYouPanel extends JPanel{
    } else {
       checkBox = new JCheckBox[] {ldish1, ldish2, ldish3, ldish4, ldish5 ,ddish1, ddish2, ddish3, ddish4, ddish5};
    }
+   
     for (int i = 0; i < checkBox.length; i++){
      checkBox[i].setFont(textFont); 
     }

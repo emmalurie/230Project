@@ -275,10 +275,7 @@ public class DiningHallSelector{
    
    public boolean isWeekend(){
     String d = getStartDow();
-
-    return ( d.equals("Saturday") || d.equals("Sunday"));
-    
-     
+    return ( d.equals("Saturday") || d.equals("Sunday")); 
    }
  
   
@@ -289,13 +286,25 @@ public class DiningHallSelector{
     //System.out.println(readWellesleyFresh("menus/stonedavis.txt", "lunch"));
     //System.out.println(readWellesleyFresh("menus/tower.txt", "dinner"));
     
+   
     DiningHallSelector s = new DiningHallSelector();
-    //s.initializeAll("lunch");
-    //s.initializeAll("dinner");
-    DiningHall [] test = s.getTopTwoDiningHalls();
-    for (int i = 0; i < test.length; i++){
-      System.out.println(test[i].getName()); 
-    }
+   //s.initializeAll("lunch");
+    s.initializeAll("dinner");
+    
+    
+     System.out.println(s.bates.getAverageScore());
+     System.out.println(s.lulu.getAverageScore());
+     System.out.println(s.pom.getAverageScore());
+     System.out.println(s.stoned.getAverageScore());
+     System.out.println(s.tower.getAverageScore());
+     
+//    DiningHall [] test = s.getTopTwoDiningHalls();
+//    for (int i = 0; i < test.length; i++){
+//      System.out.println(test[i].getName()+ test[i].getAverageScore()); 
+//    }
+//    
+    
+    
 //                System.out.println(s.getTopThreeDiningHalls()[1].getName());
 //                        System.out.println(s.getTopThreeDiningHalls()[2].getName());
 //System.out.println(s.getFirst().getName());
