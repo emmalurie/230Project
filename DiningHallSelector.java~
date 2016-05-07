@@ -189,7 +189,7 @@ public class DiningHallSelector{
     //types of dishes array
     String[] startingPhrases = {"Home-style Lunch-", "Home-Style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
       "Global Grill Brunch-", "Pure, Lunch & Dinner-", "Pizza, Lunch & Dinner-","Pizza, Brunch & Dinner-","Daily Grill Brunch-", "Daily Grill Lunch-",
-      "Home-style Dinner-","Pasta Station Lunch-","Pasta Station Lunch Ð", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner -", "Dinner-"};
+      "Home-style Dinner-","Pasta Station Lunch-","Pasta Station Lunch Ð", "Pasta Station Brunch", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner -", "Dinner-"};
     int size; 
     for (int i = 0; i < startingPhrases.length; i++){
       if (line.contains(startingPhrases[i])){

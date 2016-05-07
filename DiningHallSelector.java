@@ -173,23 +173,23 @@ public class DiningHallSelector{
   
   /*this helper method is the same as getStartDow(), but the date is a parameter. This method makes it easier for testing, 
    * because we can test any day of the week at any time */
-  private static String getStartDow(int day){
+  public static String getStartDow(int day){
     String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", "Saturday"};
     return dow[day -1];
   }
   
   /*this helper method is the same as getEndDow(), but the date is a parameter. This method makes it easier for testing, 
    * because we can test any day of the week at any time */
-  private static String getEndDow(int day){
-    String [] dow = {"Saturday","Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", };
+  public static String getEndDow(int day){
+    String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday","Saturday" };
     return dow[day % 7]; 
   }
   
   private static String trimLine(String line){
     //types of dishes array
     String[] startingPhrases = {"Home-style Lunch-", "Home-Style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
-      "Global Grill Brunch-", "Pure, Lunch & Dinner-", "Pizza, Lunch & Dinner-","Pizza, Brunch & Dinner-","Daily Grill Brunch-", "Daily Grill Lunch-",
-      "Home-style Dinner-","Pasta Station Lunch-","Pasta Station Lunch Ð", "Pasta Station Brunch", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner -", "Dinner-"};
+      "Global Grill Brunch-", "Pure, Lunch & Dinner-", "Pizza, Lunch & Dinner-","Pizza, Brunch & Dinner-","Daily Grill Brunch-","Daily Grill Lunch-", "Daily Grill Lunch-",
+      "Home-style Dinner-","Pasta Station Lunch-","Pasta Station Lunch-", "Pasta Station Lunch Ð", "Pasta Station Brunch", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner -", "Dinner-"};
     int size; 
     for (int i = 0; i < startingPhrases.length; i++){
       if (line.contains(startingPhrases[i])){
@@ -233,6 +233,45 @@ public class DiningHallSelector{
     return topTwo;
   }
   
+  /*testing method*/
+   public static LinkedList<String> readWellesleyFresh (String inFileName, String meal, int day) {
+    try {
+      Scanner reader = new Scanner(new File(inFileName));
+      LinkedList<String>result = new LinkedList<String>();
+      
+      String startDate = getStartDow(day);
+      String endDate = getEndDow(day);
+      
+      boolean canReadFile = false;
+      boolean lunch = false; 
+      boolean dinner = false; 
+      
+      if (meal.equals("lunch")) lunch = true; 
+      if (meal.equals("dinner")) dinner = true; 
+      
+      
+      
+      while (reader.hasNext()) { // Continue until we reach end of input file
+        String line = reader.nextLine();
+        
+        if (line.contains(startDate)) canReadFile = true; 
+        if (line.contains(endDate)) canReadFile = false;
+        
+        if (canReadFile && !line.contains("Breakfast-") && !line.contains(startDate)){
+          if (lunch && (line.contains("Lunch")  || line.contains("Brunch"))|| dinner && line.contains("Dinner")){
+            result.add(trimLine(line.trim())); //helper method to format the line (removes the type of meal from the string)
+          }
+        }
+      }
+      reader.close(); // Close the file reader
+      return result; 
+      
+    } catch (FileNotFoundException ex) {
+      System.out.println(ex); // Handle file-not-found by displaying message
+      return null; // Return the empty string if file not found
+      
+    }
+  }
  
   
   public static void main(String[] args){
