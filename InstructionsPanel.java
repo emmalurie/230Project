@@ -4,56 +4,112 @@ import java.awt.Image;
 
 
 public class InstructionsPanel extends JPanel{
-  JPanel description, pics;  
-  JLabel title, authors; //add more text labels/panels 
-  JLabel bates, lulu, pom, tower, stoned; //add open hours texts 
-  JLabel words; 
+  JPanel title, pics, instructions, picsAndInstructions;  
+  JLabel titleText, subtitle, authorsNames; 
+  JLabel bates, lulu, pom, stoned, tower, wfresh, intro, l1, l2,l3, thanks, best, signed;//add open hours texts 
   
   
   public InstructionsPanel() {  
-    description = new JPanel(); 
+    //panels 
+    title = new JPanel();
     pics = new JPanel();
-    pics.setLayout(new GridLayout (3,2));
+    instructions = new JPanel();
+    picsAndInstructions = new JPanel();
+
     
-    title = new JLabel("Dining Hall Selector");
-    authors = new JLabel("by Emma Lurie and Dorothy Sun");
+    //JLabels
+    titleText = new JLabel("Palate Tailor");
+    subtitle = new JLabel("We want to make sure you get the best meal on campus!");
+    authorsNames = new JLabel("by Emma Lurie and Dorothy Sun");
+    intro = new JLabel("Welcome to Palate Tailor!");
+    l1 = new JLabel("If you would like to see our general recommendations of the best dining halls to eat at today," + 
+                    "navigate to the “Today’s Choice” tab.");
+    l2 = new JLabel("If you would like to see our individualized recommendation of the best dining halls to eat at today based on your" + 
+                    "palate, navigate to the “Just For You” tab.");
+    l3  = new JLabel("To see our recommendation for lunch, click on the “Lunch” button." + 
+                     "To see our recommendation for dinner, click on the “Dinner” button.");
+    thanks = new JLabel("Thanks for trying out our program.");
+    best = new JLabel("Best,");
+    signed = new JLabel("Emma Lurie and Dorothy Sun");
     
-    bates = new JLabel(new ImageIcon("images/bates-logo","Bates Dining Hall"));
-    lulu =  new JLabel (new ImageIcon("images/lulu-logo.png","Lulu Dining Hall"));
-    pom = new JLabel (new ImageIcon("images/pom-logo.png", "Pomeroy Dining Hall"));
-    stoned = new JLabel (new ImageIcon("images/stoned-logo.png", "Stone Davis Dining Hall"));
-    tower = new JLabel (new ImageIcon("images/tower-logo.png", "Tower Dining Hall"));
     
     
     
-    description.add(title);
-    description.add(authors);
     
+    
+    //JLabel images
+    bates = new JLabel(new ImageIcon("images/bates.png","Bates Dining Hall"));
+    lulu =  new JLabel (new ImageIcon("images/lulu.png","Lulu Dining Hall"));
+    pom = new JLabel (new ImageIcon("images/pom.png", "Pomeroy Dining Hall"));
+    stoned = new JLabel (new ImageIcon("images/stoned.png", "Stone Davis Dining Hall"));
+    tower = new JLabel (new ImageIcon("images/tower.png", "Tower Dining Hall"));
+    wfresh = new JLabel (new ImageIcon("images/wellesleyfresh_logo.gif", "Wellesley Fresh Logo"));
+    
+    
+    //setFont 
+    Font titleFont = new Font ("Marker Felt" , Font.BOLD, 80);
+    Font subtitleFont = new Font ("Marker Felt" , Font.PLAIN, 40);
+    Font textFont = new Font ("Marker Felt" , Font.PLAIN, 30);
+    Font smallText = new Font ("Marker Felt" , Font.PLAIN, 24);
+    
+    titleText.setFont(titleFont);
+    subtitle.setFont(subtitleFont);
+    authorsNames.setFont(textFont);
+    
+    intro.setFont(smallText);
+    l1.setFont(smallText);
+    l2.setFont(smallText);
+    l3.setFont(smallText);
+    thanks.setFont(smallText);
+    best.setFont(smallText);
+    signed.setFont(textFont);
+    
+    //horizontal alignment
+    titleText.setHorizontalAlignment(JLabel.CENTER);
+    subtitle.setHorizontalAlignment(JLabel.CENTER);
+    authorsNames.setHorizontalAlignment(JLabel.CENTER);
+    
+    //layout 
+    setLayout(new BorderLayout());
+    title.setLayout(new GridLayout(3,1));
+    pics.setLayout(new GridLayout(1,6));
+    instructions.setLayout(new GridLayout(7,1));
+    picsAndInstructions.setLayout(new BorderLayout());
+    
+    //color    
+    Color lightBlue = new Color(135, 206, 250);
+    Color lightPurple = new Color(216,191,216);
+    
+    title.setBackground(lightPurple);
+    pics.setBackground(Color.WHITE);
+    instructions.setBackground(lightBlue);
+    
+    title.add(titleText);
+    title.add(subtitle);
+    title.add(authorsNames);
+    
+    pics.add(wfresh);
     pics.add(bates);
     pics.add(lulu);
     pics.add(pom);
+    pics.add(thanks);
     pics.add(stoned);
     pics.add(tower);
     
-    //words = new JLabel();
+    instructions.add(intro);
+    instructions.add(l1);
+    instructions.add(l2);
+    instructions.add(l3);
+    instructions.add(thanks);
+    instructions.add(best);
+    instructions.add(signed);
     
-    String t1 = "Welcome to Palate Tailor!";
-    String t2 = "If you would like to see our general recommendations of the best dining halls to eat at today, ";
-    String t3 = "navigate to the “Today’s Choice” tab. To see our recommendation for lunch, click on the “Lunch” button.";
-    String t4 = "To see our recommendation for dinner, click on the “Dinner” button.";
-    String t5 = "If you would like to see our individualized recommendation of the best dining halls to eat at today based on your palate, ";
-    String t6 = "navigate to the “Just For You” tab. To see our recommendation for lunch, click on the “Lunch” button.";
-    String t7 = "To see our recommendation for dinner, click on the “Dinner” button.";
-    String t8 = "Thanks for trying out our program.";
-    String t9 = "Best,";
-    String t10 = "Emma Lurie and Dorothy Sun";
-    
-    words = new JLabel(t1 + t2 + t3 + t4 + t5 + t6 + t7 + t8 + t9 + t10);
+    picsAndInstructions.add(pics,BorderLayout.NORTH );
+    picsAndInstructions.add(instructions,BorderLayout.CENTER );
+    add(picsAndInstructions);
+    add(title,BorderLayout.NORTH);
     
     
-    add(description);
-    add(pics);
-    add(words);
     
   }
 }
