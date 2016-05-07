@@ -11,13 +11,12 @@ public class JustForYouPanel extends JPanel{
   
   private JPanel lunchPanel, dinnerPanel, entirePanel, instructionPanel;
   private JPanel leftPanel, rightPanel;
-  private JLabel instructionLabel;
   private JPanel lunchButtonPanel, dinnerButtonPanel, lunchResultPanel, dinnerResultPanel;
   private JCheckBox ldish1, ldish2, ldish3, ldish4, ldish5;
   private JCheckBox ddish1, ddish2, ddish3, ddish4, ddish5;
 
   private JButton lunchButton, dinnerButton;  
-  private JLabel lunchFirst, lunchSecond, lunchRec, dinnerFirst, dinnerSecond, dinnerRec;
+  private JLabel lunchFirst, lunchSecond, lunchRec, dinnerFirst, dinnerSecond, dinnerRec,instructionLabel;
   
   public JustForYouPanel(){
     //initialize selectors
@@ -42,12 +41,6 @@ public class JustForYouPanel extends JPanel{
     ddish3 = new JCheckBox (dinnerSelector.getPom().getTop().shortenName());
     if (!dinnerSelector.isWeekend()) ddish4 = new JCheckBox (dinnerSelector.getStoned().getTop().shortenName());//stone davis closed on weekends and does not have a top value 
     ddish5 = new JCheckBox (dinnerSelector.getTower().getTop().shortenName());
-    
-
-    //fonts 
-    Font titleFont = new Font ("Marker Felt" , Font.BOLD, 48);
-    Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 36);
-    Font textFont = new Font ("Marker Felt" , Font.PLAIN, 30);
     
     //panels 
     lunchPanel = new JPanel();
@@ -83,7 +76,9 @@ public class JustForYouPanel extends JPanel{
     dinnerSecond = new JLabel();
     dinnerRec = new JLabel();
     
-
+    //fonts 
+    setFonts();
+    
     //layout
     setLayout (new BoxLayout (this, BoxLayout.Y_AXIS)); 
     
@@ -165,6 +160,32 @@ public class JustForYouPanel extends JPanel{
     
     add(instructionPanel);
     add(entirePanel);
+    
+  }
+  
+  private void setFonts(){
+    Font textFont = new Font ("Marker Felt" , Font.PLAIN, 24);
+    Font titleFont = new Font ("Marker Felt" , Font.BOLD, 40);
+    Font buttonFont = new Font ("Marker Felt" , Font.PLAIN, 30);
+    boolean isWeekend = lunchSelector.isWeekend();
+    
+   //check box font 
+   JCheckBox [] checkBox; 
+   JLabel [] labels; 
+   if (isWeekend){
+   checkBox = new JCheckBox[] {ldish1, ldish2, ldish3,  ldish5 ,ddish1, ddish2, ddish3, ddish5};
+   } else {
+      checkBox = new JCheckBox[] {ldish1, ldish2, ldish3, ldish4, ldish5 ,ddish1, ddish2, ddish3, ddish4, ddish5};
+   }
+    for (int i = 0; i < checkBox.length; i++){
+     checkBox[i].setFont(textFont); 
+    }
+    
+    instructionLabel.setFont(titleFont);
+    
+    
+    //JButton font 
+    
     
   }
   

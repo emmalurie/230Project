@@ -13,7 +13,7 @@ public class SelectorGUI{
     tp.addTab("Just for You", new JustForYouPanel()); 
     
     frame.getContentPane().add(tp); //add tabbed pane to frame
-    frame.setPreferredSize(new Dimension(1000,1000)); //set size
+    frame.setPreferredSize(new Dimension(1500,1500)); //set size
     frame.pack(); 
     //frame.setResizable(false); //not resizable
     frame.setVisible(true); 
