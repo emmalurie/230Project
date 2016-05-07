@@ -1,7 +1,8 @@
 /*InstructionsPanel.java
  *Last updated: 7 May 2016
  *Authors: Emma Lurie and Dorothy Sun
- *About:
+ *About: InstructionsPanel contains the general instructions of the program and
+ * lovely pictures of all the dinning halls. 
  */
 
 
