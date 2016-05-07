@@ -103,6 +103,7 @@ public class InstructionsPanel extends JPanel{
     instructions.add(thanks);
     instructions.add(best);
     instructions.add(signed);
+   
     
     picsAndInstructions.add(pics,BorderLayout.NORTH );
     picsAndInstructions.add(instructions,BorderLayout.CENTER );

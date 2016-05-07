@@ -1,3 +1,8 @@
+/* To debug: 
+ * click twice, the result chanegs
+ * stoneD, nullpointerexception
+ * 
+ */
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -9,7 +14,7 @@ public class JustForYouPanel extends JPanel{
   private DiningHallSelector lunchSelector, dinnerSelector;
   
   private JPanel lunchPanel, dinnerPanel, entirePanel, instructionPanel;
-  private JPanel leftPanel, rightPanel;
+  private JPanel topPanel, bottomPanel;
   private JPanel lunchButtonPanel, dinnerButtonPanel, lunchResultPanel, dinnerResultPanel;
   private JCheckBox ldish1, ldish2, ldish3, ldish4, ldish5;
   private JCheckBox ddish1, ddish2, ddish3, ddish4, ddish5;
@@ -26,19 +31,19 @@ public class JustForYouPanel extends JPanel{
     dinnerSelector.initializeAll("dinner");
     
     //checkboxes   
-    ldish1 = new JCheckBox (lunchSelector.getBates().getTop().shortenName());
-    ldish2 = new JCheckBox (lunchSelector.getLulu().getTop().shortenName());
-    ldish3 = new JCheckBox (lunchSelector.getPom().getTop().shortenName());
+    ldish1 = new JCheckBox (lunchSelector.getBates().getTop().getName());
+    ldish2 = new JCheckBox (lunchSelector.getLulu().getTop().getName());
+    ldish3 = new JCheckBox (lunchSelector.getPom().getTop().getName());
     
     if (!lunchSelector.isWeekend()) ldish4 = new JCheckBox (lunchSelector.getStoned().getTop().shortenName());//stone davis closed on weekends and does not have a top value 
     
-    ldish5 = new JCheckBox (lunchSelector.getTower().getTop().shortenName());
+    ldish5 = new JCheckBox (lunchSelector.getTower().getTop().getName());
     
-    ddish1 = new JCheckBox (dinnerSelector.getBates().getTop().shortenName());
-    ddish2 = new JCheckBox (dinnerSelector.getLulu().getTop().shortenName());
-    ddish3 = new JCheckBox (dinnerSelector.getPom().getTop().shortenName());
+    ddish1 = new JCheckBox (dinnerSelector.getBates().getTop().getName());
+    ddish2 = new JCheckBox (dinnerSelector.getLulu().getTop().getName());
+    ddish3 = new JCheckBox (dinnerSelector.getPom().getTop().getName());
     if (!dinnerSelector.isWeekend()) ddish4 = new JCheckBox (dinnerSelector.getStoned().getTop().shortenName());//stone davis closed on weekends and does not have a top value 
-    ddish5 = new JCheckBox (dinnerSelector.getTower().getTop().shortenName());
+    ddish5 = new JCheckBox (dinnerSelector.getTower().getTop().getName());
     
     //panels 
     lunchPanel = new JPanel();
@@ -48,8 +53,8 @@ public class JustForYouPanel extends JPanel{
     lunchButtonPanel = new JPanel();
     dinnerButtonPanel = new JPanel();
     
-    leftPanel = new JPanel();
-    rightPanel = new JPanel();
+    topPanel = new JPanel();
+    bottomPanel = new JPanel();
     
     lunchResultPanel = new JPanel();
     dinnerResultPanel = new JPanel();
@@ -83,10 +88,10 @@ public class JustForYouPanel extends JPanel{
     lunchPanel.setLayout (new GridLayout (5, 1));
     dinnerPanel.setLayout (new GridLayout (5, 1));
     
-    entirePanel.setLayout (new GridLayout (3, 2));
+    entirePanel.setLayout (new GridLayout (2, 1));
     
-    leftPanel.setLayout (new BoxLayout (leftPanel, BoxLayout.Y_AXIS));
-    rightPanel.setLayout (new BoxLayout (rightPanel, BoxLayout.Y_AXIS));
+    topPanel.setLayout (new BoxLayout (topPanel, BoxLayout.Y_AXIS));
+    bottomPanel.setLayout (new BoxLayout (bottomPanel, BoxLayout.Y_AXIS));
     
     lunchResultPanel.setLayout (new GridLayout (3, 1));
     dinnerResultPanel.setLayout (new GridLayout (3, 1));
@@ -106,15 +111,22 @@ public class JustForYouPanel extends JPanel{
     
     instructionPanel = new JPanel();
     instructionPanel.add(instructionLabel);
+    instructionPanel.setPreferredSize(new Dimension(1500,100));
     
     instructionPanel.setBackground(lightBlue);
     lunchPanel.setBackground(lightPurple);
+    lunchPanel.setPreferredSize(new Dimension(1500,300));
     lunchButtonPanel.setBackground(lightBlue);
+    lunchButtonPanel.setPreferredSize(new Dimension(1500,100));
     lunchResultPanel.setBackground(lightPurple);
+    lunchResultPanel.setPreferredSize(new Dimension(1500,300));
     
     dinnerPanel.setBackground(lightBlue);
+    dinnerPanel.setPreferredSize(new Dimension(1500,300));
     dinnerButtonPanel.setBackground(lightPurple);
+    dinnerButtonPanel.setPreferredSize(new Dimension(1500,100));
     dinnerResultPanel.setBackground(lightBlue);
+    dinnerResultPanel.setPreferredSize(new Dimension(1500,300));
 
     //add buttons to button panels 
     lunchButtonPanel.add(lunchButton);
@@ -145,16 +157,26 @@ public class JustForYouPanel extends JPanel{
     dinnerResultPanel.add(dinnerSecond);
       
     //entirePanel.add(instructionLabel);
-    leftPanel.add(lunchPanel);
-    leftPanel.add(lunchButtonPanel);
-    leftPanel.add(lunchResultPanel);
+    topPanel.add(lunchPanel);
+    topPanel.add(lunchButtonPanel);
+    topPanel.add(lunchResultPanel);
     
-    rightPanel.add(dinnerPanel);
-    rightPanel.add(dinnerButtonPanel);
-    rightPanel.add(dinnerResultPanel);
+    bottomPanel.add(dinnerPanel);
+    bottomPanel.add(dinnerButtonPanel);
+    bottomPanel.add(dinnerResultPanel);
     
-    entirePanel.add(leftPanel);
-    entirePanel.add(rightPanel);
+    //border 
+    instructionPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    lunchPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    lunchButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    lunchResultPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    
+    dinnerPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    dinnerButtonPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    dinnerResultPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
+    
+    entirePanel.add(topPanel);
+    entirePanel.add(bottomPanel);
     
     add(instructionPanel);
     add(entirePanel);
@@ -182,8 +204,16 @@ public class JustForYouPanel extends JPanel{
     
     instructionLabel.setFont(titleFont);
     
-    
     //JButton font 
+    lunchButton.setFont(buttonFont);
+    dinnerButton.setFont(buttonFont);
+    
+    //Result font
+    JLabel [] results; 
+    results = new JLabel [] {lunchFirst, lunchSecond, lunchRec, dinnerFirst, dinnerSecond, dinnerRec};
+    for (int i = 0; i < results.length; i++){
+      results[i].setFont(textFont); 
+    }
     
     
   }
