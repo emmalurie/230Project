@@ -270,10 +270,10 @@ public class DiningHallSelectorTesting{
      System.out.println("Thursday Dinner:\n" + pom+"\n");
      
      pom = new DiningHall("Pomeroy");
-     pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch", 4);
+     pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch", 6);
      System.out.println("Friday Lunch:\n" +pom +"\n");
      pom = new DiningHall("Pomeroy");
-     pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "dinner", 4);
+     pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "dinner", 6);
      System.out.println("Friday Dinner:\n" + pom+"\n");
      
      pom = new DiningHall("Pomeroy");
@@ -282,7 +282,7 @@ public class DiningHallSelectorTesting{
      pom = new DiningHall("Lulu");
      pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "dinner", 7);
      System.out.println("Saturday Dinner:\n" + pom+"\n");
-     
+     /*
      System.out.println("Stone Davis Menu Scored");
      DiningHall stoned = new DiningHall("Stone Davis");
      stoned.initializeDiningHall("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "lunch", 1);
@@ -383,7 +383,7 @@ public class DiningHallSelectorTesting{
      tower = new DiningHall("Stone Davis");
      tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", "dinner", 7);
      System.out.println("Saturday Dinner:\n" + tower+"\n");
-     
+     */
      
      
   }
