@@ -8,7 +8,6 @@
  
  To do: 
  Improve readWellelseyFresh: Pom isn't totally working
- We should create a method that finds the top 3 DiningHalls based on scores
  We should create a testing method that allows us to manually put in the day of the week. -Done by Emma 
  */
 import java.util.Scanner;
@@ -22,8 +21,9 @@ import javafoundations.*;
 
 public class DiningHallSelector{
   DiningHall bates, lulu, pom, stoned, tower; 
-  PriorityQueue<DiningHall> rankings;
+  PriorityQueue<DiningHall> rankings; //rankings of the best dining halls
   
+  //constructor 
   public DiningHallSelector(){
     bates = new DiningHall("Bates");
     lulu = new DiningHall("Lulu");
@@ -34,7 +34,7 @@ public class DiningHallSelector{
     rankings = new PriorityQueue<DiningHall>();
   }
   
-
+//getters
   public DiningHall getBates(){
     return bates;
   }
@@ -56,7 +56,8 @@ public class DiningHallSelector{
     return tower;
   }
   
-  
+  /*initializeAll creates a menu and calculates the score for all five of the dining halls. 
+   * @param mealName is either "lunch" or "dinner" and represents the meal the user would like to find the best dining hall for*/
   public void initializeAll(String mealName){
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName);  
@@ -67,8 +68,8 @@ public class DiningHallSelector{
   
   
   //bugs: to fix weird spaces, home-style brunch
-  
-  
+  /**/
+ 
   public static LinkedList<String> readWellesleyFresh (String inFileName, String meal) {
     try {
       Scanner reader = new Scanner(new File(inFileName));

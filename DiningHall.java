@@ -160,25 +160,26 @@ public class DiningHall implements Comparable<DiningHall>{
     DiningHall stoned = new DiningHall("Stone Davis");
     DiningHall tower = new DiningHall("Tower");
   
-    bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "lunch");
+    bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "dinner");
     bates.calcScore();
     //System.out.println(bates);
+    
 
     
     
-    lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "lunch");
+    lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "dinner");
     lulu.calcScore();
     //System.out.println(lulu);
     
-    pom.createMenu("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch");
+    pom.createMenu("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "dinner");
     pom.calcScore();
     //System.out.println(pom);
     
-    stoned.createMenu("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "lunch");
+    stoned.createMenu("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "dinner");
     stoned.calcScore();
     //System.out.println(stoned);
     
-    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "lunch");
+    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "dinner");
     tower.calcScore();
     //System.out.println(tower);
 
