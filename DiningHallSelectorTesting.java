@@ -180,7 +180,7 @@ public class DiningHallSelectorTesting{
      bates = new DiningHall("Bates");
      bates.initializeDiningHall("menus/bates.txt", "data/Bates_data.tsv", "dinner", 7);
      System.out.println("Saturday Dinner:\n" + bates+"\n");
-     *//*
+     
      System.out.println("Lulu Menu Scored");
      DiningHall lulu = new DiningHall("Lulu");
      lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "lunch", 1);
@@ -231,7 +231,7 @@ public class DiningHallSelectorTesting{
      lulu = new DiningHall("Lulu");
      lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_data.tsv", "dinner", 7);
      System.out.println("Saturday Dinner:\n" + lulu+"\n");
-     *//*
+     
      System.out.println("Pom Menu Scored");
      DiningHall pom = new DiningHall("Pomeroy");
      pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "lunch", 1);
@@ -335,7 +335,7 @@ public class DiningHallSelectorTesting{
      
      
      System.out.println("Tower Menu Scored");
-     DiningHall stoned = new DiningHall("Tower");
+     DiningHall tower = new DiningHall("Tower");
      tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", "lunch", 1);
      System.out.println("Sunday Lunch:\n" +tower +"\n");
      tower = new DiningHall("Tower");
