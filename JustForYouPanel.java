@@ -6,7 +6,8 @@ import javax.swing.*;
 
 public class JustForYouPanel extends JPanel{
   private String meal;
-  private JPanel lunchPanel, dinnerPanel, entirePanel, instructionPanel;
+  private JPanel lunchPanel, dinnerPanel, entirePanel;
+  private JLabel instructionLabel;
   private JPanel lunchButtonPanel, dinnerButtonPanel, lunchResultPanel, dinnerResultPanel;
   private JCheckBox ldish1, ldish2, ldish3, ldish4, ldish5;
   private JCheckBox ddish1, ddish2, ddish3, ddish4, ddish5;
@@ -16,6 +17,7 @@ public class JustForYouPanel extends JPanel{
   
   public JustForYouPanel(){
     //setLayout(new BorderLayout());
+    setLayout (new BoxLayout (this, BoxLayout.Y_AXIS)); 
     
     Color lightBlue = new Color(135, 206, 250);
     Color lightPurple = new Color(216,191,216);
@@ -44,9 +46,9 @@ public class JustForYouPanel extends JPanel{
     dinnerPanel.setLayout (new GridLayout (5, 1));
     
     this.entirePanel = new JPanel();
-    entirePanel.setLayout (new GridLayout (7, 1));
+    entirePanel.setLayout (new GridLayout (3, 2));
       
-    this.instructionPanel = new JPanel();
+    this.instructionLabel = new JLabel("Talior Your Meal by Your Preferences!", JLabel.CENTER);
     
     lunchButton = new JButton("See My Lunch");
     dinnerButton = new JButton("See My Dinner");
@@ -64,17 +66,17 @@ public class JustForYouPanel extends JPanel{
 //    instructionsPanel = new JPanel();
 //    resultsPanel = new JPanel();
     
-    ldish1 = new JCheckBox (lunchSelector.getBates().getTop().getName());
-    ldish2 = new JCheckBox (lunchSelector.getLulu().getTop().getName());
-    ldish3 = new JCheckBox (lunchSelector.getPom().getTop().getName());
-    ldish4 = new JCheckBox (lunchSelector.getStoned().getTop().getName());
-    ldish5 = new JCheckBox (lunchSelector.getTower().getTop().getName());
+    ldish1 = new JCheckBox (lunchSelector.getBates().getTop().shortenName());
+    ldish2 = new JCheckBox (lunchSelector.getLulu().getTop().shortenName());
+    ldish3 = new JCheckBox (lunchSelector.getPom().getTop().shortenName());
+    ldish4 = new JCheckBox (lunchSelector.getStoned().getTop().shortenName());
+    ldish5 = new JCheckBox (lunchSelector.getTower().getTop().shortenName());
     
-    ddish1 = new JCheckBox (dinnerSelector.getBates().getTop().getName());
-    ddish2 = new JCheckBox (dinnerSelector.getLulu().getTop().getName());
-    ddish3 = new JCheckBox (dinnerSelector.getPom().getTop().getName());
-    ddish4 = new JCheckBox (dinnerSelector.getStoned().getTop().getName());
-    ddish5 = new JCheckBox (dinnerSelector.getTower().getTop().getName());
+    ddish1 = new JCheckBox (dinnerSelector.getBates().getTop().shortenName());
+    ddish2 = new JCheckBox (dinnerSelector.getLulu().getTop().shortenName());
+    ddish3 = new JCheckBox (dinnerSelector.getPom().getTop().shortenName());
+    ddish4 = new JCheckBox (dinnerSelector.getStoned().getTop().shortenName());
+    ddish5 = new JCheckBox (dinnerSelector.getTower().getTop().shortenName());
     
     lunchPanel.add(ldish1);
     lunchPanel.add(ldish2);
@@ -110,14 +112,15 @@ public class JustForYouPanel extends JPanel{
     dinnerResultPanel.add(dinnerSecond);
     
     
-    entirePanel.add(instructionPanel);
+    //entirePanel.add(instructionLabel);
     entirePanel.add(lunchPanel);
-    entirePanel.add(lunchButtonPanel);
-    entirePanel.add(lunchResultPanel);
     entirePanel.add(dinnerPanel);
+    entirePanel.add(lunchButtonPanel);
     entirePanel.add(dinnerButtonPanel);
+    entirePanel.add(lunchResultPanel);
     entirePanel.add(dinnerResultPanel);
     
+    add(instructionLabel);
     add(entirePanel);
     
   }
