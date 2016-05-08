@@ -1,7 +1,11 @@
 /*JustForYouPanel.java
  *Last updated: 7 May 2016
  *Authors: Emma Lurie and Dorothy Sun
- *About: 
+ *About: JustForYouPanel contains both lunch panel and dinner panel. In each panel, it contains
+ * checkboxes of the main dish from every dinning hall for users to check the ones that they like.
+ * For the dish that are checked by the user, the average score of the dinning hall that serves
+ * the dish increase by 1 in calculating the top two dinning halls. The program will genenrate
+ * two best dinning halls for each meal.
  */
 
 

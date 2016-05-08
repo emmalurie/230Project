@@ -1,10 +1,10 @@
 /*SelectorGUI.java
  *Last updated: 7 May 2016
- *Authors: Emma Lurie
+ *Author: Emma Lurie
  *About: TodaysChoice contains both lunch panel and dinner panel for user to click on the 
  * lunch/ dinner button to see the corresponding results generated through the program. The 
  * results are calculated based on comparing today's menu to the hashtable we have in the data
- * base. 
+ * base. The program will genenrate two best dinning halls for each meal. 
  */
 
 
