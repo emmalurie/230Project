@@ -72,6 +72,14 @@ public class DiningHallSelector{
     tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName);    
   }
   
+  /*testing method for initializeAll*/
+  public void initializeAll(String mealName, int day){
+   bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName, day);
+    lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName, day);  
+    pom.initializeDiningHall("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", mealName, day);    
+    stoned.initializeDiningHall("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", mealName, day);    
+    tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName, day);  
+}
   
   //bugs: to fix weird spaces, home-style brunch
   
@@ -206,7 +214,7 @@ public class DiningHallSelector{
     //types of dishes array
     String[] startingPhrases = {"Home-style Lunch-", "Home-Style Lunch-", "Fusion Lunch-", "Global Grill Lunch-", "Home-style Brunch-", 
       "Global Grill Brunch-", "Pure, Lunch & Dinner-", "Pizza, Lunch & Dinner-","Pizza, Brunch & Dinner-","Daily Grill Brunch-","Daily Grill Lunch-", "Daily Grill Lunch-",
-      "Home-style Dinner-","Pasta Station Lunch-","Pasta Station Lunch-", "Pasta Station Lunch Ð", "Pasta Station Brunch", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner -", "Dinner-"};
+      "Home-style Dinner-","Pasta Station Lunch-","Pasta Station Lunch-", "Pasta Station Lunch Ð", "Pasta Station Brunch-", "Lunch Grill-", "Dinner Grill-", "Brunch-", "Lunch-", "Dinner -", "Dinner-"};
     int size; 
     for (int i = 0; i < startingPhrases.length; i++){
       if (line.contains(startingPhrases[i])){
@@ -228,6 +236,8 @@ public class DiningHallSelector{
     result += "Pomeroy \n" + pom+ "\n";
     result += "Stone Davis \n" + stoned + "\n";
     result += "Tower \n" + tower + "\n";
+    result += "Top Dining Hall: " +  getTopTwoDiningHalls()[0].getName()+ " " + getTopTwoDiningHalls()[0].getAverageScore() + "\n";
+    result += "Second Best Choice: " + getTopTwoDiningHalls()[1].getName() + " " +getTopTwoDiningHalls()[1].getAverageScore() + "\n";
     
     return result;   
   }
@@ -295,7 +305,7 @@ public class DiningHallSelector{
   }
    
    
-   /*Check whether today is weekend to avoid NullPointerException because StoneD does not open at weekends.*/
+   /*Check whether today is weekend to avoid NullPointerException because StoneD is not open on weekends.*/
    public boolean isWeekend(){
     String d = getStartDow();
     return ( d.equals("Saturday") || d.equals("Sunday")); 

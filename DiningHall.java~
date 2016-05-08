@@ -1,11 +1,13 @@
 /*DiningHall.java
- *Last updated: 3 May 2016
+ *Last updated: 7 May 2016
  *Authors: Emma Lurie and Dorothy Sun
  *About: Each dining hall is reprented by a DiningHall object. DiningHall objects have a name (ie "Tower") an averageScore,
  *and a menu (a PriorityQueue<Dish>) that holds Dish objects that represent what is being
  *at a given meal at that dining hall. Besides the three instance variables mentioned previously the class contains getters, a createMenu() method that adds all
  *Dishes that appear in the hashtable to the menu. There is also a toString() method.
  */
+
+/* All the methods are commented */
 
 import javafoundations.*;
 import java.util.Hashtable;
@@ -40,11 +42,10 @@ public class DiningHall implements Comparable<DiningHall>{
   public void setAverageScore(double score){
     averageScore = score;
   }
-  
-  //adds a dish to 
 
   /*helper method that adds a Dish to the menu 
-   * @param d is a dish to be added to the PriorityQueue<Dish> menu*/
+   * @param d is a dish to be added to the PriorityQueue<Dish> menu
+   */
   private void addToMenu(Dish d){
     try {
       menu.enqueue(d);
@@ -54,11 +55,11 @@ public class DiningHall implements Comparable<DiningHall>{
   }
   
   /*copies the menu 
-   * @return PriorityQueue<Dish> copy of the menu*/
+   * @return PriorityQueue<Dish> copy of the menu
+   */
   private PriorityQueue<Dish> copyMenu(){
     PriorityQueue<Dish> temp = new PriorityQueue<Dish>(); 
     PriorityQueue<Dish> copy = new PriorityQueue<Dish>();
-    
     
     while(!menu.isEmpty()){
       Dish element = menu.dequeue();
@@ -75,7 +76,8 @@ public class DiningHall implements Comparable<DiningHall>{
    
    @param todaysMenufile is the .txt file of the Wellelsey Fresh menu, a parameter for readWellesleyFresh()
    @param dataFile is the .tsv file that holds all of the recent Wellesley Fresh menu items and their scores, a parameter for createHahashTable
-   @param mealName is either "lunch" or "dinner", a parameter for readWellesleyFresh()*/
+   @param mealName is either "lunch" or "dinner", a parameter for readWellesleyFresh()
+   */
   public void createMenu(String todaysMenuFile, String dataFile, String mealName){
     
     Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
@@ -101,8 +103,37 @@ public class DiningHall implements Comparable<DiningHall>{
   }
   
   
+  /*testing method for createMenu
+   */
+  public void createMenu(String todaysMenuFile, String dataFile, String mealName, int day){
+    
+    Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
+    LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName,day); 
+    
+    //System.out.println(optionsToday);
+    
+    while(!optionsToday.isEmpty()){
+      
+      String dishName = optionsToday.remove();
+      
+      if(data.containsKey(dishName)){
+        this.addToMenu(data.get(dishName));
+      }else {
+        if (dishName.length() > 30){
+        System.out.println(dishName.substring(0,30) + "... could not addded to menu ");
+        } else {
+          System.out.println(dishName + "... could not addded to menu ");
+        }
+      }
+    }
+    
+  }
   
-  /*calculates the score of the dining hall by calculating the average score of the all of the Dish's on the menu*/
+  
+  
+  /*calculates the score of the dining hall by calculating the average score of the all of the Dish's on the menu
+   @ return double the score being calculated 
+   */
   public double calcScore(){
     PriorityQueue<Dish> menuClone = copyMenu(); //clone of menu
     double score = 0.0;
@@ -126,11 +157,11 @@ public class DiningHall implements Comparable<DiningHall>{
     }
   }
   
-  /*toString method to print out name and score*/
+  /*toString method to print out name of dishes and averageScore at a given meal*/
   public String toString(){
     String result = ""; 
     result += menu;
-    result += "\n" + averageScore;
+    result += "\nAVERAGE SCORE: " + averageScore +"\n";
     
     return result; 
   }
@@ -140,7 +171,8 @@ public class DiningHall implements Comparable<DiningHall>{
     return (int)(this.averageScore - d.averageScore); 
   }
   
-  /*@return the highest rated dish on the menu*/
+  /* Return the top dish from the menu
+   * @return Dish the highest rated dish on the menu*/
   public Dish getTop(){
     try{
     return menu.first(); 
@@ -152,15 +184,26 @@ public class DiningHall implements Comparable<DiningHall>{
   
   /*creates the menu for a DiningHall and the calculates the DiningHall's average score. This cannot be done in the constructor because the meal "lunch"
    * or "dinner" must be known"  
-   * 
+   
    @param todaysMenufile is the .txt file of the Wellelsey Fresh menu, a parameter for createMenu()
    @param dataFile is the .tsv file that holds all of the recent Wellesley Fresh menu items and their scores, a parameter for createMenu()
-   @param mealName is either "lunch" or "dinner", a parameter for createMenu()*/
+   @param mealName is either "lunch" or "dinner", a parameter for createMenu()
+   */
   public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName){
     createMenu(todaysMenuFile, dataFile, mealName);
     calcScore();
   }
   
+  
+  /*testing version*/
+    public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName, int day){
+    createMenu(todaysMenuFile, dataFile, mealName, day);
+    calcScore();
+  }
+  
+    
+    
+    
   public static void main(String[] args){
     
     DiningHall bates = new DiningHall("Bates");

@@ -51,7 +51,9 @@ public class Dish implements Comparable<Dish>{
   /*If a Dish's score is greater than another Dish's, a number greater than 1 is returned, 
    * if they have the same score then 0 is returend, and if a Dish's score is less another Dish's, a number less than 0 is returned*/
   public int compareTo(Dish other){
-   return (int)(this.score - other.score); 
+    if (this.score > other.score)  return 1;  
+    if (this.score == other.score) return 0; 
+    return -1;
     }
   
   
