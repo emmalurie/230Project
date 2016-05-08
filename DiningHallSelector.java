@@ -231,11 +231,11 @@ public class DiningHallSelector{
   public String toString(){
     //new lines aren't really working
     String result = "";
-    result += "Bates \n" + bates + "\n"; 
-    result += "Lulu \n" + lulu+ "\n";
-    result += "Pomeroy \n" + pom+ "\n";
-    result += "Stone Davis \n" + stoned + "\n";
-    result += "Tower \n" + tower + "\n";
+    result += bates + "\n"; 
+    result +=  lulu+ "\n";
+    result +=  pom+ "\n";
+    result +=  stoned + "\n";
+    result += tower + "\n";
     result += "Top Dining Hall: " +  getTopTwoDiningHalls()[0].getName()+ " " + getTopTwoDiningHalls()[0].getAverageScore() + "\n";
     result += "Second Best Choice: " + getTopTwoDiningHalls()[1].getName() + " " +getTopTwoDiningHalls()[1].getAverageScore() + "\n";
     

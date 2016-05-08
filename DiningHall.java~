@@ -39,6 +39,9 @@ public class DiningHall implements Comparable<DiningHall>{
     return averageScore;  
   }
   
+  /*this method is useful for the JustForYou Panel because 
+   * it allows us to change the score of the dining hall 
+   * based on the user's preferences*/
   public void setAverageScore(double score){
     averageScore = score;
   }
@@ -168,7 +171,9 @@ public class DiningHall implements Comparable<DiningHall>{
   
   /*compareTo method compares the averageScore of dininghalls*/
   public int compareTo (DiningHall d){
-    return (int)(this.averageScore - d.averageScore); 
+    if (this.averageScore > d.averageScore)  return 1;  
+    if (this.averageScore == d.averageScore) return 0; 
+    return -1;
   }
   
   /* Return the top dish from the menu
@@ -199,49 +204,5 @@ public class DiningHall implements Comparable<DiningHall>{
     public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName, int day){
     createMenu(todaysMenuFile, dataFile, mealName, day);
     calcScore();
-  }
-  
-    
-    
-    
-  public static void main(String[] args){
-    
-    DiningHall bates = new DiningHall("Bates");
-    DiningHall lulu = new DiningHall("Lulu");
-    DiningHall pom  = new DiningHall("Pomeroy");
-    DiningHall stoned = new DiningHall("Stone Davis");
-    DiningHall tower = new DiningHall("Tower");
-  
-    bates.createMenu("menus/bates.txt", "data/Bates_data.tsv", "dinner");
-    bates.calcScore();
-    //System.out.println(bates);
-    
-
-    
-    
-    lulu.createMenu("menus/bplc.txt", "data/Lulu_Data.tsv", "dinner");
-    lulu.calcScore();
-    //System.out.println(lulu);
-    
-    pom.createMenu("menus/pomeroy.txt", "data/Pomeroy_Data.tsv", "dinner");
-    pom.calcScore();
-    //System.out.println(pom);
-    
-    stoned.createMenu("menus/stonedavis.txt", "data/StoneDavis_Data.tsv", "dinner");
-    stoned.calcScore();
-    //System.out.println(stoned);
-    
-    tower.createMenu("menus/tower.txt", "data/Tower_Data.tsv", "dinner");
-    tower.calcScore();
-    //System.out.println(tower);
-
-    
-    /*getTop Testing()*/
-
-    System.out.println("Bates Top: " + bates.getTop());
-   // System.out.println("Lulu Top: " + lulu.getTop());
-    
-  }
-  
-  
+    }
 }
