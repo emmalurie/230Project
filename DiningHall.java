@@ -72,6 +72,18 @@ public class DiningHall implements Comparable<DiningHall>{
     menu = temp; 
     return copy; 
   }
+    
+  /* Return the highest rated dish from the menu
+   * @return Dish the highest rated dish on the menu*/
+  public Dish getTop(){
+    try{
+    return menu.first(); 
+    }catch(NullPointerException ex){
+      System.out.println("There is no food here!!!");
+      return null; 
+    }
+  }
+  
   
   /*creates a menu of Dish objects by comparing the items in today's menu to keys in the hashtable. 
    * If the hashtable contains the name of the dish, the value, is a Dish object representing that meal option.
@@ -81,7 +93,7 @@ public class DiningHall implements Comparable<DiningHall>{
    @param dataFile is the .tsv file that holds all of the recent Wellesley Fresh menu items and their scores, a parameter for createHahashTable
    @param mealName is either "lunch" or "dinner", a parameter for readWellesleyFresh()
    */
-  public void createMenu(String todaysMenuFile, String dataFile, String mealName){
+  private void createMenu(String todaysMenuFile, String dataFile, String mealName){
     
     Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
     LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName); 
@@ -105,39 +117,10 @@ public class DiningHall implements Comparable<DiningHall>{
     
   }
   
-  
-  /*testing method for createMenu
+  /*calculates the score of the dining hall by calculating the average score of the all of the Dish's scores on the menu
+   @return double the score being calculated 
    */
-  public void createMenu(String todaysMenuFile, String dataFile, String mealName, int day){
-    
-    Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
-    LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName,day); 
-    
-    //System.out.println(optionsToday);
-    
-    while(!optionsToday.isEmpty()){
-      
-      String dishName = optionsToday.remove();
-      
-      if(data.containsKey(dishName)){
-        this.addToMenu(data.get(dishName));
-      }else {
-        if (dishName.length() > 30){
-        System.out.println(dishName.substring(0,30) + "... could not addded to menu ");
-        } else {
-          System.out.println(dishName + "... could not addded to menu ");
-        }
-      }
-    }
-    
-  }
-  
-  
-  
-  /*calculates the score of the dining hall by calculating the average score of the all of the Dish's on the menu
-   @ return double the score being calculated 
-   */
-  public double calcScore(){
+  private double calcScore(){
     PriorityQueue<Dish> menuClone = copyMenu(); //clone of menu
     double score = 0.0;
     try{
@@ -176,18 +159,7 @@ public class DiningHall implements Comparable<DiningHall>{
     if (this.averageScore == d.averageScore) return 0; 
     return -1;
   }
-  
-  /* Return the top dish from the menu
-   * @return Dish the highest rated dish on the menu*/
-  public Dish getTop(){
-    try{
-    return menu.first(); 
-    }catch(NullPointerException ex){
-      System.out.println("There is no food here!!!");
-      return null; 
-    }
-  }
-  
+
   /*creates the menu for a DiningHall and the calculates the DiningHall's average score. This cannot be done in the constructor because the meal "lunch"
    * or "dinner" must be known"  
    
@@ -201,7 +173,32 @@ public class DiningHall implements Comparable<DiningHall>{
   }
   
   
-  /*testing version*/
+  /*testing version for createMenu-overloaded version with day of the week parameter*/
+  public void createMenu(String todaysMenuFile, String dataFile, String mealName, int day){
+    
+    Hashtable<String, Dish> data = DiningHallSelector.createHashtable(dataFile); 
+    LinkedList<String> optionsToday = DiningHallSelector.readWellesleyFresh(todaysMenuFile, mealName,day); 
+    
+    //System.out.println(optionsToday);
+    
+    while(!optionsToday.isEmpty()){
+      
+      String dishName = optionsToday.remove();
+      
+      if(data.containsKey(dishName)){
+        this.addToMenu(data.get(dishName));
+      }else {
+        if (dishName.length() > 30){
+        System.out.println(dishName.substring(0,30) + "... could not addded to menu ");
+        } else {
+          System.out.println(dishName + "... could not addded to menu ");
+        }
+      }
+    }
+    
+  }
+  
+  /*testing version for initializeDiningHall overloaded version with day of the week parameter*/
     public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName, int day){
     createMenu(todaysMenuFile, dataFile, mealName, day);
     calcScore();

@@ -22,7 +22,6 @@ public class SelectorGUI{
     frame.getContentPane().add(tp); //add tabbed pane to frame
     frame.setPreferredSize(new Dimension(1450,800)); //set size
     frame.pack(); 
-    frame.setResizable(false); //not resizable
     frame.setVisible(true); 
   }
   

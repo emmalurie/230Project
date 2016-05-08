@@ -43,7 +43,6 @@ public class DiningHallSelector{
     return bates;
   }
   
-  
   public DiningHall getLulu(){
     return lulu;
   }
@@ -62,7 +61,7 @@ public class DiningHallSelector{
   
   
   /*initializeAll creates a menu and calculates the score for all five of the dining halls. 
-   * @param mealName is either "lunch" or "dinner" and represents the meal the user would like to find the best dining hall for
+   * @param mealName is either "lunch" or "dinner" and represents the meal the user would like to find the best dining hall for that meal
    */
   public void initializeAll(String mealName){
     bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName);
@@ -72,7 +71,9 @@ public class DiningHallSelector{
     tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName);    
   }
   
-  /*testing method for initializeAll*/
+  /*testing method for initializeAll- adds day of the week parameter
+   *  @param mealName is either "lunch" or "dinner" and represents the meal the user would like to find the best dining hall for that meal
+      @param day is an int 1-7 (1 Sunday) representing the day of the week*/
   public void initializeAll(String mealName, int day){
    bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName, day);
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName, day);  
@@ -81,11 +82,10 @@ public class DiningHallSelector{
     tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName, day);  
 }
   
-  //bugs: to fix weird spaces, home-style brunch
   
   /* Read the weekly menu from the given file for a given meal and add the result to a LinkedList
- 
-   * @param inFileName, meal 
+   * @param inFileName the name of the text file that contains the weekly menu for that dining hall
+   * @param meal lunch or dinner
    * @return LinkedList<String> a LinkedList of strings read from the website
    */
   public static LinkedList<String> readWellesleyFresh (String inFileName, String meal) {
@@ -131,7 +131,7 @@ public class DiningHallSelector{
   
 
   /*creates a hashtable of all of the dishes on record being served at a specific dining hall
-   * @param inFileName a String that denotes a file of meal data 
+   * @param inFileName a String that denotes a tsv file of student reviewed dishes and their scores  
    * @return Hashtable<String,Dish> that are being created
    */
   public static Hashtable<String,Dish> createHashtable(String inFileName){
@@ -169,7 +169,7 @@ public class DiningHallSelector{
   
   
   
-  /*uses java Calendar API return an int representing the days of the week*/ 
+  /*uses java Calendar API return an int representing the days of the week (1 Sunday - 7 Saturday)*/ 
   private static int getDOW(){
     Calendar c = Calendar.getInstance();
     int i = c.get(Calendar.DAY_OF_WEEK);
@@ -178,7 +178,7 @@ public class DiningHallSelector{
   }
   
   
-  /*returns the day of the week */
+  /*returns the day of the week in String form (1 becomes Sunday*/
   private static String getStartDow(){
     String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", "Saturday"};
     int date = getDOW();   
@@ -186,26 +186,13 @@ public class DiningHallSelector{
   }
   
   
-  /*returns tomorrow's day of the week */
+  /*returns tomorrow's day of the week in String form*/
   private static String getEndDow(){
     String [] dow = {"Saturday","Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", };
     int date = getDOW() + 1 ;   
     return dow[date % 7]; 
   }
   
-  /*this helper method is the same as getStartDow(), but the date is a parameter. This method makes it easier for testing, 
-   * because we can test any day of the week at any time */
-  public static String getStartDow(int day){
-    String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", "Saturday"};
-    return dow[day -1];
-  }
-  
-  /*this helper method is the same as getEndDow(), but the date is a parameter. This method makes it easier for testing, 
-   * because we can test any day of the week at any time */
-  public static String getEndDow(int day){
-    String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday","Saturday" };
-    return dow[day % 7]; 
-  }
   
   
   /*this helper method is 
@@ -263,8 +250,28 @@ public class DiningHallSelector{
     return topTwo;
   }
   
+    /*Check whether today is weekend to avoid NullPointerException because StoneD is not open on weekends.*/
+   public boolean isWeekend(){
+    String d = getStartDow();
+    return ( d.equals("Saturday") || d.equals("Sunday")); 
+   }
   
-  /*testing method*/
+  /*this helper/ testing method is the same as getStartDow(), but the date in int formis a parameter. This method makes it easier for testing, 
+   * because we can test any day of the week at any time */
+  public static String getStartDow(int day){
+    String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday", "Saturday"};
+    return dow[day -1];
+  }
+  
+  /*this helper/testing method is the same as getEndDow(), but the date in int form is a parameter. This method makes it easier for testing, 
+   * because we can test any day of the week at any time */
+  public static String getEndDow(int day){
+    String [] dow = {"Sunday","Monday", "Tuesday", "Wednesday" , "Thursday", "Friday","Saturday" };
+    return dow[day % 7]; 
+  }
+  
+  
+  /*testing method overloading readWellesleyFresh with a day of the week parameter for easy testing*/
    public static LinkedList<String> readWellesleyFresh (String inFileName, String meal, int day) {
     try {
       Scanner reader = new Scanner(new File(inFileName));
@@ -304,12 +311,6 @@ public class DiningHallSelector{
     }
   }
    
-   
-   /*Check whether today is weekend to avoid NullPointerException because StoneD is not open on weekends.*/
-   public boolean isWeekend(){
-    String d = getStartDow();
-    return ( d.equals("Saturday") || d.equals("Sunday")); 
-   }
  
   
   public static void main(String[] args){

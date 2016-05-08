@@ -15,6 +15,7 @@ public class SelectorGUI{
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     JTabbedPane tp = new JTabbedPane(); 
   
+    //three tabs 
     tp.addTab("Instructions", new InstructionsPanel()); 
     tp.addTab("Today’s Choice", new TodaysChoice()); 
     tp.addTab("Just for You", new JustForYouPanel()); 

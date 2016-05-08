@@ -163,7 +163,8 @@ public class DiningHall implements Comparable<DiningHall>{
   /*toString method to print out name of dishes and averageScore at a given meal*/
   public String toString(){
     String result = ""; 
-    result += menu;
+    result += "DINING HALL NAME: " + name + "\n"; 
+    result += "DINING HALL MENU: " + menu;
     result += "\nAVERAGE SCORE: " + averageScore +"\n";
     
     return result; 
