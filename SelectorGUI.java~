@@ -1,6 +1,6 @@
 /*SelectorGUI.java
  *Last updated: 7 May 2016
- *Authors: Emma Lurie
+ *Author: Emma Lurie
  *About: Set up the SelectorGUI that connects three panels: InstructionsPanel, TodaysChoice, JustForYouPanel
  * Set the dimension. 
  */
@@ -11,7 +11,7 @@ import java.awt.*;
 public class SelectorGUI{
   
   public static void main(String[] args){
-    JFrame frame = new JFrame("Dining Hall Selector"); //new frame
+    JFrame frame = new JFrame("Palate Tailor"); //new frame
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     JTabbedPane tp = new JTabbedPane(); 
   
@@ -20,9 +20,9 @@ public class SelectorGUI{
     tp.addTab("Just for You", new JustForYouPanel()); 
     
     frame.getContentPane().add(tp); //add tabbed pane to frame
-    frame.setPreferredSize(new Dimension(1500,1500)); //set size
+    frame.setPreferredSize(new Dimension(1450,800)); //set size
     frame.pack(); 
-    //frame.setResizable(false); //not resizable
+    frame.setResizable(false); //not resizable
     frame.setVisible(true); 
   }
   

@@ -31,12 +31,12 @@ public class InstructionsPanel extends JPanel{
     authorsNames = new JLabel("by Emma Lurie and Dorothy Sun");
     intro = new JLabel("Welcome to Palate Tailor!");
     l1 = new JLabel("If you would like to see our general recommendations of the best dining halls to eat at today," + 
-                    " navigate to the “Today’s Choice” tab.");
-    l2 = new JLabel("If you would like to see our individualized recommendation of the best dining halls to eat at today based on your" + 
-                    "palate, navigate to the “Just For You” tab.");
-    l3  = new JLabel("Once you have selected an option, to see our recommendation for lunch, click on the “Lunch” button.");
+                    " navigate to the 'Today’s Choice' tab.");
+    l2 = new JLabel("If you would like to see our individualized recommendation of the best dining halls to eat at today based on your " + 
+                    "palate, navigate to the 'Just For You' tab.");
+    l3  = new JLabel("Once you have selected either the 'Today’s Choice' tab or the 'Just For You' tab,");
                        
-    l4 =  new JLabel("To see our recommendation for dinner, click on the “Dinner” button.");
+    l4 =  new JLabel("click the 'Lunch' button to see our recommendation for lunch, or the “Dinner” button to see our recommendation for dinner.");
     thanks = new JLabel("Thanks for trying out our program.");
     best = new JLabel("Best,");
     signed = new JLabel("Emma Lurie and Dorothy Sun");

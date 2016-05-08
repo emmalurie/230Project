@@ -14,7 +14,7 @@ import java.awt.Image;
 public class InstructionsPanel extends JPanel{
   JPanel title, pics, instructions, picsAndInstructions;  
   JLabel titleText, subtitle, authorsNames; 
-  JLabel bates, lulu, pom, stoned, tower, wfresh, intro, l1, l2,l3, thanks, best, signed;//add open hours texts 
+  JLabel bates, lulu, pom, stoned, tower, wfresh, intro, l1, l2,l3, l4,thanks, best, signed;//add open hours texts 
   
   
   public InstructionsPanel() {  
@@ -31,11 +31,12 @@ public class InstructionsPanel extends JPanel{
     authorsNames = new JLabel("by Emma Lurie and Dorothy Sun");
     intro = new JLabel("Welcome to Palate Tailor!");
     l1 = new JLabel("If you would like to see our general recommendations of the best dining halls to eat at today," + 
-                    "navigate to the “Today’s Choice” tab.");
+                    " navigate to the “Today’s Choice” tab.");
     l2 = new JLabel("If you would like to see our individualized recommendation of the best dining halls to eat at today based on your" + 
                     "palate, navigate to the “Just For You” tab.");
-    l3  = new JLabel("To see our recommendation for lunch, click on the “Lunch” button." + 
-                     "To see our recommendation for dinner, click on the “Dinner” button.");
+    l3  = new JLabel("Once you have selected an option, to see our recommendation for lunch, click on the “Lunch” button.");
+                       
+    l4 =  new JLabel("To see our recommendation for dinner, click on the “Dinner” button.");
     thanks = new JLabel("Thanks for trying out our program.");
     best = new JLabel("Best,");
     signed = new JLabel("Emma Lurie and Dorothy Sun");
@@ -68,6 +69,7 @@ public class InstructionsPanel extends JPanel{
     l1.setFont(smallText);
     l2.setFont(smallText);
     l3.setFont(smallText);
+    l4.setFont(smallText);
     thanks.setFont(smallText);
     best.setFont(smallText);
     signed.setFont(textFont);
@@ -81,7 +83,7 @@ public class InstructionsPanel extends JPanel{
     setLayout(new BorderLayout());
     title.setLayout(new GridLayout(3,1));
     pics.setLayout(new GridLayout(1,6));
-    instructions.setLayout(new GridLayout(7,1));
+    instructions.setLayout(new GridLayout(8,1));
     picsAndInstructions.setLayout(new BorderLayout());
     
     //color    
@@ -108,6 +110,7 @@ public class InstructionsPanel extends JPanel{
     instructions.add(l1);
     instructions.add(l2);
     instructions.add(l3);
+    instructions.add(l4);
     instructions.add(thanks);
     instructions.add(best);
     instructions.add(signed);
