@@ -1,8 +1,8 @@
 /*SelectorGUI.java
  *Last updated: 7 May 2016
  *Author: Emma Lurie
- *About: Set up the SelectorGUI that connects three panels: InstructionsPanel, TodaysChoice, JustForYouPanel
- * Set the dimension. 
+ *About: Driver class that establishes JFrame with 3 Tabbed Panels: 
+ * InstructionsPanel, TodaysChoice, JustForYouPanel. 
  */
 
 import javax.swing.*; 

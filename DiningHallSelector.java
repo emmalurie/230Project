@@ -72,7 +72,11 @@ public class DiningHallSelector{
     tower.initializeDiningHall("menus/tower.txt", "data/Tower_Data.tsv", mealName);    
   }
   
-  /*testing method for initializeAll*/
+  /*testing method for initializeAll
+   * the same header as the previous method but an extra paramter of "day" to test on specific date
+   * 
+   * @param day input a date that is not "today" so we could test the program on any given date
+   */
   public void initializeAll(String mealName, int day){
    bates.initializeDiningHall("menus/bates.txt", "data/Bates_Data.tsv", mealName, day);
     lulu.initializeDiningHall("menus/bplc.txt", "data/Lulu_Data.tsv", mealName, day);  
@@ -264,7 +268,11 @@ public class DiningHallSelector{
   }
   
   
-  /*testing method*/
+  /*testing method
+   * the same header as the previous method but an extra paramter of "day" to test on specific date
+   * 
+   * @param day input a date that is not "today" so we could test the program on any given date
+   */
    public static LinkedList<String> readWellesleyFresh (String inFileName, String meal, int day) {
     try {
       Scanner reader = new Scanner(new File(inFileName));

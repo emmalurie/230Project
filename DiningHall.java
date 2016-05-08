@@ -107,6 +107,9 @@ public class DiningHall implements Comparable<DiningHall>{
   
   
   /*testing method for createMenu
+   * the same header as the previous method but an extra paramter of "day" to test on any date
+   * 
+   * @param day input a date that is not "today" so we could test the program on any given date
    */
   public void createMenu(String todaysMenuFile, String dataFile, String mealName, int day){
     
@@ -201,7 +204,11 @@ public class DiningHall implements Comparable<DiningHall>{
   }
   
   
-  /*testing version*/
+  /*testing version
+   * the same header as the previous method but an extra paramter of "day" to test on any date
+   * 
+   * @param day input a date that is not "today" so we could test the program on any given date
+   */
     public void initializeDiningHall(String todaysMenuFile, String dataFile, String mealName, int day){
     createMenu(todaysMenuFile, dataFile, mealName, day);
     calcScore();

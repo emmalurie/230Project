@@ -1,6 +1,6 @@
 /*SelectorGUI.java
  *Last updated: 7 May 2016
- *Authors: Emma Lurie
+ *Author: Emma Lurie
  *About: Set up the SelectorGUI that connects three panels: InstructionsPanel, TodaysChoice, JustForYouPanel
  * Set the dimension. 
  */
