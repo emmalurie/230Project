@@ -157,12 +157,12 @@ public class TodaysChoice extends JPanel{
       
       if (meal.equals("lunch")){
         lunchFirst.setText("The best dining hall for lunch today is " + topChoice + "!!!"); 
-        lunchRec.setText("At " + topChoice + ", we recommend you try " + topTwo[0].getTop().shortenName()+ ")");
+        lunchRec.setText("At " + topChoice + ", we recommend you try " + topTwo[0].getTop().shortenName());
         lunchSecond.setText("If you can't make it to " + topChoice +", another great choice is " + topTwo[1].getName()+"!"); 
 
       }else {
         dinnerFirst.setText("The best dining hall for dinner today is " + topChoice + "!!!"); 
-        dinnerRec.setText("(At " + topChoice + ", we recommend you try " + topTwo[0].getTop().shortenName()+ ")");
+        dinnerRec.setText("At " + topChoice + ", we recommend you try " + topTwo[0].getTop().shortenName());
         dinnerSecond.setText("If you can't make it to " + topChoice +", another great choice is " + topTwo[1].getName() +"!"); 
 
       

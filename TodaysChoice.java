@@ -32,8 +32,8 @@ public class TodaysChoice extends JPanel{
     dinnerPanel = new JPanel();
     
     //buttons 
-    lunchButton = new JButton("Lunch");
-    dinnerButton = new JButton("Dinner");
+    lunchButton = new JButton("See My Lunch");
+    dinnerButton = new JButton("See My Dinner");
     
     //listener 
     ButtonListener listener = new ButtonListener();

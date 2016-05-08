@@ -1,25 +1,30 @@
+/*DiningHallSelectorTesting.java
+ *7 May 2016
+ *by Emma Lurie
+ *Tests all (important/slightly difficult) methods used in the program */
+
 public class DiningHallSelectorTesting{
   
   public static void main (String[] args){
     /*Dish class testing*/
-    /*
-     System.out.println("Dish class Testing:\n");
-     Dish a = new Dish("Mushroom, Spinach and Goat Cheese Frittata (V), and Vidalia Onion and Sweet Potato Hash (VE)");
-     a.setScore(6);
-     System.out.println("Dish a's name is Mushroom, Spinach and Goat Cheese Frittata (V), and Vidalia Onion and Sweet Potato Hash (VE) and I set the score in setScore to 6"); 
-     System.out.println("toString(): \n"+ a);
-     
-     Dish b = new Dish ("Loaded Baked Potato Soup (V)", 7);
-     System.out.println("Dish b" + " new Dish (Loaded Baked Potato Soup (V), 7)");
-     System.out.println("toString(): \n" + b);
-     
-     System.out.println("Test shortenName(): it should only shorten Dish a's name not Dish b");
-     System.out.println("Dish a: " + a.shortenName());
-     System.out.println("Dish b: " + b.shortenName() +"\n");
-     
-     System.out.println("compareTo() a to b: " + a.compareTo(b));
-     System.out.println("compareTo() b to a: " + b.compareTo(a));
-     */
+    
+    System.out.println("Dish class Testing:\n");
+    Dish a = new Dish("Mushroom, Spinach and Goat Cheese Frittata (V), and Vidalia Onion and Sweet Potato Hash (VE)");
+    a.setScore(6);
+    System.out.println("Dish a's name is Mushroom, Spinach and Goat Cheese Frittata (V), and Vidalia Onion and Sweet Potato Hash (VE) and I set the score in setScore to 6"); 
+    System.out.println("toString(): \n"+ a);
+    
+    Dish b = new Dish ("Loaded Baked Potato Soup (V)", 7);
+    System.out.println("Dish b" + " new Dish (Loaded Baked Potato Soup (V), 7)");
+    System.out.println("toString(): \n" + b);
+    
+    System.out.println("Test shortenName(): it should only shorten Dish a's name not Dish b");
+    System.out.println("Dish a: " + a.shortenName());
+    System.out.println("Dish b: " + b.shortenName() +"\n");
+    
+    System.out.println("compareTo() a to b: " + a.compareTo(b));
+    System.out.println("compareTo() b to a: " + b.compareTo(a));
+    
     
     /*Dining Hall testing*/
     System.out.println("\nDiningHall class testing:\n");

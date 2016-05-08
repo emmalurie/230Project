@@ -80,7 +80,7 @@ public class JustForYouPanel extends JPanel{
     dinnerButton.addActionListener(listener);
     
     //labels 
-    instructionLabel = new JLabel("Tailor Your Meal by Your Preferences!", JLabel.CENTER);
+    instructionLabel = new JLabel("Check your favorite meals, then click the buttons!", JLabel.CENTER);
     
     lunchFirst = new JLabel();
     lunchSecond = new JLabel();
