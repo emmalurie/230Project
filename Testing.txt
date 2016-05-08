@@ -1,0 +1,1831 @@
+
+DiningHall class testing:
+
+Dining Hall object before menu is added. Average score MUST be 0.0
+
+AVERAGE SCORE: 0.0
+
+Static Error: This class does not have a static void main method accepting String[].
+
+DiningHall class testing:
+
+Dining Hall object before menu is added. Average score MUST be 0.0
+Bates
+AVERAGE SCORE: 0.0
+
+
+DiningHall class testing:
+
+Dining Hall object before menu is added. Average score MUST be 0.0
+
+Bates
+AVERAGE SCORE: 0.0
+
+Bates 
+BatesIrish Dinner! Guinness Carved Brisket with Braised Cabbage (VE), Vegan Sheppard Pie (VE), Steamed Carrots (VE) and Boiled Red Potatoes with Chef's Pasta Bar	6.0
+	Grilled Cheese Quesadillas (V) with House Made Salsa and all the Fixings!	7.0
+	
+AVERAGE SCORE: 6.5
+
+Lulu 
+LuluHerb Roasted Beef, Fresh Herb Crust, served with Potatoes Au gratin (V) Glazed Carrots (V) & Peas (VE)	6.0
+	BBQ Turkey Tips, Fresh Turkey Breast Marinated in Fresh Herbs, Slow Grilled & Glazed with a Tangy BBQ Sauce, served with Grilled Polenta (V) and Salsa Criolla (VE)	6.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+Pomeroy 
+PomeroyLentil & Spinach Stew (VE)	4.0
+	
+AVERAGE SCORE: 4.0
+
+Stone Davis 
+Stone Davis
+AVERAGE SCORE: 0.0
+
+Tower 
+TowerTuscan Turkey Meatloaf or TVP Tuscan Meatloaf (V), Sweet and Savory Rice (VE), Steamed Carrots (VE), Steamed Green Beans (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+Top Dining Hall: Bates 6.5
+Second Best Choice: Tower 6.0
+
+Top: Bates
+Second: Tower
+Bates
+Irish Dinner! Guinness Carved Brisket with Braised Cabbage (VE), Vegan Sheppard Pie (VE), Steamed Carrots (VE) and Boiled Red Potatoes with Chef's Pasta Bar	6.0
+	Grilled Cheese Quesadillas (V) with House Made Salsa and all the Fixings!	7.0
+	
+AVERAGE SCORE: 6.5
+
+Lulu
+Herb Roasted Beef, Fresh Herb Crust, served with Potatoes Au gratin (V) Glazed Carrots (V) & Peas (VE)	6.0
+	BBQ Turkey Tips, Fresh Turkey Breast Marinated in Fresh Herbs, Slow Grilled & Glazed with a Tangy BBQ Sauce, served with Grilled Polenta (V) and Salsa Criolla (VE)	6.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+Pomeroy
+Lentil & Spinach Stew (VE)	4.0
+	
+AVERAGE SCORE: 4.0
+
+Stone Davis
+
+AVERAGE SCORE: 0.0
+
+Tower
+Tuscan Turkey Meatloaf or TVP Tuscan Meatloaf (V), Sweet and Savory Rice (VE), Steamed Carrots (VE), Steamed Green Beans (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+Top Dining Hall: Bates 6.5
+Second Best Choice: Tower 6.0
+
+Top: Bates
+Second: Tower
+Static Error: This class does not have a static void main method accepting String[].
+DINING HALL NAME: Bates
+DINING HALL MENU: Irish Dinner! Guinness Carved Brisket with Braised Cabbage (VE), Vegan Sheppard Pie (VE), Steamed Carrots (VE) and Boiled Red Potatoes with Chef's Pasta Bar	6.0
+	Grilled Cheese Quesadillas (V) with House Made Salsa and all the Fixings!	7.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Herb Roasted Beef, Fresh Herb Crust, served with Potatoes Au gratin (V) Glazed Carrots (V) & Peas (VE)	6.0
+	BBQ Turkey Tips, Fresh Turkey Breast Marinated in Fresh Herbs, Slow Grilled & Glazed with a Tangy BBQ Sauce, served with Grilled Polenta (V) and Salsa Criolla (VE)	6.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Lentil & Spinach Stew (VE)	4.0
+	
+AVERAGE SCORE: 4.0
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Tuscan Turkey Meatloaf or TVP Tuscan Meatloaf (V), Sweet and Savory Rice (VE), Steamed Carrots (VE), Steamed Green Beans (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+Top Dining Hall: Bates 6.5
+Second Best Choice: Tower 6.0
+
+Top: Bates
+Second: Tower
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+add Sunday lunch menu....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+The highest ranked Dish at Bates(): Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+The highest ranked Dish at Bates(): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+The highest ranked Dish at Bates(could be either dish): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+The highest ranked Dish at Lulu(could be either dish): Omelet Bar & Tater Tots.
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+The highest ranked Dish at Bates(could be either dish): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+The highest ranked Dish at Lulu(could be either vegetable fritatta or omelet bar): Omelet Bar & Tater Tots.
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+The highest ranked Dish at Pom(could be either vegetable fritatta or omelet bar): Omelet Bar & Tater Tots.
+
+DiningHall class testing:
+
+Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+The highest ranked Dish at Bates(could be either dish): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+The highest ranked Dish at Lulu(could be either vegetable fritatta or omelet bar): Omelet Bar & Tater Tots.
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+The highest ranked Dish at Pom(could be either vegetable fritatta or omelet bar): Cinnamon Apple Pancake (V), Hash Brown Potato...
+
+DiningHall class testing:
+
+getTop() testing: Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+getTop() testing: The highest ranked Dish at Bates(could be either dish): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+getTop() testing: The highest ranked Dish at Lulu(could be either vegetable fritatta or omelet bar): Omelet Bar & Tater Tots.
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+The highest ranked Dish at Pom(Cinnamon Apple Pancake (V)): Cinnamon Apple Pancake (V), Hash Brown Potato...
+
+ compareTo testing
+Bates compared to Lulu: -1
+
+DiningHall class testing:
+
+getTop() testing: Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+getTop() testing: The highest ranked Dish at Bates(could be either dish): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+getTop() testing: The highest ranked Dish at Lulu(could be either vegetable fritatta or omelet bar): Omelet Bar & Tater Tots.
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+The highest ranked Dish at Pom(Cinnamon Apple Pancake (V)): Cinnamon Apple Pancake (V), Hash Brown Potato...
+
+ compareTo testing
+Bates compared to Lulu (-1): -1
+Lulu compared to Bates (1): 1
+
+DiningHall class testing:
+
+getTop() testing: Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+getTop() testing: The highest ranked Dish at Bates(could be either dish): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+getTop() testing: The highest ranked Dish at Lulu(could be either vegetable fritatta or omelet bar): Omelet Bar & Tater Tots.
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+The highest ranked Dish at Pom(Cinnamon Apple Pancake (V)): Cinnamon Apple Pancake (V), Hash Brown Potato...
+
+ compareTo testing
+Bates compared to Lulu (-1): -1
+Lulu compared to Bates (1): 1
+Lulu compared to Pom (1): 1
+
+DiningHall class testing:
+
+getTop() testing: Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+getTop() testing: The highest ranked Dish at Bates(could be either dish): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+getTop() testing: The highest ranked Dish at Lulu(could be either vegetable fritatta or omelet bar): Omelet Bar & Tater Tots.
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+The highest ranked Dish at Pom(Cinnamon Apple Pancake (V)): Cinnamon Apple Pancake (V), Hash Brown Potato...
+
+ compareTo testing
+Bates compared to Lulu (-1): -1
+Lulu compared to Bates (1): 1
+Lulu compared to Pom (1): 1
+Pom compared to Bates (-1): -1
+
+DiningHall class testing:
+
+getTop() testing: Testing Dining Hall object before menu is added. Average score MUST be 0.0
+
+DINING HALL NAME: Bates
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+adding Sunday lunch menu for Bates....
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+getTop() testing: The highest ranked Dish at Bates(could be either dish): Salmon Brunch Croquettes, Roasted Cauliflower...
+adding Sunday lunch menu for Lulu and Pom....
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+getTop() testing: The highest ranked Dish at Lulu(could be either vegetable fritatta or omelet bar): Omelet Bar & Tater Tots.
+DINING HALL NAME: Pom
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+The highest ranked Dish at Pom(Cinnamon Apple Pancake (V)): Cinnamon Apple Pancake (V), Hash Brown Potato...
+
+compareTo testing for DiningHall
+Bates compared to Lulu (-1): -1
+Lulu compared to Bates (1): 1
+Lulu compared to Pom (1): 1
+Pom compared to Bates (-1): -1
+Start date and End date testing... is a helper method to readWellesleyFresh() in DiningHall class
+getStartDow(1) (Sunday): Sunday
+getEndDow(1) (Monday): Monday
+
+getStartDow(2) (Monday): Monday
+getEndDow(2) (Tuesday): Tuesday
+
+getStartDow(7) (Saturday): Saturday
+getStartDow(7) (Sunday): Sunday
+
+DiningHallSelector testing readWellesleyFresh() reads from txt file to create LinkedList<String> of Dish names
+Bates Menus:
+Sunday Lunch :
+[Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V)., Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links]
+
+Sunday Dinner :
+[Irish Dinner! Guinness Carved Brisket with Braised Cabbage (VE), Vegan Sheppard Pie (VE), Steamed Carrots (VE) and Boiled Red Potatoes with Chef's Pasta Bar, Grilled Cheese Quesadillas (V) with House Made Salsa and all the Fixings!]
+
+Monday Lunch:
+[Customize your Own Steakburger or Black Bean Burger (VE) with Grilled Onion Trifecta (VE), Green Bean Fries (VE), and Roasted Vegetable Medley (VE) with Toppings on the Side., Spring Vegetable Pasta with Carrots, Asparagus, Green Peas and Red Onion with Fresh Lemon in a Cream Cheese Sauce (V)., Chicken Caesar Salad; White Grilled Chicken Breast on Crispy Romaine with Shredded Asiago Cheese and House Made Croutons.]
+
+Monday Dinner:
+[Brazilian Frango Con Quibo; Roasted Chicken with Tomato and Okra, Macarrao de Forno; Brazilian Baked Pasta (V), Grilled Pineapple (VE), Roasted Brazilian Leeks (VE) and Angu Creamy Polenta (V), Panzanella Toss with Crispy Croutons, Fresh Mozzarella Cheese, Fresh Basil, Heirloom Tomato and Balsamic Drizzle (V), Fresh Quesadilla (V) Stuffed with Mango, Black Beans, Caramelized Onion and Jack Cheese with House Made Tomato Salsa and Fresh Fried Tortilla Chips (VE)]
+
+Tuesday Lunch:
+[Cashew Chicken with Spinach and Mushroom Lo Mein (VE), Ginger Snap Peas (VE), Braised Nappa Cabbage (VE) and Brown Rice & Edamame (VE) with Fresh Herbs., Try Our New Fusion Item: Smoked Salmon and Fresh Dill on House Made Pea Pancakes., House Made Turkish Turkey Burger on Grilled Pita or Roasted Eggplant Sabich (VE) with Olives and Feta Cheese Salad (V).]
+
+Tuesday Dinner:
+[Lamb and Niman Ranch Beef Meatloaf with Balsamic Glaze, Asparagus Tomato and Fontina Frittata (V), Braised Green Kale (VE), Orange Glazed Beets (VE), and Baked Potato Bar, Tiramisu Crepe (V); Chocolate Crepe Stuffed with Coffee-Cream Cheese and Vanilla Cookies with Fresh Mint, Chocolate Sauce and Powdered Sugar, Greek Nachos; Stacked Fresh Pita Chips Layered with House Made Hummus, Roasted Red Peppers, Artichokes, Black Olives and Feta Cheese (V)]
+
+Wednesday Lunch:
+[Fresh Seafood Coconut Curry with Calamari, Swordfish, Shrimp, Lobster and Mussels Served with Ancient Grains and Black Beans with Indian Spices (VE), Steamed Green Beans (VE), Steamed Bok Choy(VE), Roasted Cauliflower (VE), and Warm Naan Bread (V) with Assorted Rice and Lentils (VE)., Marinated Tofu on Cold Peanut Noodles (VE)., Grilled Chicken Sandwich with Watermelon Jalapeno Salsa on a Fresh Claflin Roll or Grilled Zucchini Stacks with Mozzarella and Balsamic Drizzle (V).]
+
+Wednesday Dinner:
+[Hand Carved Turkey Dinner with Cranberry Orange Relish, Butternut Squash and Kale Stuffed Shells (V), Steamed Green Beans (VE), Corn Pudding (VE), and Olive Oil Mashed Potatoes (VE), Fresh Zucchini Noodles with Avocado Cream Sauce (VE), Grilled Shrimp Roll with Sorrel and Grilled Zucchini Stacks with Mozzarella and Balsamic Drizzle (V)]
+
+Thursday Lunch:
+[Crispy Chicken with Pepper and Salsa Verde, Southwest Quiche with Black Beans, Cheddar Cheese and Jalapeno (V), Wilted Green Kale (VE),Steamed Broccoli (VE) and Spanish Rice (VE) with Mac and Cheese Bar (V)., Pan Bagnat; Traditional French Tuna Nicoise Sandwich in Crispy Baguette., Spring Onion and Cheddar (V) or Steak Fajita Grilled Cheese with Reskin Potato Salad with Citrus Balsamic (VE).]
+
+Thursday Dinner:
+[Pulled Niman Pork with Mango and Chipotle Peppers, Spicy Southwest BBQ Bean Pot (VE), Roasted Corn on the Cob (VE), Steamed Green Chard (VE), and Corn Bread with Cheddar and Jalapeno Peppers (V) with Mac and Cheese Bar (V), A Throwback from Twisted Nacho Night! Thai Chicken Nachos; Wonton Skins Topped with Nappa Cabbage, Shredded Carrots and Pulled Chicken with Thai Peanut Drizzle, Cajun Salmon Burger or Veggie Burger (V) on Fresh Claflin Roll Served with Redskin Potato Salad with Citrus Balsamic (VE)]
+
+Friday Lunch:
+[Pizza Day! House Made Sauce with Shredded Mozzarella Cheese on Fresh Claflin Dough! Today we feature Jerk Chicken Pizza, Eggplant Parmesan Pizza (V) and Three Cheese and Broccoli Pizza (V) with Roasted Cauliflower (VE), Wilted Green Kale (VE) and Chef’s Pasta Bar (V)., Burrito Bar (V) with Warm Flour Tortillas, Cheddar Cheese, Shredded Lettuce, House Made Salsa, Sour Cream, Jalapeno and Fresh Cilantro., House Made Falafel (VE) on Warm Pita with Hand Cut French Fries (VE).]
+
+Friday Dinner:
+[Chicken Wing Bar, Penne Pasta with cannellini Beans and Escarole (V), Grilled Summer Squash (VE), Mixed Vegetables (VE), and Quinoa Pilaf (VE), Wintergreen Salad; a Custom Made Bates Only Salad with Bibb Lettuce, Fresh Mint, Grape Tomato, Goat Cheese and Golden Raisins with Raspberry Vinaigrette (V), Custom Make your Own Cheese Omelet with Home Fries (VE)]
+
+Saturday Lunch:
+[Oktoberfest Brunch of Bratwurst Pork Sausage with Grilled Onions, German Cabbage and Potato Casserole (V), Lemon Dill Carrots (VE), Roasted Brussels Sprouts (VE) and German Potato Pancakes (V)., Buttermilk Blueberry Pancakes (V) and Fresh Florentine Scramble (V).]
+
+Saturday Dinner:
+[Lime Marinated Broiled Salmon, Roasted Green Beans (VE), Roasted Leek and Cheddar Strata (V), Mixed Vegetables (VE), and Barley Pilaf (VE) with Chefs Choice Pasta Bar, Our Famous Make your Own Grilled Cheese (V) with Fresh Kettle Potato Chips (VE)]
+
+Lulu Menus:
+Sunday Lunch:
+[Cheese Pizza (V), Paella, Scones & Cookies (V), Omelet Bar & Tater Tots., Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)]
+
+Sunday Dinner:
+[Cheese Pizza (V), Paella, Scones & Cookies (V), BBQ Turkey Tips, Fresh Turkey Breast Marinated in Fresh Herbs, Slow Grilled & Glazed with a Tangy BBQ Sauce, served with Grilled Polenta (V) and Salsa Criolla (VE), Herb Roasted Beef, Fresh Herb Crust, served with Potatoes Au gratin (V) Glazed Carrots (V) & Peas (VE)]
+
+Monday Lunch:
+[Sausage Pizza, Cheese Pizza (V), Eggplant Parm (V), Monte Cristo Sandwich- Sliced ham and Swiss cheese, dipped in egg batter and golden brown griddled, Grill cheese Sandwich (V) 2 cheese in between whole grain bread, toasted, Cole slaw (V)., Gazpacho (VE), ripened Tomatoes, Fennel, Cucumbers, EVOO, Jalapenos puree, Chicken Fried Rice, Diced Chicken Breast, Vegetables and Eggs Sauteed with Ginger & Soy Dressing, Vegetable Stir Fry (VE) Sauteed in Ginger & Soy, Spicy Eggplant (VE), Oven Roasted & Seasoned with Chipotle Powder]
+
+Monday Dinner:
+[Sausage Pizza, Cheese Pizza (V), Eggplant Parm (V), Grilled Rachael, House Roasted Turkey, Swiss cheese, sauerkraut, house made 1000 Island dressing, toasted, Cole slaw (V), and Kettle chips (VE), Gazpacho (VE), ripened Tomatoes, Fennel, Cucumbers, EVOO, Jalapenos puree, Beef Chilaquiles, Shredded beef, Spicy Tomato Sauce, Crispy Corn Tortillas with Shredded Cheese, Rice & Beans (VE), Yellow Rice & Black Eyed Peas, Fried Plantains (VE) & Roasted Cauliflower (VE)]
+
+Tuesday Lunch:
+[3 cheese Baked Pasta (V), House Made Focaccia, Marinara Sauce (VE), Pepperoni Pizza, Crispy Calamari, Fried Calamari with Sweet Chili Soy Sauce, Vegetable Tempura (VE), Flash Fried Vegetables, Sweet & Sour Dipping Sauce., California Rolls (V) Cauliflower Couscous, Avocado, Carrots, Red Peppers, wrapped in Seaweed, Plato Montanero, Roasted Pork, Red Beans (VE), Rice VE), Fried Plantains (VE), Eggs, Sauteed Peppers & Onions (VE)]
+
+Tuesday Dinner:
+[3 cheese Baked Pasta (V), House Made Focaccia, Marinara Sauce (VE), Pepperoni Pizza, Croque Monsieur, Thin sliced Ham and Swiss cheese, dipped in butter and toasted, served with Cheese Sauce, Kettle chips (VE), Putin (V), Golden Crisp Potatoes and Gravy, cheese Curds, California Rolls (V) Cauliflower Couscous, Avocado, Carrots, Red Peppers, wrapped in Seaweed, Chicken Kebob, fresh Herbs Marinated Chicken Tenders, Skewer with Vegetables, Vegetable Kebob (VE) Skewer Squash, Onions, Peppers, Drizzled with Herb Olive Oil, Rice Pilaf (VE), and Steamed Broccoli (VE)]
+
+Wednesday Lunch:
+[Socca (VE), Greek Pizza, Meat Lover’s Pizza, Turkey Burger, With Caramelized Onions (V), Garden Burger (V) Served with Fresh Cut Fries (VE)., Melon Soup, Honey Dew, Cantaloupe puree and Watermelon Granita, Orange Beef- Stir fry Spicy Beef, Seasoned with Teriyaki and Orange Reduction, Served with Vegetable Lo Mein (V) and Steamed Broccoli (VE)]
+
+Wednesday Dinner:
+[Socca (VE), Greek Pizza, Meat Lover’s Pizza, Steak Tips, Grilled Steak Served with Crispy Potato Wedges (VE) Wedge Salad (V), Quartered Iceberg lettuce, Tomatoes, Crumbled Blue Cheese, Shredded Carrots, Melon Soup, Honey Dew, Cantaloupe puree and Watermelon Granita, Meat Pie- Pan Seared Ground Beef with Onions, and Raisins, Seasoned with Smoked paprika, with a Puff Pastry, Lentil Mac and Cheese (V), Green Beans (VE) & Carrots (VE)]
+
+Thursday Lunch:
+[Cheese Pizza, Buffalo Chicken, Vegetable Calzone, Tuna Melt, Tuna salad with Melted Swiss cheese on Toasted Marble Rye Bread Eggplant Parm Slider, Golden Crispy Eggplant, tomato Sauce Provolone on Brioche (V) served with Fresh Cut Fries (VE), Crudite of Vegetables, with Vegetable Puree for dipping (VE), Red's Best, Catch of the Day Veracruzano, Tomato Broth and Olives, Served with Rice (VE) and Sauteed Squash (VE)]
+
+Thursday Dinner:
+[Cheese Pizza, Buffalo Chicken, Vegetable Calzone, Clams PO Boy, Golden Crisp Clams, Served with Cole Slaw (V), in a Bun, Fresh Cut Fries, Crudite of Vegetables, with Vegetable Puree for dipping (VE), Maple Pork Loin, Roasted Niman Ranch Pork Loin, Maple Syrup Glazed, Charred Brussels Sprouts (VE), Mashed Sweet Potatoes (V) Steamed Corn, Roasted Cauliflower (VE)]
+
+Friday Lunch:
+[Banana Foster (V), Pepperoni Pizza, Chicken Jalapeno Pizza, Fish Taco, Crispy Fried Fish, Corn Tortilla, Pico de Gallo, Pickled Vegetables Taco (VE)., Pickled Vegetables, Garden Fresh Vegetables, Apple Cider Marinated, Carnitas Burrito, Shredded BBQ Pork in a Flour Tortilla, With Rice (VE) Beans (VE), Fresh Salsa (VE) & Tortilla Chips (VE)]
+
+Friday Dinner:
+[Banana Foster (V), Pepperoni Pizza, Chicken Jalapeno Pizza, Carne Asada, Grilled Thin Sliced Beef with Chimichurri (VE) Corn Tortillas and Grilled Corn (VE) with Spicy Crema (V), Pickled Vegetables, Garden Fresh Vegetables, Apple Cider Marinated, Chicken Parm, Golden Crispy Chicken Breast, Served with Marinara Sauce (VE) and Melted Mozzarella Cheese, Penne and Baby Tomatoes (VE) with Caramelized Onions and Sauteed Squash (VE)]
+
+Saturday Lunch:
+[Sausage Pizza, Cheese Pizza (V), Fruit Crisp (V), Kimchi Fried Rice, Fried Egg (V), Bacon., Menemen, Spicy Scrambled Egg Casserole (V) Served with Pasta Primavera (V), Mixed Vegetables(VE) and Niman Ranch Sausage Patties]
+
+Saturday Dinner:
+[Sausage Pizza, Cheese Pizza (V), Fruit Crisp (V), Fish Croquette, Lightly Fried Fish Cakes, served with Tartare Sauce, Rice Pilaf (V), Beef Bolognese, Niman Ranch Ground Beef slow braised with carrots, onions, Celery, Tomatoes served over Cheddar Grits (V), Sauteed Mushrooms(VE), Creamed spinach (V)]
+
+Pom Menus:
+Sunday Lunch:
+[Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE), Spinach and Feta Pasta (V).]
+
+Sunday Dinner:
+[Lentil & Spinach Stew (VE)]
+
+Monday Lunch:
+[Penn with Herbs, Tomatoes and Peas (VE), Roasted Chickpeas Pita Sandwich (VE), with Arugula and Tomatoes (VE), Lime Tzatziki (V), Quinoa Asparagus cakes (V), Sweet Potato fries (VE), Braised Napa cabbage (VE)]
+
+Monday Dinner:
+[Vegan Chili (VE), Vegan Chicken Fajitas (VE), with Tomato Salsa (VE), Sour Cream and Cheese (V), Chipotle Grilled Tofu (VE), Spanish Rice (VE), Wilted Spinach (VE) Steamed Corn (VE)]
+
+Tuesday Lunch:
+[Cheese Tortellini with Fresh Vegetables and Pesto (V)., Baked Sesame Tofu (VE), Southwest Vegan Chicken (V), Steamed Rice(VE), Wilted Kale (VE), Roasted Cauliflower (VE)]
+
+Tuesday Dinner:
+[Chickpeas Curry (VE), Indian Vegetable Curry (VE), with Naan Bread (V), Seitan Makhani (VE), Indian Vegetable Rice (VE), Indian Cauliflower (VE)]
+
+Wednesday Lunch:
+[Pasta with Blue Cheese and Walnuts (V)., Southwest Tofu with Tomatillo Pico de Gallo (VE), Grilled Falafel Burger (V), Baked Sweet Potato (VE), Wilted Spinach (VE), Corn (VE)]
+
+Wednesday Dinner:
+[Mexican Corn Casserole (V), Grilled Tofu (VE), Vegan Chicken Tostadas (VE), with Tostadas (VE), Black beans (VE), Lettuce, Tomatoes (VE) Cheddar Cheese (V), Roasted Brussels Sprouts (VE), steamed Cauliflower (VE)]
+
+Thursday Lunch:
+[Pasta Fagoile with Escarole (VE)., Fresh House Made Pasta (VE), Accompanied by Roasted peppers (VE) Crispy Tofu (V), Steamed Broccoli (VE) Roasted Corn (VE), Eggplant Meatballs (V), House Made Marinara Sauce (VE) House Made Pesto Sauce (V) House Made Alfredo Sauce(V) Garlic Bread (VE) Gluten Free Pasta Available Upon Request (VE)]
+
+Thursday Dinner:
+[Green bean Casserole (V), Baked Penne with Sausage (V), Creole Tofu (VE), Basmati Rice (VE), Steamed Carrots (VE), Roasted Carrots (VE)]
+
+Friday Lunch:
+[Rice Noodles (VE), Seitan Stir Fry with Black Bean Garlic Sauce (VE), Vegetarian Eggrolls (V), Wilted Kale (VE), Jasmine Rice (VE)]
+
+Friday Dinner:
+[Lasagna Rolls (V), Roasted vegetable Burrito (VE), Bean and Cheese Burrito (V), Spanish Rice (VE), Roasted Onion, Sweet Peppers and Mushroom (VE), Burger Crumble (VE)]
+
+Saturday Lunch:
+[French Toast (V), Potato Tots (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Vegan Nuggets (V) with Honey mustard (V), and BBQ Sauce (VE), & Broccoli & Cauliflower (VE), Spinach and Feta Pasta (V).]
+
+Saturday Dinner:
+[Fresh Pasta (VE), with Tomato Basil Cream Sauce (V), Buffalo Vegetable Pizza (V), Vegan Pizza (VE), Cheese Pizza (V), House made Fresh French Fries (VE), Broccoli (VE) Full Nacho Bar Starts @ 3:00]
+
+StoneD Menus:
+Sunday Lunch:
+[]
+
+Sunday Dinner:
+[]
+
+Monday Lunch:
+[Chicken Pinata, Broccoli Pasta, (VE) Chickpea & Tomatoes, (V) Swiss Chard, (V) Roasted Corn (VE), Blacken Chicken Sandwich, Potato Salad, (V) Grilled Tofu Sandwich (V)]
+
+Monday Dinner:
+[New England Fish Fry, Cole Slaw, (V) Corn on Cob, (V) Summer Squash (VE), "Hail Caesar" Salad]
+
+Tuesday Lunch:
+[Cheese Lasagna, Vegetable Meat Balls, (V) House Made Meat Balls, Steam Broccoli, (VE) Garlic Bread (V), Chicken Farro & Vegetable Salad with Lemon Vinaigrette]
+
+Tuesday Dinner:
+[Rotisserie Chicken, Boiled Rice (VE), Polenta with Fontina Cheese & Vegetables (V), Steamed Broccoli (VE), Greek Chicken Wrap, Greek Vegetable Wrap (V)]
+
+Wednesday Lunch:
+[Gazpacho Chicken, Vegetable Gazpacho (VE), Boiled Rice (VE), Pea & Onions (VE), BBQ Tofu (VE), Awesome Egg Rolls]
+
+Wednesday Dinner:
+[Crispy Hoisin Ribs, Wild Rice, (VE) Eggplant & Chickpea Stew (VE), Baked Sweet Potatoes (VE), Collard Greens (VE), Salmon Burger with Salsa, Salt & Vinegar Slaw (VE)]
+
+Thursday Lunch:
+[Seared Pork Medallions with Cranberry Sauce, Mac & Cheese, (V) Roasted Potatoes (VE), Boston Beets (VE), Roasted Green Beans (VE), Grilled Fresh Salmon with Black Bean & Corn Salad]
+
+Thursday Dinner:
+[Rotisserie Garlic & Herb Infused Beef, Roasted Potatoes (VE), Mushroom Risotto (V), Polenta with Vegetables (V), Brussels Sprouts (V), BBQ Bacon Burger Nacho, Vegetable Nacho (V) Late Night- Flat Bread Pizza]
+
+Friday Lunch:
+[Baked White Fish With Kelp, Spice Chickpeas Couscous (VE), Rice & Peas (VE), Steamed Baby Carrots (VE), Baked Beans, Chicken Tostadas, Refried Beans Tostadas (VE)]
+
+Friday Dinner:
+[Spinach Mozzarella Meat Loft, Mash Potatoes (V), Beef Gravy, Vegetable Quinoa Risotto (VE), Roasted Cauliflower (VE), Peas (VE), Rosti and Guacamole (VE)]
+
+Saturday Lunch:
+[]
+
+Saturday Dinner:
+[]
+
+Tower Menus:
+Sunday Lunch:
+[Red Bliss Home Fries (VE), Turkey Sausage Links, Scramble Egg (V), Scramble Eggs Whites (V) and Stuffed Apple Buttermilk Pancake (V), Spinach, Bacon & Swiss Quiche, Vegetable Alfredo (V), Steamed Vegetable (VE)]
+
+Sunday Dinner:
+[Tuscan Turkey Meatloaf or TVP Tuscan Meatloaf (V), Sweet and Savory Rice (VE), Steamed Carrots (VE), Steamed Green Beans (VE)]
+
+Monday Lunch:
+[Summer Cooked Bar, Beef OR Veggie Burgers (V), Chili, Cheese Sauce (V), Corn (V), House Cut Fries (V)]
+
+Monday Dinner:
+[Chicken & Waffle, Crispy Bacon, Bourbon Caramelized Onions (V), Warm Whiskey, Maple Syrup (V), Crispy Tempura Eggplant (V)]
+
+Tuesday Lunch:
+[Sweet and Tangy Pulled Pork Tacos, Mixed Bean Tacos (VE), Habanero Mango Slaw (V), Green Tomatillo Avocado Salsa (V)]
+
+Tuesday Dinner:
+[Coffee Crusted Beef, or Coffee Crusted Tofu (VE), Blue Cheese Mashed (V), Garlic Butter Broccoli (V), Wilted Green (VE)]
+
+Wednesday Lunch:
+[Szechuan Chicken or Tofu (VE), Steamed Rice, Roasted Ginger Soy Beans (VE), Steamed Summer Squash (VE)]
+
+Wednesday Dinner:
+[MYO Thai Salad, Sweet Thai Chili Lo Mein (V), Chicken or Beef, and your Choice of Dressing or Sauce]
+
+Thursday Lunch:
+[Seared Chicken with Sundried Tomato Cream Sauce, Pasta (V), Roasted Broccoli (VE), Steamed Vegetable (VE)]
+
+Thursday Dinner:
+[Memphis Style Smoked Ribs, Grilled Cauliflower Steak (VE), Cornbread (V), Buttered Corn (V), Smashed Potatoes (V)]
+
+Friday Lunch:
+[Caprese Chicken Chicken Skillet, Springtime Quinoa pilaf (VE), Sautéed Greens (VE), Steamed Veggies (VE)]
+
+Friday Dinner:
+[Grilled Hot Dogs, or Grilled Veggie Dags (V), House Cut Fries, Cheese Sauce (V), Choice of Cold Toppings]
+
+Saturday Lunch:
+[Shredded Hash browns (V), Pork Bacon, Scramble Egg (V), Scramble Eggs Whites (V) and, Cinnamon Vanilla French toast (V), Moroccan Chicken Tagine, Moroccan Chickpea Stew (VE), Mixed Vegetable (VE)]
+
+Saturday Dinner:
+[Vegetable Lo Mein (VE), Red Pork, Fried Lo Mein, Gingered Beans (VE), Mixed Asian Vegetable (VE)]
+
+Dining Hall Class testing continued...
+Bates Menu Scored (tests initializeDiningHall()... which is comprised of two methods: createMenu(), and calcScore()
+Sunday Lunch:
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Sunday Dinner:
+DINING HALL NAME: Bates
+DINING HALL MENU: Irish Dinner! Guinness Carved Brisket with Braised Cabbage (VE), Vegan Sheppard Pie (VE), Steamed Carrots (VE) and Boiled Red Potatoes with Chef's Pasta Bar	6.0
+	Grilled Cheese Quesadillas (V) with House Made Salsa and all the Fixings!	7.0
+	
+AVERAGE SCORE: 6.5
+
+
+Monday Lunch:
+DINING HALL NAME: Bates
+DINING HALL MENU: Chicken Caesar Salad; White Grilled Chicken Breast on Crispy Romaine with Shredded Asiago Cheese and House Made Croutons.	6.0
+	Customize your Own Steakburger or Black Bean Burger (VE) with Grilled Onion Trifecta (VE), Green Bean Fries (VE), and Roasted Vegetable Medley (VE) with Toppings on the Side.	7.0
+	Spring Vegetable Pasta with Carrots, Asparagus, Green Peas and Red Onion with Fresh Lemon in a Cream Cheese Sauce (V).	4.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+
+Monday Dinner:
+DINING HALL NAME: Bates
+DINING HALL MENU: Panzanella Toss with Crispy Croutons, Fresh Mozzarella Cheese, Fresh Basil, Heirloom Tomato and Balsamic Drizzle (V)	6.0
+	Fresh Quesadilla (V) Stuffed with Mango, Black Beans, Caramelized Onion and Jack Cheese with House Made Tomato Salsa and Fresh Fried Tortilla Chips (VE)	7.0
+	Brazilian Frango Con Quibo; Roasted Chicken with Tomato and Okra, Macarrao de Forno; Brazilian Baked Pasta (V), Grilled Pineapple (VE), Roasted Brazilian Leeks (VE) and Angu Creamy Polenta (V)	5.0
+	
+AVERAGE SCORE: 6.0
+
+
+Tuesday Lunch:
+DINING HALL NAME: Bates
+DINING HALL MENU: Try Our New Fusion Item: Smoked Salmon and Fresh Dill on House Made Pea Pancakes.	5.0
+	House Made Turkish Turkey Burger on Grilled Pita or Roasted Eggplant Sabich (VE) with Olives and Feta Cheese Salad (V).	6.0
+	Cashew Chicken with Spinach and Mushroom Lo Mein (VE), Ginger Snap Peas (VE), Braised Nappa Cabbage (VE) and Brown Rice & Edamame (VE) with Fresh Herbs.	4.0
+	
+AVERAGE SCORE: 5.0
+
+
+Tuesday Dinner:
+DINING HALL NAME: Bates
+DINING HALL MENU: Greek Nachos; Stacked Fresh Pita Chips Layered with House Made Hummus, Roasted Red Peppers, Artichokes, Black Olives and Feta Cheese (V)	6.0
+	Lamb and Niman Ranch Beef Meatloaf with Balsamic Glaze, Asparagus Tomato and Fontina Frittata (V), Braised Green Kale (VE), Orange Glazed Beets (VE), and Baked Potato Bar	7.0
+	Tiramisu Crepe (V); Chocolate Crepe Stuffed with Coffee-Cream Cheese and Vanilla Cookies with Fresh Mint, Chocolate Sauce and Powdered Sugar	6.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+
+Wednesday Lunch:
+DINING HALL NAME: Bates
+DINING HALL MENU: Fresh Seafood Coconut Curry with Calamari, Swordfish, Shrimp, Lobster and Mussels Served with Ancient Grains and Black Beans with Indian Spices (VE), Steamed Green Beans (VE), Steamed Bok Choy(VE), Roasted Cauliflower (VE), and Warm Naan Bread (V) with Assorted Rice and Lentils (VE).	4.0
+	Grilled Chicken Sandwich with Watermelon Jalapeno Salsa on a Fresh Claflin Roll or Grilled Zucchini Stacks with Mozzarella and Balsamic Drizzle (V).	7.0
+	Marinated Tofu on Cold Peanut Noodles (VE).	4.0
+	
+AVERAGE SCORE: 5.0
+
+
+Wednesday Dinner:
+DINING HALL NAME: Bates
+DINING HALL MENU: Hand Carved Turkey Dinner with Cranberry Orange Relish, Butternut Squash and Kale Stuffed Shells (V), Steamed Green Beans (VE), Corn Pudding (VE), and Olive Oil Mashed Potatoes (VE)	6.0
+	Grilled Shrimp Roll with Sorrel and Grilled Zucchini Stacks with Mozzarella and Balsamic Drizzle (V)	7.0
+	Fresh Zucchini Noodles with Avocado Cream Sauce (VE)	5.0
+	
+AVERAGE SCORE: 6.0
+
+
+Thursday Lunch:
+DINING HALL NAME: Bates
+DINING HALL MENU: Crispy Chicken with Pepper and Salsa Verde, Southwest Quiche with Black Beans, Cheddar Cheese and Jalapeno (V), Wilted Green Kale (VE),Steamed Broccoli (VE) and Spanish Rice (VE) with Mac and Cheese Bar (V).	6.0
+	Spring Onion and Cheddar (V) or Steak Fajita Grilled Cheese with Reskin Potato Salad with Citrus Balsamic (VE).	7.0
+	Pan Bagnat; Traditional French Tuna Nicoise Sandwich in Crispy Baguette.	6.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+
+Thursday Dinner:
+DINING HALL NAME: Bates
+DINING HALL MENU: Pulled Niman Pork with Mango and Chipotle Peppers, Spicy Southwest BBQ Bean Pot (VE), Roasted Corn on the Cob (VE), Steamed Green Chard (VE), and Corn Bread with Cheddar and Jalapeno Peppers (V) with Mac and Cheese Bar (V)	5.0
+	A Throwback from Twisted Nacho Night! Thai Chicken Nachos; Wonton Skins Topped with Nappa Cabbage, Shredded Carrots and Pulled Chicken with Thai Peanut Drizzle	6.0
+	Cajun Salmon Burger or Veggie Burger (V) on Fresh Claflin Roll Served with Redskin Potato Salad with Citrus Balsamic (VE)	4.0
+	
+AVERAGE SCORE: 5.0
+
+
+Friday Lunch:
+DINING HALL NAME: Bates
+DINING HALL MENU: Pizza Day! House Made Sauce with Shredded Mozzarella Cheese on Fresh Claflin Dough! Today we feature Jerk Chicken Pizza, Eggplant Parmesan Pizza (V) and Three Cheese and Broccoli Pizza (V) with Roasted Cauliflower (VE), Wilted Green Kale (VE) and Chef’s Pasta Bar (V).	7.0
+	Burrito Bar (V) with Warm Flour Tortillas, Cheddar Cheese, Shredded Lettuce, House Made Salsa, Sour Cream, Jalapeno and Fresh Cilantro.	8.0
+	House Made Falafel (VE) on Warm Pita with Hand Cut French Fries (VE).	5.0
+	
+AVERAGE SCORE: 6.666666666666667
+
+
+Friday Dinner:
+DINING HALL NAME: Bates
+DINING HALL MENU: Custom Make your Own Cheese Omelet with Home Fries (VE)	7.0
+	Chicken Wing Bar, Penne Pasta with cannellini Beans and Escarole (V), Grilled Summer Squash (VE), Mixed Vegetables (VE), and Quinoa Pilaf (VE)	7.0
+	Wintergreen Salad; a Custom Made Bates Only Salad with Bibb Lettuce, Fresh Mint, Grape Tomato, Goat Cheese and Golden Raisins with Raspberry Vinaigrette (V)	7.0
+	
+AVERAGE SCORE: 7.0
+
+
+Saturday Lunch:
+DINING HALL NAME: Bates
+DINING HALL MENU: Oktoberfest Brunch of Bratwurst Pork Sausage with Grilled Onions, German Cabbage and Potato Casserole (V), Lemon Dill Carrots (VE), Roasted Brussels Sprouts (VE) and German Potato Pancakes (V).	5.0
+	Buttermilk Blueberry Pancakes (V) and Fresh Florentine Scramble (V).	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+Saturday Dinner:
+DINING HALL NAME: Bates
+DINING HALL MENU: Lime Marinated Broiled Salmon, Roasted Green Beans (VE), Roasted Leek and Cheddar Strata (V), Mixed Vegetables (VE), and Barley Pilaf (VE) with Chefs Choice Pasta Bar	4.0
+	Our Famous Make your Own Grilled Cheese (V) with Fresh Kettle Potato Chips (VE)	6.0
+	
+AVERAGE SCORE: 5.0
+
+
+Lulu Menu Scored
+Sunday Lunch:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+
+Sunday Dinner:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Herb Roasted Beef, Fresh Herb Crust, served with Potatoes Au gratin (V) Glazed Carrots (V) & Peas (VE)	6.0
+	BBQ Turkey Tips, Fresh Turkey Breast Marinated in Fresh Herbs, Slow Grilled & Glazed with a Tangy BBQ Sauce, served with Grilled Polenta (V) and Salsa Criolla (VE)	6.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+
+Monday Lunch:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Chicken Fried Rice, Diced Chicken Breast, Vegetables and Eggs Sauteed with Ginger & Soy Dressing, Vegetable Stir Fry (VE) Sauteed in Ginger & Soy, Spicy Eggplant (VE), Oven Roasted & Seasoned with Chipotle Powder	5.0
+	Gazpacho (VE), ripened Tomatoes, Fennel, Cucumbers, EVOO, Jalapenos puree	7.0
+	Sausage Pizza, Cheese Pizza (V), Eggplant Parm (V)	7.0
+	Monte Cristo Sandwich- Sliced ham and Swiss cheese, dipped in egg batter and golden brown griddled, Grill cheese Sandwich (V) 2 cheese in between whole grain bread, toasted, Cole slaw (V).	6.0
+	
+AVERAGE SCORE: 6.25
+
+
+Monday Dinner:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Grilled Rachael, House Roasted Turkey, Swiss cheese, sauerkraut, house made 1000 Island dressing, toasted, Cole slaw (V), and Kettle chips (VE)	4.0
+	Gazpacho (VE), ripened Tomatoes, Fennel, Cucumbers, EVOO, Jalapenos puree	7.0
+	Sausage Pizza, Cheese Pizza (V), Eggplant Parm (V)	7.0
+	Beef Chilaquiles, Shredded beef, Spicy Tomato Sauce, Crispy Corn Tortillas with Shredded Cheese, Rice & Beans (VE), Yellow Rice & Black Eyed Peas, Fried Plantains (VE) & Roasted Cauliflower (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Tuesday Lunch:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Crispy Calamari, Fried Calamari with Sweet Chili Soy Sauce, Vegetable Tempura (VE), Flash Fried Vegetables, Sweet & Sour Dipping Sauce.	5.0
+	Plato Montanero, Roasted Pork, Red Beans (VE), Rice VE), Fried Plantains (VE), Eggs, Sauteed Peppers & Onions (VE)	7.0
+	California Rolls (V) Cauliflower Couscous, Avocado, Carrots, Red Peppers, wrapped in Seaweed	7.0
+	3 cheese Baked Pasta (V), House Made Focaccia, Marinara Sauce (VE), Pepperoni Pizza	6.0
+	
+AVERAGE SCORE: 6.25
+
+
+Tuesday Dinner:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Croque Monsieur, Thin sliced Ham and Swiss cheese, dipped in butter and toasted, served with Cheese Sauce, Kettle chips (VE), Putin (V), Golden Crisp Potatoes and Gravy, cheese Curds	6.0
+	Chicken Kebob, fresh Herbs Marinated Chicken Tenders, Skewer with Vegetables, Vegetable Kebob (VE) Skewer Squash, Onions, Peppers, Drizzled with Herb Olive Oil, Rice Pilaf (VE), and Steamed Broccoli (VE)	7.0
+	California Rolls (V) Cauliflower Couscous, Avocado, Carrots, Red Peppers, wrapped in Seaweed	7.0
+	3 cheese Baked Pasta (V), House Made Focaccia, Marinara Sauce (VE), Pepperoni Pizza	6.0
+	
+AVERAGE SCORE: 6.5
+
+
+Wednesday Lunch:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Socca (VE), Greek Pizza, Meat Lover’s Pizza	6.0
+	Turkey Burger, With Caramelized Onions (V), Garden Burger (V) Served with Fresh Cut Fries (VE).	7.0
+	Orange Beef- Stir fry Spicy Beef, Seasoned with Teriyaki and Orange Reduction, Served with Vegetable Lo Mein (V) and Steamed Broccoli (VE)	8.0
+	Melon Soup, Honey Dew, Cantaloupe puree and Watermelon Granita	6.0
+	
+AVERAGE SCORE: 6.75
+
+
+Wednesday Dinner:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Socca (VE), Greek Pizza, Meat Lover’s Pizza	6.0
+	Meat Pie- Pan Seared Ground Beef with Onions, and Raisins, Seasoned with Smoked paprika, with a Puff Pastry, Lentil Mac and Cheese (V), Green Beans (VE) & Carrots (VE)	6.0
+	Steak Tips, Grilled Steak Served with Crispy Potato Wedges (VE) Wedge Salad (V), Quartered Iceberg lettuce, Tomatoes, Crumbled Blue Cheese, Shredded Carrots	8.0
+	Melon Soup, Honey Dew, Cantaloupe puree and Watermelon Granita	6.0
+	
+AVERAGE SCORE: 6.5
+
+
+Thursday Lunch:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Red's Best, Catch of the Day Veracruzano, Tomato Broth and Olives, Served with Rice (VE) and Sauteed Squash (VE)	5.0
+	Crudite of Vegetables, with Vegetable Puree for dipping (VE)	6.0
+	Cheese Pizza, Buffalo Chicken, Vegetable Calzone	6.0
+	Tuna Melt, Tuna salad with Melted Swiss cheese on Toasted Marble Rye Bread Eggplant Parm Slider, Golden Crispy Eggplant, tomato Sauce Provolone on Brioche (V) served with Fresh Cut Fries (VE)	6.0
+	
+AVERAGE SCORE: 5.75
+
+
+Thursday Dinner:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Cheese Pizza, Buffalo Chicken, Vegetable Calzone	6.0
+	Maple Pork Loin, Roasted Niman Ranch Pork Loin, Maple Syrup Glazed, Charred Brussels Sprouts (VE), Mashed Sweet Potatoes (V) Steamed Corn, Roasted Cauliflower (VE)	6.0
+	Clams PO Boy, Golden Crisp Clams, Served with Cole Slaw (V), in a Bun, Fresh Cut Fries	8.0
+	Crudite of Vegetables, with Vegetable Puree for dipping (VE)	6.0
+	
+AVERAGE SCORE: 6.5
+
+
+Friday Lunch:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Socca (VE), Greek Pizza, Meat Lover’s Pizza	6.0
+	Turkey Burger, With Caramelized Onions (V), Garden Burger (V) Served with Fresh Cut Fries (VE).	7.0
+	Orange Beef- Stir fry Spicy Beef, Seasoned with Teriyaki and Orange Reduction, Served with Vegetable Lo Mein (V) and Steamed Broccoli (VE)	8.0
+	Melon Soup, Honey Dew, Cantaloupe puree and Watermelon Granita	6.0
+	
+AVERAGE SCORE: 6.75
+
+
+Friday Dinner:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Socca (VE), Greek Pizza, Meat Lover’s Pizza	6.0
+	Meat Pie- Pan Seared Ground Beef with Onions, and Raisins, Seasoned with Smoked paprika, with a Puff Pastry, Lentil Mac and Cheese (V), Green Beans (VE) & Carrots (VE)	6.0
+	Steak Tips, Grilled Steak Served with Crispy Potato Wedges (VE) Wedge Salad (V), Quartered Iceberg lettuce, Tomatoes, Crumbled Blue Cheese, Shredded Carrots	8.0
+	Melon Soup, Honey Dew, Cantaloupe puree and Watermelon Granita	6.0
+	
+AVERAGE SCORE: 6.5
+
+
+Saturday Lunch:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Sausage Pizza, Cheese Pizza (V), Fruit Crisp (V)	6.0
+	Kimchi Fried Rice, Fried Egg (V), Bacon.	7.0
+	Menemen, Spicy Scrambled Egg Casserole (V) Served with Pasta Primavera (V), Mixed Vegetables(VE) and Niman Ranch Sausage Patties	5.0
+	
+AVERAGE SCORE: 6.0
+
+
+Saturday Dinner:
+DINING HALL NAME: Lulu
+DINING HALL MENU: Beef Bolognese, Niman Ranch Ground Beef slow braised with carrots, onions, Celery, Tomatoes served over Cheddar Grits (V), Sauteed Mushrooms(VE), Creamed spinach (V)	6.0
+	Sausage Pizza, Cheese Pizza (V), Fruit Crisp (V)	6.0
+	Fish Croquette, Lightly Fried Fish Cakes, served with Tartare Sauce, Rice Pilaf (V)	5.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+
+Pom Menu Scored
+Sunday Lunch:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+Sunday Dinner:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Lentil & Spinach Stew (VE)	4.0
+	
+AVERAGE SCORE: 4.0
+
+
+Monday Lunch:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Roasted Chickpeas Pita Sandwich (VE), with Arugula and Tomatoes (VE), Lime Tzatziki (V), Quinoa Asparagus cakes (V), Sweet Potato fries (VE), Braised Napa cabbage (VE)	6.0
+	Penn with Herbs, Tomatoes and Peas (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Monday Dinner:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Vegan Chili (VE)	5.0
+	Vegan Chicken Fajitas (VE), with Tomato Salsa (VE), Sour Cream and Cheese (V), Chipotle Grilled Tofu (VE), Spanish Rice (VE), Wilted Spinach (VE) Steamed Corn (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+Tuesday Lunch:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Baked Sesame Tofu (VE), Southwest Vegan Chicken (V), Steamed Rice(VE), Wilted Kale (VE), Roasted Cauliflower (VE)	4.0
+	Cheese Tortellini with Fresh Vegetables and Pesto (V).	6.0
+	
+AVERAGE SCORE: 5.0
+
+
+Tuesday Dinner:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Chickpeas Curry (VE)	6.0
+	Indian Vegetable Curry (VE), with Naan Bread (V), Seitan Makhani (VE), Indian Vegetable Rice (VE), Indian Cauliflower (VE)	7.0
+	
+AVERAGE SCORE: 6.5
+
+
+Wednesday Lunch:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Pasta with Blue Cheese and Walnuts (V).	4.0
+	Southwest Tofu with Tomatillo Pico de Gallo (VE), Grilled Falafel Burger (V), Baked Sweet Potato (VE), Wilted Spinach (VE), Corn (VE)	6.0
+	
+AVERAGE SCORE: 5.0
+
+
+Wednesday Dinner:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Grilled Tofu (VE), Vegan Chicken Tostadas (VE), with Tostadas (VE), Black beans (VE), Lettuce, Tomatoes (VE) Cheddar Cheese (V), Roasted Brussels Sprouts (VE), steamed Cauliflower (VE)	6.0
+	Mexican Corn Casserole (V)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Thursday Lunch:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Pasta Fagoile with Escarole (VE).	4.0
+	Fresh House Made Pasta (VE), Accompanied by Roasted peppers (VE) Crispy Tofu (V), Steamed Broccoli (VE) Roasted Corn (VE), Eggplant Meatballs (V), House Made Marinara Sauce (VE) House Made Pesto Sauce (V) House Made Alfredo Sauce(V) Garlic Bread (VE) Gluten Free Pasta Available Upon Request (VE)	6.0
+	
+AVERAGE SCORE: 5.0
+
+
+Thursday Dinner:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Baked Penne with Sausage (V), Creole Tofu (VE), Basmati Rice (VE), Steamed Carrots (VE), Roasted Carrots (VE)	5.0
+	Green bean Casserole (V)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+Friday Lunch:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Seitan Stir Fry with Black Bean Garlic Sauce (VE), Vegetarian Eggrolls (V), Wilted Kale (VE), Jasmine Rice (VE)	6.0
+	Rice Noodles (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Friday Dinner:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Lasagna Rolls (V)	4.0
+	Roasted vegetable Burrito (VE), Bean and Cheese Burrito (V), Spanish Rice (VE), Roasted Onion, Sweet Peppers and Mushroom (VE), Burger Crumble (VE)	7.0
+	
+AVERAGE SCORE: 5.5
+
+
+Saturday Lunch:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	French Toast (V), Potato Tots (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Vegan Nuggets (V) with Honey mustard (V), and BBQ Sauce (VE), & Broccoli & Cauliflower (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+Saturday Dinner:
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Fresh Pasta (VE), with Tomato Basil Cream Sauce (V)	6.0
+	Buffalo Vegetable Pizza (V), Vegan Pizza (VE), Cheese Pizza (V), House made Fresh French Fries (VE), Broccoli (VE) Full Nacho Bar Starts @ 3:00	7.0
+	
+AVERAGE SCORE: 6.5
+
+
+Stone Davis Menu Scored
+Sunday Lunch:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+
+Sunday Dinner:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+
+Monday Lunch:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Chicken Pinata, Broccoli Pasta, (VE) Chickpea & Tomatoes, (V) Swiss Chard, (V) Roasted Corn (VE)	6.0
+	Blacken Chicken Sandwich, Potato Salad, (V) Grilled Tofu Sandwich (V)	7.0
+	
+AVERAGE SCORE: 6.5
+
+
+Monday Dinner:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: "Hail Caesar" Salad	6.0
+	New England Fish Fry, Cole Slaw, (V) Corn on Cob, (V) Summer Squash (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Tuesday Lunch:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Chicken Farro & Vegetable Salad with Lemon Vinaigrette	5.0
+	Cheese Lasagna, Vegetable Meat Balls, (V) House Made Meat Balls, Steam Broccoli, (VE) Garlic Bread (V)	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+Tuesday Dinner:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Greek Chicken Wrap, Greek Vegetable Wrap (V)	6.0
+	Rotisserie Chicken, Boiled Rice (VE), Polenta with Fontina Cheese & Vegetables (V), Steamed Broccoli (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Wednesday Lunch:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Awesome Egg Rolls	5.0
+	Gazpacho Chicken, Vegetable Gazpacho (VE), Boiled Rice (VE), Pea & Onions (VE), BBQ Tofu (VE)	8.0
+	
+AVERAGE SCORE: 6.5
+
+
+Wednesday Dinner:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Salmon Burger with Salsa, Salt & Vinegar Slaw (VE)	4.0
+	Crispy Hoisin Ribs, Wild Rice, (VE) Eggplant & Chickpea Stew (VE), Baked Sweet Potatoes (VE), Collard Greens (VE)	7.0
+	
+AVERAGE SCORE: 5.5
+
+
+Thursday Lunch:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Seared Pork Medallions with Cranberry Sauce, Mac & Cheese, (V) Roasted Potatoes (VE), Boston Beets (VE), Roasted Green Beans (VE)	5.0
+	Grilled Fresh Salmon with Black Bean & Corn Salad	6.0
+	
+AVERAGE SCORE: 5.5
+
+
+BBQ Bacon Burger Nacho, Vegeta... could not addded to menu 
+Thursday Dinner:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Rotisserie Garlic & Herb Infused Beef, Roasted Potatoes (VE), Mushroom Risotto (V), Polenta with Vegetables (V), Brussels Sprouts (V)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Friday Lunch:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Awesome Egg Rolls	5.0
+	Gazpacho Chicken, Vegetable Gazpacho (VE), Boiled Rice (VE), Pea & Onions (VE), BBQ Tofu (VE)	8.0
+	
+AVERAGE SCORE: 6.5
+
+
+Friday Dinner:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Salmon Burger with Salsa, Salt & Vinegar Slaw (VE)	4.0
+	Crispy Hoisin Ribs, Wild Rice, (VE) Eggplant & Chickpea Stew (VE), Baked Sweet Potatoes (VE), Collard Greens (VE)	7.0
+	
+AVERAGE SCORE: 5.5
+
+
+Saturday Lunch:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+
+Saturday Dinner:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+
+Tower Menu Scored
+Sunday Lunch:
+DINING HALL NAME: Tower
+DINING HALL MENU: Red Bliss Home Fries (VE), Turkey Sausage Links, Scramble Egg (V), Scramble Eggs Whites (V) and Stuffed Apple Buttermilk Pancake (V), Spinach, Bacon & Swiss Quiche, Vegetable Alfredo (V), Steamed Vegetable (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Sunday Dinner:
+DINING HALL NAME: Tower
+DINING HALL MENU: Tuscan Turkey Meatloaf or TVP Tuscan Meatloaf (V), Sweet and Savory Rice (VE), Steamed Carrots (VE), Steamed Green Beans (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Monday Lunch:
+DINING HALL NAME: Tower
+DINING HALL MENU: Summer Cooked Bar, Beef OR Veggie Burgers (V), Chili, Cheese Sauce (V), Corn (V), House Cut Fries (V)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Monday Dinner:
+DINING HALL NAME: Tower
+DINING HALL MENU: Chicken & Waffle, Crispy Bacon, Bourbon Caramelized Onions (V), Warm Whiskey, Maple Syrup (V), Crispy Tempura Eggplant (V)	7.0
+	
+AVERAGE SCORE: 7.0
+
+
+Tuesday Lunch:
+DINING HALL NAME: Tower
+DINING HALL MENU: Sweet and Tangy Pulled Pork Tacos, Mixed Bean Tacos (VE), Habanero Mango Slaw (V), Green Tomatillo Avocado Salsa (V)	5.0
+	
+AVERAGE SCORE: 5.0
+
+
+Tuesday Dinner:
+DINING HALL NAME: Tower
+DINING HALL MENU: Coffee Crusted Beef, or Coffee Crusted Tofu (VE), Blue Cheese Mashed (V), Garlic Butter Broccoli (V), Wilted Green (VE)	5.0
+	
+AVERAGE SCORE: 5.0
+
+
+Wednesday Lunch:
+DINING HALL NAME: Tower
+DINING HALL MENU: Szechuan Chicken or Tofu (VE), Steamed Rice, Roasted Ginger Soy Beans (VE), Steamed Summer Squash (VE)	5.0
+	
+AVERAGE SCORE: 5.0
+
+
+Wednesday Dinner:
+DINING HALL NAME: Tower
+DINING HALL MENU: MYO Thai Salad, Sweet Thai Chili Lo Mein (V), Chicken or Beef, and your Choice of Dressing or Sauce	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Thursday Lunch:
+DINING HALL NAME: Tower
+DINING HALL MENU: Seared Chicken with Sundried Tomato Cream Sauce, Pasta (V), Roasted Broccoli (VE), Steamed Vegetable (VE)	5.0
+	
+AVERAGE SCORE: 5.0
+
+
+Thursday Dinner:
+DINING HALL NAME: Tower
+DINING HALL MENU: Memphis Style Smoked Ribs, Grilled Cauliflower Steak (VE), Cornbread (V), Buttered Corn (V), Smashed Potatoes (V)	7.0
+	
+AVERAGE SCORE: 7.0
+
+
+Friday Lunch:
+DINING HALL NAME: Tower
+DINING HALL MENU: Szechuan Chicken or Tofu (VE), Steamed Rice, Roasted Ginger Soy Beans (VE), Steamed Summer Squash (VE)	5.0
+	
+AVERAGE SCORE: 5.0
+
+
+Friday Dinner:
+DINING HALL NAME: Tower
+DINING HALL MENU: MYO Thai Salad, Sweet Thai Chili Lo Mein (V), Chicken or Beef, and your Choice of Dressing or Sauce	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Saturday Lunch:
+DINING HALL NAME: Tower
+DINING HALL MENU: Shredded Hash browns (V), Pork Bacon, Scramble Egg (V), Scramble Eggs Whites (V) and, Cinnamon Vanilla French toast (V), Moroccan Chicken Tagine, Moroccan Chickpea Stew (VE), Mixed Vegetable (VE)	7.0
+	
+AVERAGE SCORE: 7.0
+
+
+Saturday Dinner:
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Vegetable Lo Mein (VE), Red Pork, Fried Lo Mein, Gingered Beans (VE), Mixed Asian Vegetable (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+
+Tests DiningHallSelector algorithm
+*** Top two choices should be: Lulu and Tower
+DINING HALL NAME: Bates
+DINING HALL MENU: Chef's Omelet Special, Cheddar Cheese Omelet (V), Potato Tater Tots (VE), and Niman Ranch Pork Sausage Links	6.0
+	Salmon Brunch Croquettes, Roasted Cauliflower (VE), Mustard Dill Potatoes (V), Citrus Asparagus (VE), and Belgian Waffle Bar with Fruit and Cream (V).	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Vegetable Frittata (V), Home Fries (VE), Ham Carving, Broccoli (VE)	7.0
+	Omelet Bar & Tater Tots.	7.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	Cinnamon Apple Pancake (V), Hash Brown Potatoes (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Broccoli-Mushroom Quiche (V) Vegetable Sausage Patties (V), and Roasted Asparagus (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Red Bliss Home Fries (VE), Turkey Sausage Links, Scramble Egg (V), Scramble Eggs Whites (V) and Stuffed Apple Buttermilk Pancake (V), Spinach, Bacon & Swiss Quiche, Vegetable Alfredo (V), Steamed Vegetable (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+Top Dining Hall: Lulu 6.333333333333333
+Second Best Choice: Tower 6.0
+
+*** Top two choices should be: Bates and Tower
+DINING HALL NAME: Bates
+DINING HALL MENU: Irish Dinner! Guinness Carved Brisket with Braised Cabbage (VE), Vegan Sheppard Pie (VE), Steamed Carrots (VE) and Boiled Red Potatoes with Chef's Pasta Bar	6.0
+	Grilled Cheese Quesadillas (V) with House Made Salsa and all the Fixings!	7.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Herb Roasted Beef, Fresh Herb Crust, served with Potatoes Au gratin (V) Glazed Carrots (V) & Peas (VE)	6.0
+	BBQ Turkey Tips, Fresh Turkey Breast Marinated in Fresh Herbs, Slow Grilled & Glazed with a Tangy BBQ Sauce, served with Grilled Polenta (V) and Salsa Criolla (VE)	6.0
+	Cheese Pizza (V), Paella, Scones & Cookies (V)	5.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Lentil & Spinach Stew (VE)	4.0
+	
+AVERAGE SCORE: 4.0
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Tuscan Turkey Meatloaf or TVP Tuscan Meatloaf (V), Sweet and Savory Rice (VE), Steamed Carrots (VE), Steamed Green Beans (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+Top Dining Hall: Bates 6.5
+Second Best Choice: Tower 6.0
+
+*** Top two choices should be: Stone Davis and Lulu 
+DINING HALL NAME: Bates
+DINING HALL MENU: Chicken Caesar Salad; White Grilled Chicken Breast on Crispy Romaine with Shredded Asiago Cheese and House Made Croutons.	6.0
+	Customize your Own Steakburger or Black Bean Burger (VE) with Grilled Onion Trifecta (VE), Green Bean Fries (VE), and Roasted Vegetable Medley (VE) with Toppings on the Side.	7.0
+	Spring Vegetable Pasta with Carrots, Asparagus, Green Peas and Red Onion with Fresh Lemon in a Cream Cheese Sauce (V).	4.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Chicken Fried Rice, Diced Chicken Breast, Vegetables and Eggs Sauteed with Ginger & Soy Dressing, Vegetable Stir Fry (VE) Sauteed in Ginger & Soy, Spicy Eggplant (VE), Oven Roasted & Seasoned with Chipotle Powder	5.0
+	Gazpacho (VE), ripened Tomatoes, Fennel, Cucumbers, EVOO, Jalapenos puree	7.0
+	Sausage Pizza, Cheese Pizza (V), Eggplant Parm (V)	7.0
+	Monte Cristo Sandwich- Sliced ham and Swiss cheese, dipped in egg batter and golden brown griddled, Grill cheese Sandwich (V) 2 cheese in between whole grain bread, toasted, Cole slaw (V).	6.0
+	
+AVERAGE SCORE: 6.25
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Roasted Chickpeas Pita Sandwich (VE), with Arugula and Tomatoes (VE), Lime Tzatziki (V), Quinoa Asparagus cakes (V), Sweet Potato fries (VE), Braised Napa cabbage (VE)	6.0
+	Penn with Herbs, Tomatoes and Peas (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Chicken Pinata, Broccoli Pasta, (VE) Chickpea & Tomatoes, (V) Swiss Chard, (V) Roasted Corn (VE)	6.0
+	Blacken Chicken Sandwich, Potato Salad, (V) Grilled Tofu Sandwich (V)	7.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Summer Cooked Bar, Beef OR Veggie Burgers (V), Chili, Cheese Sauce (V), Corn (V), House Cut Fries (V)	6.0
+	
+AVERAGE SCORE: 6.0
+
+Top Dining Hall: Stone Davis 6.5
+Second Best Choice: Lulu 6.25
+
+*** Top two choices should be: Tower and Lulu (Stone D is also tied)
+DINING HALL NAME: Bates
+DINING HALL MENU: Panzanella Toss with Crispy Croutons, Fresh Mozzarella Cheese, Fresh Basil, Heirloom Tomato and Balsamic Drizzle (V)	6.0
+	Fresh Quesadilla (V) Stuffed with Mango, Black Beans, Caramelized Onion and Jack Cheese with House Made Tomato Salsa and Fresh Fried Tortilla Chips (VE)	7.0
+	Brazilian Frango Con Quibo; Roasted Chicken with Tomato and Okra, Macarrao de Forno; Brazilian Baked Pasta (V), Grilled Pineapple (VE), Roasted Brazilian Leeks (VE) and Angu Creamy Polenta (V)	5.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Grilled Rachael, House Roasted Turkey, Swiss cheese, sauerkraut, house made 1000 Island dressing, toasted, Cole slaw (V), and Kettle chips (VE)	4.0
+	Gazpacho (VE), ripened Tomatoes, Fennel, Cucumbers, EVOO, Jalapenos puree	7.0
+	Sausage Pizza, Cheese Pizza (V), Eggplant Parm (V)	7.0
+	Beef Chilaquiles, Shredded beef, Spicy Tomato Sauce, Crispy Corn Tortillas with Shredded Cheese, Rice & Beans (VE), Yellow Rice & Black Eyed Peas, Fried Plantains (VE) & Roasted Cauliflower (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Vegan Chili (VE)	5.0
+	Vegan Chicken Fajitas (VE), with Tomato Salsa (VE), Sour Cream and Cheese (V), Chipotle Grilled Tofu (VE), Spanish Rice (VE), Wilted Spinach (VE) Steamed Corn (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: "Hail Caesar" Salad	6.0
+	New England Fish Fry, Cole Slaw, (V) Corn on Cob, (V) Summer Squash (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Chicken & Waffle, Crispy Bacon, Bourbon Caramelized Onions (V), Warm Whiskey, Maple Syrup (V), Crispy Tempura Eggplant (V)	7.0
+	
+AVERAGE SCORE: 7.0
+
+Top Dining Hall: Tower 7.0
+Second Best Choice: Lulu 6.0
+
+*** Top two choices should be: Lulu and Stone Davis 
+DINING HALL NAME: Bates
+DINING HALL MENU: Try Our New Fusion Item: Smoked Salmon and Fresh Dill on House Made Pea Pancakes.	5.0
+	House Made Turkish Turkey Burger on Grilled Pita or Roasted Eggplant Sabich (VE) with Olives and Feta Cheese Salad (V).	6.0
+	Cashew Chicken with Spinach and Mushroom Lo Mein (VE), Ginger Snap Peas (VE), Braised Nappa Cabbage (VE) and Brown Rice & Edamame (VE) with Fresh Herbs.	4.0
+	
+AVERAGE SCORE: 5.0
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Crispy Calamari, Fried Calamari with Sweet Chili Soy Sauce, Vegetable Tempura (VE), Flash Fried Vegetables, Sweet & Sour Dipping Sauce.	5.0
+	Plato Montanero, Roasted Pork, Red Beans (VE), Rice VE), Fried Plantains (VE), Eggs, Sauteed Peppers & Onions (VE)	7.0
+	California Rolls (V) Cauliflower Couscous, Avocado, Carrots, Red Peppers, wrapped in Seaweed	7.0
+	3 cheese Baked Pasta (V), House Made Focaccia, Marinara Sauce (VE), Pepperoni Pizza	6.0
+	
+AVERAGE SCORE: 6.25
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Baked Sesame Tofu (VE), Southwest Vegan Chicken (V), Steamed Rice(VE), Wilted Kale (VE), Roasted Cauliflower (VE)	4.0
+	Cheese Tortellini with Fresh Vegetables and Pesto (V).	6.0
+	
+AVERAGE SCORE: 5.0
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Chicken Farro & Vegetable Salad with Lemon Vinaigrette	5.0
+	Cheese Lasagna, Vegetable Meat Balls, (V) House Made Meat Balls, Steam Broccoli, (VE) Garlic Bread (V)	6.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Sweet and Tangy Pulled Pork Tacos, Mixed Bean Tacos (VE), Habanero Mango Slaw (V), Green Tomatillo Avocado Salsa (V)	5.0
+	
+AVERAGE SCORE: 5.0
+
+Top Dining Hall: Lulu 6.25
+Second Best Choice: Stone Davis 5.5
+
+*** Top two choices should be: Pom and Lulu (Pom and Lulu are tied)
+DINING HALL NAME: Bates
+DINING HALL MENU: Greek Nachos; Stacked Fresh Pita Chips Layered with House Made Hummus, Roasted Red Peppers, Artichokes, Black Olives and Feta Cheese (V)	6.0
+	Lamb and Niman Ranch Beef Meatloaf with Balsamic Glaze, Asparagus Tomato and Fontina Frittata (V), Braised Green Kale (VE), Orange Glazed Beets (VE), and Baked Potato Bar	7.0
+	Tiramisu Crepe (V); Chocolate Crepe Stuffed with Coffee-Cream Cheese and Vanilla Cookies with Fresh Mint, Chocolate Sauce and Powdered Sugar	6.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Croque Monsieur, Thin sliced Ham and Swiss cheese, dipped in butter and toasted, served with Cheese Sauce, Kettle chips (VE), Putin (V), Golden Crisp Potatoes and Gravy, cheese Curds	6.0
+	Chicken Kebob, fresh Herbs Marinated Chicken Tenders, Skewer with Vegetables, Vegetable Kebob (VE) Skewer Squash, Onions, Peppers, Drizzled with Herb Olive Oil, Rice Pilaf (VE), and Steamed Broccoli (VE)	7.0
+	California Rolls (V) Cauliflower Couscous, Avocado, Carrots, Red Peppers, wrapped in Seaweed	7.0
+	3 cheese Baked Pasta (V), House Made Focaccia, Marinara Sauce (VE), Pepperoni Pizza	6.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Chickpeas Curry (VE)	6.0
+	Indian Vegetable Curry (VE), with Naan Bread (V), Seitan Makhani (VE), Indian Vegetable Rice (VE), Indian Cauliflower (VE)	7.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Greek Chicken Wrap, Greek Vegetable Wrap (V)	6.0
+	Rotisserie Chicken, Boiled Rice (VE), Polenta with Fontina Cheese & Vegetables (V), Steamed Broccoli (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Coffee Crusted Beef, or Coffee Crusted Tofu (VE), Blue Cheese Mashed (V), Garlic Butter Broccoli (V), Wilted Green (VE)	5.0
+	
+AVERAGE SCORE: 5.0
+
+Top Dining Hall: Lulu 6.5
+Second Best Choice: Pomeroy 6.5
+
+*** Top two choices should be: Lulu and Stone Davis 
+DINING HALL NAME: Bates
+DINING HALL MENU: Fresh Seafood Coconut Curry with Calamari, Swordfish, Shrimp, Lobster and Mussels Served with Ancient Grains and Black Beans with Indian Spices (VE), Steamed Green Beans (VE), Steamed Bok Choy(VE), Roasted Cauliflower (VE), and Warm Naan Bread (V) with Assorted Rice and Lentils (VE).	4.0
+	Grilled Chicken Sandwich with Watermelon Jalapeno Salsa on a Fresh Claflin Roll or Grilled Zucchini Stacks with Mozzarella and Balsamic Drizzle (V).	7.0
+	Marinated Tofu on Cold Peanut Noodles (VE).	4.0
+	
+AVERAGE SCORE: 5.0
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Socca (VE), Greek Pizza, Meat Lover’s Pizza	6.0
+	Turkey Burger, With Caramelized Onions (V), Garden Burger (V) Served with Fresh Cut Fries (VE).	7.0
+	Orange Beef- Stir fry Spicy Beef, Seasoned with Teriyaki and Orange Reduction, Served with Vegetable Lo Mein (V) and Steamed Broccoli (VE)	8.0
+	Melon Soup, Honey Dew, Cantaloupe puree and Watermelon Granita	6.0
+	
+AVERAGE SCORE: 6.75
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Pasta with Blue Cheese and Walnuts (V).	4.0
+	Southwest Tofu with Tomatillo Pico de Gallo (VE), Grilled Falafel Burger (V), Baked Sweet Potato (VE), Wilted Spinach (VE), Corn (VE)	6.0
+	
+AVERAGE SCORE: 5.0
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Awesome Egg Rolls	5.0
+	Gazpacho Chicken, Vegetable Gazpacho (VE), Boiled Rice (VE), Pea & Onions (VE), BBQ Tofu (VE)	8.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Szechuan Chicken or Tofu (VE), Steamed Rice, Roasted Ginger Soy Beans (VE), Steamed Summer Squash (VE)	5.0
+	
+AVERAGE SCORE: 5.0
+
+Top Dining Hall: Lulu 6.75
+Second Best Choice: Stone Davis 6.5
+
+*** Top two choices should be: Lulu and Tower (tied with Pom and Bates)
+DINING HALL NAME: Bates
+DINING HALL MENU: Hand Carved Turkey Dinner with Cranberry Orange Relish, Butternut Squash and Kale Stuffed Shells (V), Steamed Green Beans (VE), Corn Pudding (VE), and Olive Oil Mashed Potatoes (VE)	6.0
+	Grilled Shrimp Roll with Sorrel and Grilled Zucchini Stacks with Mozzarella and Balsamic Drizzle (V)	7.0
+	Fresh Zucchini Noodles with Avocado Cream Sauce (VE)	5.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Socca (VE), Greek Pizza, Meat Lover’s Pizza	6.0
+	Meat Pie- Pan Seared Ground Beef with Onions, and Raisins, Seasoned with Smoked paprika, with a Puff Pastry, Lentil Mac and Cheese (V), Green Beans (VE) & Carrots (VE)	6.0
+	Steak Tips, Grilled Steak Served with Crispy Potato Wedges (VE) Wedge Salad (V), Quartered Iceberg lettuce, Tomatoes, Crumbled Blue Cheese, Shredded Carrots	8.0
+	Melon Soup, Honey Dew, Cantaloupe puree and Watermelon Granita	6.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Grilled Tofu (VE), Vegan Chicken Tostadas (VE), with Tostadas (VE), Black beans (VE), Lettuce, Tomatoes (VE) Cheddar Cheese (V), Roasted Brussels Sprouts (VE), steamed Cauliflower (VE)	6.0
+	Mexican Corn Casserole (V)	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Salmon Burger with Salsa, Salt & Vinegar Slaw (VE)	4.0
+	Crispy Hoisin Ribs, Wild Rice, (VE) Eggplant & Chickpea Stew (VE), Baked Sweet Potatoes (VE), Collard Greens (VE)	7.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Tower
+DINING HALL MENU: MYO Thai Salad, Sweet Thai Chili Lo Mein (V), Chicken or Beef, and your Choice of Dressing or Sauce	6.0
+	
+AVERAGE SCORE: 6.0
+
+Top Dining Hall: Lulu 6.5
+Second Best Choice: Tower 6.0
+
+*** Top two choices should be: Bates and Lulu 
+DINING HALL NAME: Bates
+DINING HALL MENU: Crispy Chicken with Pepper and Salsa Verde, Southwest Quiche with Black Beans, Cheddar Cheese and Jalapeno (V), Wilted Green Kale (VE),Steamed Broccoli (VE) and Spanish Rice (VE) with Mac and Cheese Bar (V).	6.0
+	Spring Onion and Cheddar (V) or Steak Fajita Grilled Cheese with Reskin Potato Salad with Citrus Balsamic (VE).	7.0
+	Pan Bagnat; Traditional French Tuna Nicoise Sandwich in Crispy Baguette.	6.0
+	
+AVERAGE SCORE: 6.333333333333333
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Red's Best, Catch of the Day Veracruzano, Tomato Broth and Olives, Served with Rice (VE) and Sauteed Squash (VE)	5.0
+	Crudite of Vegetables, with Vegetable Puree for dipping (VE)	6.0
+	Cheese Pizza, Buffalo Chicken, Vegetable Calzone	6.0
+	Tuna Melt, Tuna salad with Melted Swiss cheese on Toasted Marble Rye Bread Eggplant Parm Slider, Golden Crispy Eggplant, tomato Sauce Provolone on Brioche (V) served with Fresh Cut Fries (VE)	6.0
+	
+AVERAGE SCORE: 5.75
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Pasta Fagoile with Escarole (VE).	4.0
+	Fresh House Made Pasta (VE), Accompanied by Roasted peppers (VE) Crispy Tofu (V), Steamed Broccoli (VE) Roasted Corn (VE), Eggplant Meatballs (V), House Made Marinara Sauce (VE) House Made Pesto Sauce (V) House Made Alfredo Sauce(V) Garlic Bread (VE) Gluten Free Pasta Available Upon Request (VE)	6.0
+	
+AVERAGE SCORE: 5.0
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Seared Pork Medallions with Cranberry Sauce, Mac & Cheese, (V) Roasted Potatoes (VE), Boston Beets (VE), Roasted Green Beans (VE)	5.0
+	Grilled Fresh Salmon with Black Bean & Corn Salad	6.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Seared Chicken with Sundried Tomato Cream Sauce, Pasta (V), Roasted Broccoli (VE), Steamed Vegetable (VE)	5.0
+	
+AVERAGE SCORE: 5.0
+
+Top Dining Hall: Bates 6.333333333333333
+Second Best Choice: Lulu 5.75
+
+BBQ Bacon Burger Nacho, Vegeta... could not addded to menu 
+*** Top two choices should be: Tower and Lulu (tied with Pom and Bates)
+DINING HALL NAME: Bates
+DINING HALL MENU: Pulled Niman Pork with Mango and Chipotle Peppers, Spicy Southwest BBQ Bean Pot (VE), Roasted Corn on the Cob (VE), Steamed Green Chard (VE), and Corn Bread with Cheddar and Jalapeno Peppers (V) with Mac and Cheese Bar (V)	5.0
+	A Throwback from Twisted Nacho Night! Thai Chicken Nachos; Wonton Skins Topped with Nappa Cabbage, Shredded Carrots and Pulled Chicken with Thai Peanut Drizzle	6.0
+	Cajun Salmon Burger or Veggie Burger (V) on Fresh Claflin Roll Served with Redskin Potato Salad with Citrus Balsamic (VE)	4.0
+	
+AVERAGE SCORE: 5.0
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Cheese Pizza, Buffalo Chicken, Vegetable Calzone	6.0
+	Maple Pork Loin, Roasted Niman Ranch Pork Loin, Maple Syrup Glazed, Charred Brussels Sprouts (VE), Mashed Sweet Potatoes (V) Steamed Corn, Roasted Cauliflower (VE)	6.0
+	Clams PO Boy, Golden Crisp Clams, Served with Cole Slaw (V), in a Bun, Fresh Cut Fries	8.0
+	Crudite of Vegetables, with Vegetable Puree for dipping (VE)	6.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Baked Penne with Sausage (V), Creole Tofu (VE), Basmati Rice (VE), Steamed Carrots (VE), Roasted Carrots (VE)	5.0
+	Green bean Casserole (V)	6.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Rotisserie Garlic & Herb Infused Beef, Roasted Potatoes (VE), Mushroom Risotto (V), Polenta with Vegetables (V), Brussels Sprouts (V)	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Memphis Style Smoked Ribs, Grilled Cauliflower Steak (VE), Cornbread (V), Buttered Corn (V), Smashed Potatoes (V)	7.0
+	
+AVERAGE SCORE: 7.0
+
+Top Dining Hall: Tower 7.0
+Second Best Choice: Lulu 6.5
+
+*** Top two choices should be: Bates and Pom (also tied with Stone Davis)
+DINING HALL NAME: Bates
+DINING HALL MENU: Pizza Day! House Made Sauce with Shredded Mozzarella Cheese on Fresh Claflin Dough! Today we feature Jerk Chicken Pizza, Eggplant Parmesan Pizza (V) and Three Cheese and Broccoli Pizza (V) with Roasted Cauliflower (VE), Wilted Green Kale (VE) and Chef’s Pasta Bar (V).	7.0
+	Burrito Bar (V) with Warm Flour Tortillas, Cheddar Cheese, Shredded Lettuce, House Made Salsa, Sour Cream, Jalapeno and Fresh Cilantro.	8.0
+	House Made Falafel (VE) on Warm Pita with Hand Cut French Fries (VE).	5.0
+	
+AVERAGE SCORE: 6.666666666666667
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Fish Taco, Crispy Fried Fish, Corn Tortilla, Pico de Gallo, Pickled Vegetables Taco (VE).	4.0
+	Carnitas Burrito, Shredded BBQ Pork in a Flour Tortilla, With Rice (VE) Beans (VE), Fresh Salsa (VE) & Tortilla Chips (VE)	5.0
+	Banana Foster (V), Pepperoni Pizza, Chicken Jalapeno Pizza	5.0
+	Pickled Vegetables, Garden Fresh Vegetables, Apple Cider Marinated	4.0
+	
+AVERAGE SCORE: 4.5
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Seitan Stir Fry with Black Bean Garlic Sauce (VE), Vegetarian Eggrolls (V), Wilted Kale (VE), Jasmine Rice (VE)	6.0
+	Rice Noodles (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Chicken Tostadas, Refried Beans Tostadas (VE)	6.0
+	Baked White Fish With Kelp, Spice Chickpeas Couscous (VE), Rice & Peas (VE), Steamed Baby Carrots (VE), Baked Beans	6.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Caprese Chicken Chicken Skillet, Springtime Quinoa pilaf (VE), Sautéed Greens (VE), Steamed Veggies (VE)	5.0
+	
+AVERAGE SCORE: 5.0
+
+Top Dining Hall: Bates 6.666666666666667
+Second Best Choice: Pomeroy 6.0
+
+Chicken Parm, Golden Crispy Ch... could not addded to menu 
+*** Top two choices should be: Bates and Tower (tie)
+DINING HALL NAME: Bates
+DINING HALL MENU: Custom Make your Own Cheese Omelet with Home Fries (VE)	7.0
+	Chicken Wing Bar, Penne Pasta with cannellini Beans and Escarole (V), Grilled Summer Squash (VE), Mixed Vegetables (VE), and Quinoa Pilaf (VE)	7.0
+	Wintergreen Salad; a Custom Made Bates Only Salad with Bibb Lettuce, Fresh Mint, Grape Tomato, Goat Cheese and Golden Raisins with Raspberry Vinaigrette (V)	7.0
+	
+AVERAGE SCORE: 7.0
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Banana Foster (V), Pepperoni Pizza, Chicken Jalapeno Pizza	5.0
+	Carne Asada, Grilled Thin Sliced Beef with Chimichurri (VE) Corn Tortillas and Grilled Corn (VE) with Spicy Crema (V)	6.0
+	Pickled Vegetables, Garden Fresh Vegetables, Apple Cider Marinated	4.0
+	
+AVERAGE SCORE: 5.0
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Lasagna Rolls (V)	4.0
+	Roasted vegetable Burrito (VE), Bean and Cheese Burrito (V), Spanish Rice (VE), Roasted Onion, Sweet Peppers and Mushroom (VE), Burger Crumble (VE)	7.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: Spinach Mozzarella Meat Loft, Mash Potatoes (V), Beef Gravy, Vegetable Quinoa Risotto (VE), Roasted Cauliflower (VE), Peas (VE)	6.0
+	Rosti and Guacamole (VE)	7.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Grilled Hot Dogs, or Grilled Veggie Dags (V), House Cut Fries, Cheese Sauce (V), Choice of Cold Toppings	7.0
+	
+AVERAGE SCORE: 7.0
+
+Top Dining Hall: Bates 7.0
+Second Best Choice: Tower 7.0
+
+*** Top two choices should be: Tower and Lulu
+DINING HALL NAME: Bates
+DINING HALL MENU: Oktoberfest Brunch of Bratwurst Pork Sausage with Grilled Onions, German Cabbage and Potato Casserole (V), Lemon Dill Carrots (VE), Roasted Brussels Sprouts (VE) and German Potato Pancakes (V).	5.0
+	Buttermilk Blueberry Pancakes (V) and Fresh Florentine Scramble (V).	6.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Sausage Pizza, Cheese Pizza (V), Fruit Crisp (V)	6.0
+	Kimchi Fried Rice, Fried Egg (V), Bacon.	7.0
+	Menemen, Spicy Scrambled Egg Casserole (V) Served with Pasta Primavera (V), Mixed Vegetables(VE) and Niman Ranch Sausage Patties	5.0
+	
+AVERAGE SCORE: 6.0
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Spinach and Feta Pasta (V).	5.0
+	French Toast (V), Potato Tots (VE), Boiled Eggs (V), Scramble Eggs (V), Egg Whites on Request (V), Vegan Nuggets (V) with Honey mustard (V), and BBQ Sauce (VE), & Broccoli & Cauliflower (VE)	6.0
+	
+AVERAGE SCORE: 5.5
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Shredded Hash browns (V), Pork Bacon, Scramble Egg (V), Scramble Eggs Whites (V) and, Cinnamon Vanilla French toast (V), Moroccan Chicken Tagine, Moroccan Chickpea Stew (VE), Mixed Vegetable (VE)	7.0
+	
+AVERAGE SCORE: 7.0
+
+Top Dining Hall: Tower 7.0
+Second Best Choice: Lulu 6.0
+
+*** Top two choices should be: Pom and Tower
+DINING HALL NAME: Bates
+DINING HALL MENU: Lime Marinated Broiled Salmon, Roasted Green Beans (VE), Roasted Leek and Cheddar Strata (V), Mixed Vegetables (VE), and Barley Pilaf (VE) with Chefs Choice Pasta Bar	4.0
+	Our Famous Make your Own Grilled Cheese (V) with Fresh Kettle Potato Chips (VE)	6.0
+	
+AVERAGE SCORE: 5.0
+
+DINING HALL NAME: Lulu
+DINING HALL MENU: Beef Bolognese, Niman Ranch Ground Beef slow braised with carrots, onions, Celery, Tomatoes served over Cheddar Grits (V), Sauteed Mushrooms(VE), Creamed spinach (V)	6.0
+	Sausage Pizza, Cheese Pizza (V), Fruit Crisp (V)	6.0
+	Fish Croquette, Lightly Fried Fish Cakes, served with Tartare Sauce, Rice Pilaf (V)	5.0
+	
+AVERAGE SCORE: 5.666666666666667
+
+DINING HALL NAME: Pomeroy
+DINING HALL MENU: Fresh Pasta (VE), with Tomato Basil Cream Sauce (V)	6.0
+	Buffalo Vegetable Pizza (V), Vegan Pizza (VE), Cheese Pizza (V), House made Fresh French Fries (VE), Broccoli (VE) Full Nacho Bar Starts @ 3:00	7.0
+	
+AVERAGE SCORE: 6.5
+
+DINING HALL NAME: Stone Davis
+DINING HALL MENU: 
+AVERAGE SCORE: 0.0
+
+DINING HALL NAME: Tower
+DINING HALL MENU: Vegetable Lo Mein (VE), Red Pork, Fried Lo Mein, Gingered Beans (VE), Mixed Asian Vegetable (VE)	6.0
+	
+AVERAGE SCORE: 6.0
+
+Top Dining Hall: Pomeroy 6.5
+Second Best Choice: Tower 6.0
+
